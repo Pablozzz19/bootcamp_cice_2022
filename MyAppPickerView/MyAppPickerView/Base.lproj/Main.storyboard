@@ -22,7 +22,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="DRN-Kc-GtM"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -39,7 +39,7 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uh5-1W-qnY">
                                 <rect key="frame" x="20" y="630" width="374" height="216"/>
                             </pickerView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oEf-Rv-hfh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="oEf-Rv-hfh">
                                 <rect key="frame" x="20" y="333" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Ser-PG-Q0v"/>
@@ -64,7 +64,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YrE-w7-BPz" secondAttribute="trailing" constant="20" id="zrj-lg-cnB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Title" id="Zn5-3d-ya2"/>
+                    <navigationItem key="navigationItem" title="First View Controller" id="Zn5-3d-ya2">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="JPz-gW-Hv9">
+                            <connections>
+                                <segue destination="edA-qq-AVX" kind="show" id="H0h-3U-4NM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detalleTextQuesoTxv" destination="adw-WZ-0po" id="VMv-ab-yyL"/>
                         <outlet property="imageQuesoImv" destination="oEf-Rv-hfh" id="sGj-MV-Mna"/>
@@ -94,8 +100,87 @@
             </objects>
             <point key="canvasLocation" x="531.8840579710145" y="138.61607142857142"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="vOY-7m-fuW">
+            <objects>
+                <viewController id="edA-qq-AVX" customClass="SecondViewController" customModule="MyAppPickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jWT-no-6R9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="931-hs-5EV">
+                                <rect key="frame" x="28" y="97" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Localidades de Madrid" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3CG-Ar-GDI">
+                                <rect key="frame" x="20" y="112" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Codigo Postal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOI-7H-amQ">
+                                <rect key="frame" x="20" y="171" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prioridad de Trabajo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gq-Po-WQX">
+                                <rect key="frame" x="20" y="230" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ulO-Zp-Jbo">
+                                <rect key="frame" x="20" y="289" width="374" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="360" id="6tG-L5-tBr"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="a2z-77-xmS"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="360" id="cyf-Wt-Ywa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="360" id="hoF-va-fmT"/>
+                                    <constraint firstAttribute="height" constant="400" id="iWt-9L-ZgN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="076-Al-oTc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="076-Al-oTc" firstAttribute="trailing" secondItem="6gq-Po-WQX" secondAttribute="trailing" constant="20" id="1yx-Sj-wfd"/>
+                            <constraint firstItem="sOI-7H-amQ" firstAttribute="leading" secondItem="076-Al-oTc" secondAttribute="leading" constant="20" id="2Ri-nx-uhe"/>
+                            <constraint firstItem="sOI-7H-amQ" firstAttribute="top" secondItem="3CG-Ar-GDI" secondAttribute="bottom" constant="25" id="5zk-xI-a96"/>
+                            <constraint firstItem="6gq-Po-WQX" firstAttribute="top" secondItem="sOI-7H-amQ" secondAttribute="bottom" constant="25" id="7fe-ia-kTs"/>
+                            <constraint firstItem="ulO-Zp-Jbo" firstAttribute="leading" secondItem="076-Al-oTc" secondAttribute="leading" constant="20" id="8OV-Dn-SUq"/>
+                            <constraint firstItem="3CG-Ar-GDI" firstAttribute="leading" secondItem="076-Al-oTc" secondAttribute="leading" constant="20" id="EVw-sf-WPc"/>
+                            <constraint firstItem="076-Al-oTc" firstAttribute="trailing" secondItem="3CG-Ar-GDI" secondAttribute="trailing" constant="20" id="NoF-AF-MCF"/>
+                            <constraint firstItem="ulO-Zp-Jbo" firstAttribute="leading" secondItem="076-Al-oTc" secondAttribute="leading" constant="20" id="QJP-mp-SHP"/>
+                            <constraint firstItem="sOI-7H-amQ" firstAttribute="leading" secondItem="076-Al-oTc" secondAttribute="leading" constant="28" id="Sp0-8i-ukc"/>
+                            <constraint firstItem="076-Al-oTc" firstAttribute="trailing" secondItem="sOI-7H-amQ" secondAttribute="trailing" constant="20" id="U2k-5P-0G0"/>
+                            <constraint firstItem="sOI-7H-amQ" firstAttribute="top" secondItem="3CG-Ar-GDI" secondAttribute="bottom" constant="25" id="UwH-cb-7yC"/>
+                            <constraint firstItem="sOI-7H-amQ" firstAttribute="leading" secondItem="076-Al-oTc" secondAttribute="leading" constant="20" id="YYF-xS-q8L"/>
+                            <constraint firstItem="076-Al-oTc" firstAttribute="trailing" secondItem="sOI-7H-amQ" secondAttribute="trailing" constant="20" id="iBX-f9-lgt"/>
+                            <constraint firstItem="ulO-Zp-Jbo" firstAttribute="top" secondItem="6gq-Po-WQX" secondAttribute="bottom" constant="25" id="kCI-Hk-Nta"/>
+                            <constraint firstItem="ulO-Zp-Jbo" firstAttribute="top" secondItem="6gq-Po-WQX" secondAttribute="bottom" constant="25" id="spe-fL-jlg"/>
+                            <constraint firstItem="3CG-Ar-GDI" firstAttribute="top" secondItem="076-Al-oTc" secondAttribute="top" constant="24" id="t8s-oT-Z4k"/>
+                            <constraint firstItem="076-Al-oTc" firstAttribute="trailing" secondItem="ulO-Zp-Jbo" secondAttribute="trailing" constant="20" id="usM-6A-Ysy"/>
+                            <constraint firstItem="6gq-Po-WQX" firstAttribute="leading" secondItem="076-Al-oTc" secondAttribute="leading" constant="20" id="zyY-l8-023"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oRD-dt-m61"/>
+                    <connections>
+                        <outlet property="codigoPostalTF" destination="sOI-7H-amQ" id="OMl-VD-7Eq"/>
+                        <outlet property="localidadesTF" destination="3CG-Ar-GDI" id="upj-uI-onT"/>
+                        <outlet property="perfilImageView" destination="ulO-Zp-Jbo" id="WKy-HT-CdY"/>
+                        <outlet property="prioridadTrabajoTF" destination="6gq-Po-WQX" id="Okm-V8-rQL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgY-o5-WNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2444.9275362318845" y="138.61607142857142"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="placeholder" width="275" height="183"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
