@@ -29,7 +29,7 @@ class SecondViewController: UIViewController {
     
 
     private func configurationUI() {
-        self.perfilImageView.image = UIImage(named: self.dataSourceFotoPerfil[0] ?? "placeholder")
+        self.perfilImageView.image = UIImage(named: self.dataSourceFotoPerfil.first ?? "placeholder")
         Utils.shared.configurationPickerView(tag: 1,
                                              delegate: self,
                                              datasource: self,
