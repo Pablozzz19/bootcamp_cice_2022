@@ -60,11 +60,10 @@ class SecondViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "segueV3" {
-            if !(self.miTelefonoTF.text?.isEmpty ?? false) &&
-                !(self.miDireccionTF.text?.isEmpty ?? false) &&
-                "\(self.nuevaEdadPerro ?? 0)" {
+            
+            if let edadPerro = self.nuevaEdadPerro {
                 
-                segue.destination as? ThirdViewController
+                self.navigationToThirdWindow(segue: segue, edadPerro: edadPerro)
                 
             } else {
                 self.present(Utils.shared.showAlertVC(
@@ -76,5 +75,31 @@ class SecondViewController: UIViewController {
         }
         
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    private func navigationToThirdWindow(segue: UIStoryboardSegue, edadPerro : Int) {
+        
+        if !(self.miTelefonoTF.text?.isEmpty ?? false) &&
+            !(self.miDireccionTF.text?.isEmpty ?? false) &&
+            !("\(edadPerro)".isEmpty) {
+            
+            let ventana3VC = segue.destination as? ThirdViewController
+            ventana3VC?.datosUsuario.nombreData = self.datosUsuario.nombreData
+            ventana3VC?.datosUsuario.apellidoData = self.datosUsuario.apellidoData
+            ventana3VC?.datosUsuario.telefonoData = self.miTelefonoTF.text
+            ventana3VC?.datosUsuario.direccionData = self.miDireccionTF.text
+            ventana3VC?.datosUsuario.edadPerroData = self.edadPerroTF.text
+            
+        } else {
+            self.present(Utils.shared.showAlertVC(
+                            title: "Heyeee",
+                            message: "Por favor introduce datos en todos los campos de texto."),
+                         animated: true,
+                         completion: nil)
+        }
+        
+    }
 }

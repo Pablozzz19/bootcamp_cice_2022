@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import MessageUI
 
 class Utils {
     
@@ -24,6 +25,52 @@ class Utils {
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         return alertVC
+    }
+    
+    
+    /// Method configuracionPickerView
+    /// - Parameters:
+    ///   - tag: Int
+    ///   - delegate: UIPickerViewDelegate
+    ///   - dataSource: UIPickerViewDataSource
+    ///   - textField: UITextField
+    func configuracionPickerView(tag: Int,
+                                 delegate: UIPickerViewDelegate,
+                                 dataSource: UIPickerViewDataSource,
+                                 textField: UITextField) {
+        let pickerView = UIPickerView()
+        pickerView.delegate = delegate
+        pickerView.dataSource = dataSource
+        pickerView.tag = tag
+        textField.inputView = pickerView
+        
+    }
+    
+    /// Method dataIntextFieldIsEmpty
+    /// - Parameters:
+    ///   - param : [String]
+    func dataIntextFieldIsEmpty(param : [String]) -> Bool {
+        
+        var semaforo : Bool = true
+        for item in param {
+            if (item.isEmpty) {
+                semaforo = false
+                break
+            }
+        }
+        return semaforo
+    }
+    
+    func configurationMailCompose(deledate : MFMailComposeViewControllerDelegate, recipients : [String], emailBody : String) -> MFMailComposeViewController {
+        
+        let mailCompose = MFMailComposeViewController()
+        mailCompose.mailComposeDelegate = deledate
+        mailCompose.setToRecipients(recipients)
+        mailCompose.setSubject("Este es el mensaje para el equipo de soporte")
+        
+        mailCompose.setMessageBody(emailBody, isHTML: false)
+        return mailCompose
+
     }
     
 }
