@@ -24,7 +24,12 @@ class ListSuperCochesViewController: UIViewController {
 
     // MARK: - Metodos privados
     private func configurationUI() {
-        
+        self.title = Utils.Constants().tituloListaCoches
+        for item in 0..<23 {
+            let modelData = CochesModel(nombre: <#T##String?#>,
+                                        color: <#T##String?#>,
+                                        imagen: <#T##UIImage?#>)
+        }
     }
     
     private func configuracionTableView() {

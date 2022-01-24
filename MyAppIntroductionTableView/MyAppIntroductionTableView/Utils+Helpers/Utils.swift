@@ -22,5 +22,6 @@ extension ReuseIdentifierView where Self:UIView {
 class Utils {
     struct Constants {
         let tituloListaMeses = "Meses"
+        let tituloListaCoches = "Coches"
     }
 }
