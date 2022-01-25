@@ -39,7 +39,7 @@ class GalleryAdapter(private val context : Context, private val dataSet : ArrayL
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        //holder.ivPhoto.setImageResource(dataSet[position])
+        holder.ivPhoto.setImageURI(dataSet[position])
     }
 
     // Return the size of your dataset (invoked by the layout manager)
