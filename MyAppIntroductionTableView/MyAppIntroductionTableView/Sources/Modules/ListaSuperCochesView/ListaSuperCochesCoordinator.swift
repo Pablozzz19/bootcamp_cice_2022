@@ -17,7 +17,7 @@ final class ListaSuperCochesCoordinator {
     
     // Vista
     static func view() -> UIViewController {
-        let vc = ListaSuperCochesViewController()
+        let vc = ListSuperCochesViewController()
         return vc
     }
     

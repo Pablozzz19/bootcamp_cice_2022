@@ -26,6 +26,9 @@
 		09A144A9279F45D00042A44C /* ListSuperCochesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A144A7279F45D00042A44C /* ListSuperCochesViewController.xib */; };
 		09A144AD279F49460042A44C /* CochesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A144AB279F49460042A44C /* CochesCell.swift */; };
 		09A144AE279F49460042A44C /* CochesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A144AC279F49460042A44C /* CochesCell.xib */; };
+		09A144B327A07DA00042A44C /* ListaPerfilPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A144B127A07DA00042A44C /* ListaPerfilPostViewController.swift */; };
+		09A144B427A07DA00042A44C /* ListaPerfilPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A144B227A07DA00042A44C /* ListaPerfilPostViewController.xib */; };
+		09A144B727A07F790042A44C /* ListaPerfilPostCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A144B627A07F790042A44C /* ListaPerfilPostCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		09A144A7279F45D00042A44C /* ListSuperCochesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListSuperCochesViewController.xib; sourceTree = "<group>"; };
 		09A144AB279F49460042A44C /* CochesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CochesCell.swift; sourceTree = "<group>"; };
 		09A144AC279F49460042A44C /* CochesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CochesCell.xib; sourceTree = "<group>"; };
+		09A144B127A07DA00042A44C /* ListaPerfilPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPerfilPostViewController.swift; sourceTree = "<group>"; };
+		09A144B227A07DA00042A44C /* ListaPerfilPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaPerfilPostViewController.xib; sourceTree = "<group>"; };
+		09A144B627A07F790042A44C /* ListaPerfilPostCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPerfilPostCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		09A14476279F29C70042A44C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				09A144B027A07D6B0042A44C /* ListaPerfilPostView */,
 				09A14496279F3F910042A44C /* HomeTabBarView */,
 				09A1448D279F3E330042A44C /* ListaSuperCochesView */,
 				09A14477279F29D10042A44C /* ListaCochesView */,
@@ -186,6 +193,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		09A144B027A07D6B0042A44C /* ListaPerfilPostView */ = {
+			isa = PBXGroup;
+			children = (
+				09A144B927A081840042A44C /* Cell */,
+				09A144B127A07DA00042A44C /* ListaPerfilPostViewController.swift */,
+				09A144B227A07DA00042A44C /* ListaPerfilPostViewController.xib */,
+				09A144B627A07F790042A44C /* ListaPerfilPostCoordinator.swift */,
+			);
+			path = ListaPerfilPostView;
+			sourceTree = "<group>";
+		};
+		09A144B927A081840042A44C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,6 +270,7 @@
 			files = (
 				09A14466279F238B0042A44C /* LaunchScreen.storyboard in Resources */,
 				09A1449A279F3FC60042A44C /* HomeTabBarViewController.xib in Resources */,
+				09A144B427A07DA00042A44C /* ListaPerfilPostViewController.xib in Resources */,
 				09A1447B279F2A090042A44C /* ListaCochesViewController.xib in Resources */,
 				09A144AE279F49460042A44C /* CochesCell.xib in Resources */,
 				09A14463279F238B0042A44C /* Assets.xcassets in Resources */,
@@ -264,7 +290,9 @@
 				09A14499279F3FC60042A44C /* HomeTabBarViewController.swift in Sources */,
 				09A14484279F2DC10042A44C /* MesesCell.swift in Sources */,
 				09A14473279F27130042A44C /* AppCoordinator.swift in Sources */,
+				09A144B727A07F790042A44C /* ListaPerfilPostCoordinator.swift in Sources */,
 				09A144A3279F45100042A44C /* CochesModel.swift in Sources */,
+				09A144B327A07DA00042A44C /* ListaPerfilPostViewController.swift in Sources */,
 				09A1447F279F2A4C0042A44C /* ListaCochesCoordinator.swift in Sources */,
 				09A14494279F3EB90042A44C /* ListaSuperCochesCoordinator.swift in Sources */,
 				09A144A8279F45D00042A44C /* ListSuperCochesViewController.swift in Sources */,

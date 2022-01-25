@@ -11,7 +11,7 @@ class ListSuperCochesViewController: UIViewController {
 
     // MARK: - Variables globales
     var dataSourceCoches: [CochesModel] = []
-    var imageCoche = UIImage(named: "Audi")
+    var imageCoche = UIImage(named: "audi")
     
     // MARK: - IBOutlet
     @IBOutlet weak var miListaCochesTableView: UITableView!
@@ -19,6 +19,7 @@ class ListSuperCochesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configurationUI()
+        self.configuracionTableView()
         // Do any additional setup after loading the view.
     }
 
@@ -26,15 +27,20 @@ class ListSuperCochesViewController: UIViewController {
     private func configurationUI() {
         self.title = Utils.Constants().tituloListaCoches
         for item in 0..<23 {
-            let modelData = CochesModel(nombre: <#T##String?#>,
-                                        color: <#T##String?#>,
-                                        imagen: <#T##UIImage?#>)
+            let modelData = CochesModel(nombre: "Audi",
+                                        color: "Verde",
+                                        imagen: imageCoche)
+            dataSourceCoches.append(modelData)
+            print("\(dataSourceCoches[item])")
         }
     }
     
     private func configuracionTableView() {
         self.miListaCochesTableView.delegate = self
         self.miListaCochesTableView.dataSource = self
+        self.miListaCochesTableView.register(UINib(nibName: CochesCell.defaultReuseIdentifier,
+                                                bundle: nil),
+                                             forCellReuseIdentifier: CochesCell.defaultReuseIdentifier)
     }
 }
 
@@ -49,7 +55,10 @@ extension ListSuperCochesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cellCoches = self.miListaCochesTableView.dequeueReusableCell(withIdentifier:
+            CochesCell.defaultReuseIdentifier, for: indexPath) as! CochesCell
+        cellCoches.setuptCell(data: self.dataSourceCoches[indexPath.row])
+        return cellCoches
     }
     
 }
@@ -57,11 +66,12 @@ extension ListSuperCochesViewController: UITableViewDataSource {
 extension ListSuperCochesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        let model = self.dataSourceCoches[indexPath.row]
+        print("\(model.nombre ?? "Liada")" + "\(self.dataSourceCoches[indexPath.row])")
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 90
     }
     
 }
