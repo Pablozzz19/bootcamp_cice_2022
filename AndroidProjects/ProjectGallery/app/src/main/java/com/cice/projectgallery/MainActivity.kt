@@ -17,6 +17,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
+import androidx.recyclerview.widget.GridLayoutManager
+import com.cice.projectgallery.adapters.GalleryAdapter
 import com.cice.projectgallery.databinding.ActivityMainBinding
 import java.io.File
 import java.io.FileOutputStream
@@ -51,8 +53,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    // region - Private Methods
-
     // region - Permissions
     private fun checkCameraPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -86,6 +86,18 @@ class MainActivity : AppCompatActivity() {
     }
     // endregion
 
+    // region - Fill RecyclerView
+    private fun fillRecyclerView() {
+        if (listPhotosUri.size > 0) {
+
+            val galleryAdapter = GalleryAdapter(this, listPhotosUri)
+            binding.rvPhotos.layoutManager = GridLayoutManager(this, 2)
+            binding.rvPhotos.adapter = galleryAdapter
+
+        }
+    }
+    // endregion
+
     // region - Open Camera
     private fun openCamera() {
 
@@ -94,7 +106,7 @@ class MainActivity : AppCompatActivity() {
 
         val uri = FileProvider.getUriForFile(
             this,
-            "com.cice.projectgallery",
+            "com.cice.projectgallery.fileprovider",
             file
         )
 
@@ -161,6 +173,8 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        fillRecyclerView()
+
     }
     // endregion
 
@@ -218,5 +232,4 @@ class MainActivity : AppCompatActivity() {
     }
     // endregion
 
-    // endregion
 }
