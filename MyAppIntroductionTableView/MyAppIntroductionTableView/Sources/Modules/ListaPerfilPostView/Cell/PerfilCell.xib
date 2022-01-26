@@ -39,6 +39,9 @@
                         </constraints>
                         <color key="tintColor" systemColor="labelColor"/>
                         <state key="normal" title="B2"/>
+                        <connections>
+                            <action selector="senderEventAlertB2ACTION:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IWc-kf-ex9"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Nombre perfilLBL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5w-zv-jC1">
                         <rect key="frame" x="16" y="130" width="288" height="21"/>
@@ -58,6 +61,9 @@
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="B3"/>
+                        <connections>
+                            <action selector="senderNavigationToDetailViewACTION:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qPT-OT-yXW"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Puesto actualLBL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8h-lE-7Zy">
                         <rect key="frame" x="16" y="210" width="142.5" height="21"/>
@@ -80,6 +86,9 @@
                         </constraints>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="B1"/>
+                        <connections>
+                            <action selector="senderEventAlertB1ACTION:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Kep-B5-GIb"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
