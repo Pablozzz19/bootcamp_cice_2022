@@ -10,6 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="MyUserDefault" customModuleProvider="target">
             <connections>
+                <outlet property="apellidoTF" destination="U6P-Ab-6ic" id="IC1-Fd-rCR"/>
+                <outlet property="direccionTF" destination="aA6-NL-OTc" id="XVm-1n-0Kt"/>
+                <outlet property="fechaActualizacionLBL" destination="9cd-CH-exf" id="BUc-kM-FM2"/>
+                <outlet property="imagenPerfilTF" destination="SRJ-fH-hs5" id="Ntv-Z3-wF9"/>
+                <outlet property="nombreTF" destination="I94-Sc-y1Z" id="WMI-iC-9Fj"/>
+                <outlet property="telefonoTF" destination="syA-mD-5IA" id="EVB-8v-er0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,7 +48,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SRJ-fH-hs5">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SRJ-fH-hs5">
                     <rect key="frame" x="87" y="338" width="240" height="303"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -59,13 +65,19 @@
                     <color key="backgroundColor" systemColor="linkColor"/>
                     <color key="tintColor" systemColor="systemBackgroundColor"/>
                     <state key="normal" title="Guardar"/>
+                    <connections>
+                        <action selector="guardarDatosACTION:" destination="-1" eventType="touchUpInside" id="Q3U-oH-U5d"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKo-sm-Ffp">
-                    <rect key="frame" x="252" y="83" width="142" height="30"/>
+                    <rect key="frame" x="252" y="84" width="142" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="linkColor"/>
                     <color key="tintColor" systemColor="systemBackgroundColor"/>
                     <state key="normal" title="Recuperar"/>
+                    <connections>
+                        <action selector="recuperarDatosACTION:" destination="-1" eventType="touchUpInside" id="SXP-DE-ts5"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -74,6 +86,7 @@
         </view>
     </objects>
     <resources>
+        <image name="placeholder" width="1280" height="800"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
