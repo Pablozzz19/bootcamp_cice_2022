@@ -24,6 +24,7 @@ class ListaPerfilPostViewController: UIViewController {
         self.miPerfilPostTableView.delegate = self
         self.miPerfilPostTableView.dataSource = self
         self.miPerfilPostTableView.register(UINib(nibName: PerfilCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: PerfilCell.defaultReuseIdentifier)
+        self.miPerfilPostTableView.register(UINib(nibName: PostCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: PostCell.defaultReuseIdentifier)
     }
 
 }
@@ -47,6 +48,7 @@ extension ListaPerfilPostViewController: UITableViewDataSource {
         switch indexPath.section {
         case 0:
             let cellPerfil = self.miPerfilPostTableView.dequeueReusableCell(withIdentifier: PerfilCell.defaultReuseIdentifier, for: indexPath) as! PerfilCell
+            cellPerfil.delegate = self
             cellPerfil.setupCellPerfil(data: UserDataModel(nombrePerfil: "Pablo Tesheiner Moreno",
                                                            descripcionPerfil: "Lrem ipsum donde las leyes haces lo que quieran Lrem ipsum donde las leyes haces lo que quieran Lrem ipsum donde las leyes haces lo que quieran",
                                                            puestoActualPerfil: "Estudiante CICE",
@@ -54,7 +56,13 @@ extension ListaPerfilPostViewController: UITableViewDataSource {
                                                            imagePerfil: "thor"))
             return cellPerfil
         default:
-            return UITableViewCell()
+            let cellPost = self.miPerfilPostTableView.dequeueReusableCell(withIdentifier: PostCell.defaultReuseIdentifier, for: indexPath) as! PostCell
+            cellPost.setupPostCell(data: UserDataModel(nombrePerfil: "Miranda",
+                                                       descripcionPerfil: "Lrem ipsum donde las leyes haces lo que quieran Lrem ipsum donde las leyes haces lo que quieran Lrem ipsum donde las leyes haces lo que quieran, Lrem ipsum donde las leyes haces lo que quieran Lrem ipsum donde las leyes haces lo que quieran Lrem ipsum donde las leyes haces lo que quieran, Lrem ipsum donde las leyes haces lo que quieran Lrem ipsum donde las leyes haces lo que quieran Lrem ipsum donde las leyes haces lo que quieran",
+                                                       puestoActualPerfil: "Sebior Lead iOs Engineer",
+                                                       usuarioLinkedInPerfil: "@Miranda_Lambert",
+                                                       imagePerfil: "Miranda_Lambert"))
+            return cellPost
         }
     }
     
@@ -71,8 +79,48 @@ extension ListaPerfilPostViewController: UITableViewDelegate {
         case 0:
             return 266
         default:
-            return 44
+            return UITableView.automaticDimension
         }
+    }
+    
+}
+
+extension ListaPerfilPostViewController: PerfilCellDelegate {
+    
+    func showAlertB1() {
+        let alertVC = UIAlertController(title: "Explota la cabeza",
+                                        message: "\(#function)",
+                                        preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Ok",
+                                        style: .default,
+                                        handler: nil))
+        self.present(alertVC,
+                     animated: true,
+                     completion: nil)
+    }
+    
+    func showAlertB2() {
+        let alertVC = UIAlertController(title: "Explota la cabeza",
+                                        message: "\(#function)",
+                                        preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Ok",
+                                        style: .default,
+                                        handler: nil))
+        self.present(alertVC,
+                     animated: true,
+                     completion: nil)
+    }
+    
+    func navigationToDetailView(withData: UserDataModel?) {
+        let alertVC = UIAlertController(title: "Explota la cabeza",
+                                        message: withData?.nombrePerfil,
+                                        preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Ok",
+                                        style: .default,
+                                        handler: nil))
+        self.present(alertVC,
+                     animated: true,
+                     completion: nil)
     }
     
 }
