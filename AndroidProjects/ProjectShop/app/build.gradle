@@ -44,7 +44,7 @@ dependencies {
 
     // MVVM - ModelData
     // Kotlin
-    implementation 'androidx.activity:activity-ktx:1.4.1'
+    implementation 'androidx.activity:activity-ktx:1.4.0'
     // ViewModel
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     // LiveData
