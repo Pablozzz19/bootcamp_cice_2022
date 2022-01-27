@@ -1,6 +1,7 @@
 package com.cice.projectshop.adapters
 
 import android.content.Context
+import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,9 +10,14 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.cice.projectshop.R
 import com.cice.projectshop.clothes.model.ClothesModel
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
+import java.io.File
 
 class MyDiscoverAdapter(private val dataSet: List<ClothesModel>, private val context: Context?) :
     RecyclerView.Adapter<MyDiscoverAdapter.ViewHolder>() {
+
+    private lateinit var storageReference : StorageReference
 
     inner class ViewHolder(view : View) : RecyclerView.ViewHolder(view) {
 
@@ -44,6 +50,14 @@ class MyDiscoverAdapter(private val dataSet: List<ClothesModel>, private val con
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
+        storageReference = FirebaseStorage.getInstance().reference.child("Clothes/${dataSet[position].id}/shoe.PNG")
+        val localFile = File.createTempFile("tempImage", "jpg")
+        storageReference.getFile(localFile).addOnSuccessListener {
+
+            val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+           holder.ivPhoto.setImageBitmap(bitmap)
+
+        }
         holder.tvName.text = dataSet[position].name
         holder.tvPrice.text = "${dataSet[position].price}€"
     }

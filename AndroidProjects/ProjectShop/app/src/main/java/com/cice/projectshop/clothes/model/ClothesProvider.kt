@@ -1,12 +1,16 @@
 package com.cice.projectshop.clothes.model
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.util.Log
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import java.io.File
 
 class ClothesProvider {
 
@@ -45,6 +49,7 @@ class ClothesProvider {
 
         }
         // endregion
+
     }
 
 }
