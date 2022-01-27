@@ -23,4 +23,10 @@
     <string name="sign_in_text_view">Sign in</string>
     <string name="welcome_text_view">Welcome!</string>
 
+    <!-- Navigation_Menu -->
+    <string name="discover_label">Discover</string>
+    <string name="favourite_label">Favourite</string>
+    <string name="profile_label">Profile</string>
+    <string name="shop_label">Shop</string>
+
 </resources>

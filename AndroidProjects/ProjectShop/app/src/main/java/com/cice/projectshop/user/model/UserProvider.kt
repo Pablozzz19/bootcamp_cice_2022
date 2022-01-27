@@ -46,7 +46,7 @@ class UserProvider {
             }
 
         }
-        // endregion !!
+        // endregion
 
         // region - Create User in Firebase Database
         private fun writeUserInFirebaseDatabase(id: String, email: String, fullName: String, activity: Activity?) {
