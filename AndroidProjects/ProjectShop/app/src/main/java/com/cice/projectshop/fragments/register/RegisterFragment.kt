@@ -25,6 +25,8 @@ class RegisterFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
 
+        setListener()
+
         return binding.root
     }
 
@@ -44,7 +46,8 @@ class RegisterFragment : Fragment() {
             userViewModel.writeNewUser(email = email,
                 fullName = fullName,
                 password = password,
-                context = context)
+                context = context,
+                activity = activity)
         }
     }
     // endregion
