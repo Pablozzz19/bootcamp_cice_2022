@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">MyShop</string>
 
+    <!-- Fragment_Login -->
+    <string name="sign_in_button">Sign in</string>
+    <string name="email_edit_text">Email</string>
+    <string name="password_edit_text">Password</string>
+    <string name="create_account_text_view">Don have an Account?</string>
+    <string name="login_text_view">Login to your account</string>
+    <string name="sign_up_here_text_view">Sign up here</string>
+    <string name="welcome_back_text_view">Welcome back!</string>
+
     <!-- Fragment_Register -->
     <string name="sign_up_button">Sign up</string>
     <string name="create_full_name">Full Name</string>
