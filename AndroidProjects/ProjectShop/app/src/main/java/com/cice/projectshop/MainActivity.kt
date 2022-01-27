@@ -1,12 +1,13 @@
 package com.cice.projectshop
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.commit
 import com.cice.projectshop.databinding.ActivityMainBinding
-import com.cice.projectshop.fragments.register.RegisterFragment
+import com.cice.projectshop.fragments.register.LoginFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setFragment(RegisterFragment())
+        setFragment(LoginFragment())
 
     }
 
@@ -28,5 +29,14 @@ class MainActivity : AppCompatActivity() {
             setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
             addToBackStack(null)
         }
+    }
+
+    fun showHome(id: String) {
+
+        val homeIntent = Intent(this, NavigationActivity::class.java).apply {
+            putExtra("userId", id)
+        }
+
+        startActivity(homeIntent)
     }
 }

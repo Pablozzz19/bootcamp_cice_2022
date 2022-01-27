@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import com.cice.projectshop.MainActivity
 import com.cice.projectshop.databinding.FragmentRegisterBinding
 import com.cice.projectshop.user.viewModel.UserViewModel
 
@@ -25,6 +26,7 @@ class RegisterFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
 
+        navigateToRegisterFragment()
         setListener()
 
         return binding.root
@@ -34,6 +36,15 @@ class RegisterFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+    // region - navigateToRegisterFragment()
+    private fun navigateToRegisterFragment() {
+        binding.tvSignInHere.setOnClickListener {
+            val mainActivity = activity as MainActivity
+            mainActivity.setFragment(LoginFragment())
+        }
+    }
+    // endregion
 
     // region - setListener()
     private fun setListener() {

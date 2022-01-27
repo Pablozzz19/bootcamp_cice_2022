@@ -16,4 +16,11 @@ class UserViewModel : ViewModel() {
 
     }
 
+    fun loginUser(email: String, password: String, context: Context?, activity: Activity?) {
+        UserProvider.loginUser(email = email,
+            password = password,
+            context = context,
+            activity = activity)
+    }
+
 }

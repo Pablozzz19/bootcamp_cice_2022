@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.net.Uri
 import android.widget.Toast
+import com.cice.projectshop.MainActivity
 import com.cice.projectshop.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.ktx.database
@@ -22,7 +23,7 @@ class UserProvider {
         private lateinit var storageReference : StorageReference
         // endregion
 
-        // region - Create UserModel
+        // region - Create UserModel - Not Finish
         fun writeNewUserModel(email: String, fullName: String, password: String, context: Context?, activity: Activity?) {
             if (email.isNotEmpty() && fullName.isNotEmpty() && password.isNotEmpty()) {
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
@@ -44,7 +45,7 @@ class UserProvider {
             }
 
         }
-        // endregion
+        // endregion !!
 
         // region - Create User in Firebase Database
         private fun writeUserInFirebaseDatabase(id: String, email: String, fullName: String, activity: Activity?) {
@@ -63,6 +64,27 @@ class UserProvider {
                         .getReference("Users/" + mAuth.currentUser?.uid + "/profile.jpg")
                     storageReference.putFile(imageUri)
                 }
+            }
+
+        }
+        // endregion
+
+        // region - Login User using FirebaseAuth
+        fun loginUser(email: String, password: String, context: Context?, activity: Activity?) {
+
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        val mainActivity = activity as MainActivity
+                        mainActivity.showHome(mAuth.currentUser?.uid.toString())
+                        Toast.makeText(context, "Successful", Toast.LENGTH_LONG).show()
+                    } else {
+                        val sError = "An error occurred while logging user."
+                        Toast.makeText(context, sError, Toast.LENGTH_LONG).show()
+                    }
+                }
+            } else {
+                Toast.makeText(context, "Fill in all the fields.", Toast.LENGTH_LONG).show()
             }
 
         }
