@@ -6,7 +6,7 @@ import com.cice.projectshop.user.model.UserProvider
 
 class UserViewModel : ViewModel() {
 
-    fun writeNewUser(email: String, fullName: String, password: String, context: Context) {
+    fun writeNewUser(email: String, fullName: String, password: String, context: Context?) {
         UserProvider.writeNewUserModel(email = email,
             fullName = fullName,
             password = password,

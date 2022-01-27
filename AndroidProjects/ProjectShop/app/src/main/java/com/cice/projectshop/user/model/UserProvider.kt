@@ -17,7 +17,7 @@ class UserProvider {
         // endregion
 
         // region - Create UserModel
-        fun writeNewUserModel(email: String, fullName: String, password: String, context: Context) {
+        fun writeNewUserModel(email: String, fullName: String, password: String, context: Context?) {
             if (email.isNotEmpty() && fullName.isNotEmpty() && password.isNotEmpty()) {
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                     Toast.makeText(context, "Successful", Toast.LENGTH_LONG).show()
