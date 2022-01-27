@@ -23,7 +23,7 @@ class UserProvider {
         private lateinit var storageReference : StorageReference
         // endregion
 
-        // region - Create UserModel - Not Finish
+        // region - Create UserModel
         fun writeNewUserModel(email: String, fullName: String, password: String, context: Context?, activity: Activity?) {
             if (email.isNotEmpty() && fullName.isNotEmpty() && password.isNotEmpty()) {
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
@@ -34,7 +34,8 @@ class UserProvider {
                             email = email,
                             fullName = fullName,
                             activity = activity)
-                        Toast.makeText(context, "Successful", Toast.LENGTH_LONG).show()
+                        val mainActivity = activity as MainActivity
+                        mainActivity.showHome(mAuth.currentUser?.uid.toString())
                     } else {
                         val sUser = "An error occurred while authenticating user."
                         Toast.makeText(context, sUser, Toast.LENGTH_LONG).show()
@@ -77,7 +78,6 @@ class UserProvider {
                     if (it.isSuccessful) {
                         val mainActivity = activity as MainActivity
                         mainActivity.showHome(mAuth.currentUser?.uid.toString())
-                        Toast.makeText(context, "Successful", Toast.LENGTH_LONG).show()
                     } else {
                         val sError = "An error occurred while logging user."
                         Toast.makeText(context, sError, Toast.LENGTH_LONG).show()

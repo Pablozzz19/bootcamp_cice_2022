@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">MyShop</string>
 
+    <!-- Prefs Files -->
+    <string name="prefs_files">com.cice.projectshop.PREFERENCE_FILE_KEY</string>
+
     <!-- Fragment_Login -->
     <string name="sign_in_button">Sign in</string>
     <string name="email_edit_text">Email</string>

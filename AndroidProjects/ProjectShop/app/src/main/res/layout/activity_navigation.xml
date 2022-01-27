@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".NavigationActivity">
 
+    <TextView
+        android:id="@+id/tvBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adios"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBorrar"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
