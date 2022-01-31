@@ -27,6 +27,9 @@ final class HomeViewCoordinator {
         
         homeVC.viewControllers = [listaCochesVC, listaPostVC]
         
+        var vc = RegisterCoordinator.view()
+        vc = nil
+        
         return homeVC
     }
     
