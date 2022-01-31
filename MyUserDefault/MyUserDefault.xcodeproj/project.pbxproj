@@ -14,6 +14,7 @@
 		09A1451A27A1E93A0042A44C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1451827A1E93A0042A44C /* RegisterViewController.swift */; };
 		09A1451B27A1E93A0042A44C /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A1451927A1E93A0042A44C /* RegisterViewController.xib */; };
 		09A1451F27A1E94A0042A44C /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1451E27A1E94A0042A44C /* RegisterCoordinator.swift */; };
+		09A1452727A7D3B90042A44C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1452627A7D3B90042A44C /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		09A1451827A1E93A0042A44C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		09A1451927A1E93A0042A44C /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		09A1451E27A1E94A0042A44C /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		09A1452627A7D3B90042A44C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		09A144F827A1E6500042A44C /* MyUserDefault */ = {
 			isa = PBXGroup;
 			children = (
+				09A1452527A7D29C0042A44C /* Utils+Helpers */,
 				09A1451627A1E90C0042A44C /* Sources */,
 				09A1451227A1E6E80042A44C /* CoreApp */,
 				09A1450227A1E6510042A44C /* Assets.xcassets */,
@@ -92,6 +95,14 @@
 				09A1451E27A1E94A0042A44C /* RegisterCoordinator.swift */,
 			);
 			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		09A1452527A7D29C0042A44C /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09A1452627A7D3B90042A44C /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A1452727A7D3B90042A44C /* Utils.swift in Sources */,
 				09A1451A27A1E93A0042A44C /* RegisterViewController.swift in Sources */,
 				09A1451F27A1E94A0042A44C /* RegisterCoordinator.swift in Sources */,
 				09A144FA27A1E6500042A44C /* AppDelegate.swift in Sources */,

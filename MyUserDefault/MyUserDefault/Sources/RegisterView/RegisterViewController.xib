@@ -13,7 +13,7 @@
                 <outlet property="apellidoTF" destination="U6P-Ab-6ic" id="IC1-Fd-rCR"/>
                 <outlet property="direccionTF" destination="aA6-NL-OTc" id="XVm-1n-0Kt"/>
                 <outlet property="fechaActualizacionLBL" destination="9cd-CH-exf" id="BUc-kM-FM2"/>
-                <outlet property="imagenPerfilTF" destination="SRJ-fH-hs5" id="Ntv-Z3-wF9"/>
+                <outlet property="imagenPerfil" destination="SRJ-fH-hs5" id="UZh-Kg-iJk"/>
                 <outlet property="nombreTF" destination="I94-Sc-y1Z" id="WMI-iC-9Fj"/>
                 <outlet property="telefonoTF" destination="syA-mD-5IA" id="EVB-8v-er0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -53,7 +53,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_FechaActualizacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cd-CH-exf">
-                    <rect key="frame" x="20" y="674" width="157" height="21"/>
+                    <rect key="frame" x="20" y="674" width="374" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -82,7 +82,7 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="140.57971014492756" y="153.34821428571428"/>
+            <point key="canvasLocation" x="-230.43478260869566" y="135.9375"/>
         </view>
     </objects>
     <resources>
