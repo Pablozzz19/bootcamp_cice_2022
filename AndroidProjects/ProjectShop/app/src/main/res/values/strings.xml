@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyShop</string>
+
+    <!-- Prefs Files -->
+    <string name="prefs_files">com.cice.projectshop.PREFERENCE_FILE_KEY</string>
+
+    <!-- Fragment_Login -->
+    <string name="sign_in_button">Sign in</string>
+    <string name="email_edit_text">Email</string>
+    <string name="password_edit_text">Password</string>
+    <string name="create_account_text_view">Don have an Account?</string>
+    <string name="login_text_view">Login to your account</string>
+    <string name="sign_up_here_text_view">Sign up here</string>
+    <string name="welcome_back_text_view">Welcome back!</string>
+
+    <!-- Fragment_Register -->
+    <string name="sign_up_button">Sign up</string>
+    <string name="create_full_name">Full Name</string>
+    <string name="create_email_edit_text">Email</string>
+    <string name="create_password_edit_text">Password</string>
+    <string name="create_text_view">Create your account</string>
+    <string name="have_account_text_view">Already have a account?</string>
+    <string name="sign_in_text_view">Sign in</string>
+    <string name="welcome_text_view">Welcome!</string>
+
+    <!-- Navigation_Menu -->
+    <string name="discover_label">Discover</string>
+    <string name="favourite_label">Favourite</string>
+    <string name="profile_label">Profile</string>
+    <string name="shop_label">Shop</string>
+
+</resources>
