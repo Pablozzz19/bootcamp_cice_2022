@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2CFB34F5-DAAF-4FD3-A616-06AAB2C32AD9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FC78182-3472-4EAD-BE91-F118132218C4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "PerfilCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7FC78182-3472-4EAD-BE91-F118132218C4 - ff059141f413a157"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTaskVersion3_0.PerfilCell.apellidoPerfil.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MyTaskVersion3.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Documents/GitHub/bootcamp_cice_2022/MyTaskVersion3.0/MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "7FC78182-3472-4EAD-BE91-F118132218C4 - 9dc0e7a2e3fc563"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTaskVersion3_0.PerfilCell.apellidoPerfil.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MyTaskVersion3.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Documents/GitHub/bootcamp_cice_2022/MyTaskVersion3.0/MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "7FC78182-3472-4EAD-BE91-F118132218C4 - 670782b59c5046fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTaskVersion3_0.PerfilCell.apellidoPerfil.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MyTaskVersion3.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Documents/GitHub/bootcamp_cice_2022/MyTaskVersion3.0/MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "7FC78182-3472-4EAD-BE91-F118132218C4 - 85375a6fa1275cac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTaskVersion3_0.PerfilCell.apellidoPerfil.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MyTaskVersion3.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Documents/GitHub/bootcamp_cice_2022/MyTaskVersion3.0/MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "7FC78182-3472-4EAD-BE91-F118132218C4 - 6f321871547fe91c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTaskVersion3_0.PerfilCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; MyTaskVersion3_0.PerfilCell"
+                  moduleName = "MyTaskVersion3.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Documents/GitHub/bootcamp_cice_2022/MyTaskVersion3.0/MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "623">
+               </Location>
+               <Location
+                  uuid = "7FC78182-3472-4EAD-BE91-F118132218C4 - a836505caf2880d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTaskVersion3_0.PerfilCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MyTaskVersion3_0.PerfilCell&gt;"
+                  moduleName = "MyTaskVersion3.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Documents/GitHub/bootcamp_cice_2022/MyTaskVersion3.0/MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "649AC162-F777-47B2-9C26-89BFDE9CFD45"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "configuracionCell(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16C0FA64-34B3-47F1-A82F-987E60DE7C26"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "configuracionCell(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A39E24E7-55A4-4719-B452-CAE82C9D0B16"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "configuracionCell(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E8BAD26-037B-452F-A735-7B58B6910F40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTaskVersion3.0/Sources/ContactosView/DetalleContactoView/Cell/PerfilCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "configuracionCell(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A898B15-F964-4BC0-9558-0CB6F7D68B3D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTaskVersion3.0/Sources/NuevaTareaView/NuevaTareaViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "salvarTareaUDACTION(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1D8590C-95CF-41FD-8C06-668FEDAA0F69"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTaskVersion3.0/Sources/NuevaTareaView/NuevaTareaViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "validacionDatos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

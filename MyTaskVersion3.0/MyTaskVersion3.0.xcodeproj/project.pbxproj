@@ -34,6 +34,19 @@
 		09A145B727A86B010042A44C /* ListaTareasViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145B627A86B010042A44C /* ListaTareasViewCoordinator.swift */; };
 		09A145BA27A86B330042A44C /* DetalleTareaViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145B927A86B330042A44C /* DetalleTareaViewCoordinator.swift */; };
 		09A145BD27A86B6B0042A44C /* NuevaTareaViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145BC27A86B6B0042A44C /* NuevaTareaViewCoordinator.swift */; };
+		09A145C227A871280042A44C /* ContactosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145C027A871280042A44C /* ContactosCell.swift */; };
+		09A145C327A871280042A44C /* ContactosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A145C127A871280042A44C /* ContactosCell.xib */; };
+		09A145C827A87B3D0042A44C /* DetalleContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145C627A87B3D0042A44C /* DetalleContactoViewController.swift */; };
+		09A145C927A87B3D0042A44C /* DetalleContactoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A145C727A87B3D0042A44C /* DetalleContactoViewController.xib */; };
+		09A145CD27A87B4F0042A44C /* DetalleContactoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145CC27A87B4F0042A44C /* DetalleContactoCoordinator.swift */; };
+		09A145D027A87C9D0042A44C /* ContactosServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145CF27A87C9D0042A44C /* ContactosServerModel.swift */; };
+		09A145D527A87F060042A44C /* PerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145D327A87F060042A44C /* PerfilCell.swift */; };
+		09A145D627A87F060042A44C /* PerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A145D427A87F060042A44C /* PerfilCell.xib */; };
+		09A145DA27AC51E00042A44C /* CategoriaViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145D927AC51E00042A44C /* CategoriaViewCoordinator.swift */; };
+		09A145DF27AC5CF40042A44C /* CategoriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145DD27AC5CF40042A44C /* CategoriaCell.swift */; };
+		09A145E027AC5CF40042A44C /* CategoriaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A145DE27AC5CF40042A44C /* CategoriaCell.xib */; };
+		09A145E527AC709D0042A44C /* ListaTareasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A145E327AC709D0042A44C /* ListaTareasCell.swift */; };
+		09A145E627AC709D0042A44C /* ListaTareasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A145E427AC709D0042A44C /* ListaTareasCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +79,19 @@
 		09A145B627A86B010042A44C /* ListaTareasViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasViewCoordinator.swift; sourceTree = "<group>"; };
 		09A145B927A86B330042A44C /* DetalleTareaViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewCoordinator.swift; sourceTree = "<group>"; };
 		09A145BC27A86B6B0042A44C /* NuevaTareaViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaTareaViewCoordinator.swift; sourceTree = "<group>"; };
+		09A145C027A871280042A44C /* ContactosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosCell.swift; sourceTree = "<group>"; };
+		09A145C127A871280042A44C /* ContactosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactosCell.xib; sourceTree = "<group>"; };
+		09A145C627A87B3D0042A44C /* DetalleContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoViewController.swift; sourceTree = "<group>"; };
+		09A145C727A87B3D0042A44C /* DetalleContactoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleContactoViewController.xib; sourceTree = "<group>"; };
+		09A145CC27A87B4F0042A44C /* DetalleContactoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoCoordinator.swift; sourceTree = "<group>"; };
+		09A145CF27A87C9D0042A44C /* ContactosServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosServerModel.swift; sourceTree = "<group>"; };
+		09A145D327A87F060042A44C /* PerfilCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilCell.swift; sourceTree = "<group>"; };
+		09A145D427A87F060042A44C /* PerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilCell.xib; sourceTree = "<group>"; };
+		09A145D927AC51E00042A44C /* CategoriaViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaViewCoordinator.swift; sourceTree = "<group>"; };
+		09A145DD27AC5CF40042A44C /* CategoriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCell.swift; sourceTree = "<group>"; };
+		09A145DE27AC5CF40042A44C /* CategoriaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaCell.xib; sourceTree = "<group>"; };
+		09A145E327AC709D0042A44C /* ListaTareasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasCell.swift; sourceTree = "<group>"; };
+		09A145E427AC709D0042A44C /* ListaTareasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareasCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				09A1457D27A865DF0042A44C /* TaskModel.swift */,
+				09A145CF27A87C9D0042A44C /* ContactosServerModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -158,6 +185,7 @@
 		09A1458127A8678C0042A44C /* ListaTareasView */ = {
 			isa = PBXGroup;
 			children = (
+				09A145E227AC70730042A44C /* Cell */,
 				09A1458527A867BE0042A44C /* DetalleTareaView */,
 				09A145A327A869620042A44C /* ListaTareasViewController.swift */,
 				09A145A427A869620042A44C /* ListaTareasViewController.xib */,
@@ -169,6 +197,8 @@
 		09A1458227A867970042A44C /* ContactosView */ = {
 			isa = PBXGroup;
 			children = (
+				09A145C527A87B120042A44C /* DetalleContactoView */,
+				09A145BF27A86FA50042A44C /* Cell */,
 				09A1459427A868FA0042A44C /* ContactosViewController.swift */,
 				09A1459527A868FA0042A44C /* ContactosViewController.xib */,
 				09A145B327A86A980042A44C /* ContactosViewCoordinator.swift */,
@@ -210,8 +240,10 @@
 		09A1458727A867F20042A44C /* CategoriasView */ = {
 			isa = PBXGroup;
 			children = (
+				09A145DC27AC5CD30042A44C /* Cell */,
 				09A1459E27A869350042A44C /* CategoriasViewController.swift */,
 				09A1459F27A869350042A44C /* CategoriasViewController.xib */,
+				09A145D927AC51E00042A44C /* CategoriaViewCoordinator.swift */,
 			);
 			path = CategoriasView;
 			sourceTree = "<group>";
@@ -224,6 +256,53 @@
 				09A145AD27A869D40042A44C /* LoginViewCoordinator.swift */,
 			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		09A145BF27A86FA50042A44C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09A145C027A871280042A44C /* ContactosCell.swift */,
+				09A145C127A871280042A44C /* ContactosCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09A145C527A87B120042A44C /* DetalleContactoView */ = {
+			isa = PBXGroup;
+			children = (
+				09A145D227A87EDD0042A44C /* Cell */,
+				09A145C627A87B3D0042A44C /* DetalleContactoViewController.swift */,
+				09A145C727A87B3D0042A44C /* DetalleContactoViewController.xib */,
+				09A145CC27A87B4F0042A44C /* DetalleContactoCoordinator.swift */,
+			);
+			path = DetalleContactoView;
+			sourceTree = "<group>";
+		};
+		09A145D227A87EDD0042A44C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09A145D327A87F060042A44C /* PerfilCell.swift */,
+				09A145D427A87F060042A44C /* PerfilCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09A145DC27AC5CD30042A44C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09A145DD27AC5CF40042A44C /* CategoriaCell.swift */,
+				09A145DE27AC5CF40042A44C /* CategoriaCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09A145E227AC70730042A44C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09A145E327AC709D0042A44C /* ListaTareasCell.swift */,
+				09A145E427AC709D0042A44C /* ListaTareasCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,14 +364,19 @@
 			files = (
 				09A1458D27A868A00042A44C /* LoginViewController.xib in Resources */,
 				09A1459C27A869140042A44C /* NuevaTareaViewController.xib in Resources */,
+				09A145E627AC709D0042A44C /* ListaTareasCell.xib in Resources */,
 				09A145AB27A869770042A44C /* DetalleTareaViewController.xib in Resources */,
 				09A1459727A868FA0042A44C /* ContactosViewController.xib in Resources */,
+				09A145C327A871280042A44C /* ContactosCell.xib in Resources */,
 				09A1456027A7F72D0042A44C /* LaunchScreen.storyboard in Resources */,
+				09A145D627A87F060042A44C /* PerfilCell.xib in Resources */,
 				09A145A627A869620042A44C /* ListaTareasViewController.xib in Resources */,
 				09A1457A27A865720042A44C /* contacts.json in Resources */,
 				09A1455D27A7F72D0042A44C /* Assets.xcassets in Resources */,
+				09A145C927A87B3D0042A44C /* DetalleContactoViewController.xib in Resources */,
 				09A145A127A869350042A44C /* CategoriasViewController.xib in Resources */,
 				09A1459227A868D40042A44C /* HomeTabBarViewController.xib in Resources */,
+				09A145E027AC5CF40042A44C /* CategoriaCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +387,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A145DA27AC51E00042A44C /* CategoriaViewCoordinator.swift in Sources */,
 				09A145A527A869620042A44C /* ListaTareasViewController.swift in Sources */,
+				09A145C827A87B3D0042A44C /* DetalleContactoViewController.swift in Sources */,
 				09A145AE27A869D40042A44C /* LoginViewCoordinator.swift in Sources */,
 				09A1457227A861C80042A44C /* Utils.swift in Sources */,
 				09A145B127A86A4E0042A44C /* HomeTabBarViewCoordinator.swift in Sources */,
@@ -312,14 +398,20 @@
 				09A1459627A868FA0042A44C /* ContactosViewController.swift in Sources */,
 				09A145A027A869350042A44C /* CategoriasViewController.swift in Sources */,
 				09A1456E27A8613A0042A44C /* AppCoreCoordinator.swift in Sources */,
+				09A145CD27A87B4F0042A44C /* DetalleContactoCoordinator.swift in Sources */,
 				09A145BA27A86B330042A44C /* DetalleTareaViewCoordinator.swift in Sources */,
 				09A1457E27A865DF0042A44C /* TaskModel.swift in Sources */,
 				09A1459B27A869140042A44C /* NuevaTareaViewController.swift in Sources */,
 				09A145B427A86A980042A44C /* ContactosViewCoordinator.swift in Sources */,
 				09A145BD27A86B6B0042A44C /* NuevaTareaViewCoordinator.swift in Sources */,
 				09A1459127A868D40042A44C /* HomeTabBarViewController.swift in Sources */,
+				09A145D527A87F060042A44C /* PerfilCell.swift in Sources */,
+				09A145E527AC709D0042A44C /* ListaTareasCell.swift in Sources */,
 				09A1458C27A868A00042A44C /* LoginViewController.swift in Sources */,
+				09A145C227A871280042A44C /* ContactosCell.swift in Sources */,
+				09A145DF27AC5CF40042A44C /* CategoriaCell.swift in Sources */,
 				09A1455427A7F7250042A44C /* AppDelegate.swift in Sources */,
+				09A145D027A87C9D0042A44C /* ContactosServerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
