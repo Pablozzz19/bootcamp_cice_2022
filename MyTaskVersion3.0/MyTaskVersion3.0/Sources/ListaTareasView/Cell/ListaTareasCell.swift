@@ -51,7 +51,7 @@ class ListaTareasCell: UITableViewCell, ReuseIdentifierProtocol {
 
 extension ListaTareasCell: ListaTareaCellProtocol {
     func configuracionCell(data: DownloadNewModel) {
-        //self.imageTareaIV.image = UIImage(data: data.taskImage)
+        self.imageTareaIV.image = UIImage(data: (data.taskImage!))
         self.nombreTareaLBL.text = data.newTask
         self.prioridadTareaLBL.text = data.priority
     }
