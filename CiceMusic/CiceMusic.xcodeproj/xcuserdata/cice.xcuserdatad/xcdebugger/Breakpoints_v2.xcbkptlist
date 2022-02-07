@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D3EA2FD5-AB29-4AD8-8BBC-CF6FF65A5E3E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3396E97-1811-49CD-91AE-BD308FEE328E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceMusic/NetworkService/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "requestGeneric(requestPayload:entityClass:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6061C869-05FC-498A-AB30-B3E3F6843EF0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceMusic/NetworkService/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "requestGeneric(requestPayload:entityClass:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AAD042D-E758-4892-8A97-57578B9953CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceMusic/NetworkService/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "requestGeneric(requestPayload:entityClass:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FBF0030-1AA3-4F18-8E03-AFE5C85A7809"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceMusic/NetworkService/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "requestGeneric(requestPayload:entityClass:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0FBF0030-1AA3-4F18-8E03-AFE5C85A7809 - 103f13a53d69af43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CiceMusic.NetworkService.requestGeneric&lt;A where A: Swift.Decodable&gt;(requestPayload: CiceMusic.RequestDTO, entityClass: A.Type, success: (Swift.Optional&lt;A&gt;) -&gt; (), failure: (CiceMusic.NetworkError) -&gt; ()) -&gt; ()"
+                  moduleName = "CiceMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Documents/GitHub/bootcamp_cice_2022/CiceMusic/CiceMusic/NetworkService/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "2383">
+               </Location>
+               <Location
+                  uuid = "0FBF0030-1AA3-4F18-8E03-AFE5C85A7809 - 103f13a53d69af43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CiceMusic.NetworkService.requestGeneric&lt;A where A: Swift.Decodable&gt;(requestPayload: CiceMusic.RequestDTO, entityClass: A.Type, success: (Swift.Optional&lt;A&gt;) -&gt; (), failure: (CiceMusic.NetworkError) -&gt; ()) -&gt; ()"
+                  moduleName = "CiceMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Documents/GitHub/bootcamp_cice_2022/CiceMusic/CiceMusic/NetworkService/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "2779">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -22,6 +22,7 @@
 		09A1463E27B197D80042A44C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1463D27B197D80042A44C /* NetworkError.swift */; };
 		09A1464227B198660042A44C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1464127B198660042A44C /* Utils.swift */; };
 		09A1464527B198D90042A44C /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1464427B198D90042A44C /* SplashProvider.swift */; };
+		09A1464927B19F060042A44C /* MusicServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1464827B19F060042A44C /* MusicServerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		09A1463D27B197D80042A44C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		09A1464127B198660042A44C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		09A1464427B198D90042A44C /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
+		09A1464827B19F060042A44C /* MusicServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		09A145F327B170470042A44C /* CiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09A1464727B19EF20042A44C /* Models */,
 				09A1464027B198550042A44C /* Utils+Helpers */,
 				09A1462A27B183920042A44C /* NetworkService */,
 				09A1461427B176400042A44C /* Sources */,
@@ -140,6 +143,14 @@
 				09A1464127B198660042A44C /* Utils.swift */,
 			);
 			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		09A1464727B19EF20042A44C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09A1464827B19F060042A44C /* MusicServerModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A1464927B19F060042A44C /* MusicServerModel.swift in Sources */,
 				09A145F527B170470042A44C /* AppDelegate.swift in Sources */,
 				09A1464527B198D90042A44C /* SplashProvider.swift in Sources */,
 				09A1462727B17CE30042A44C /* SplashCoordinator.swift in Sources */,

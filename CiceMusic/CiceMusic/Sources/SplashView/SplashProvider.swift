@@ -17,9 +17,9 @@ final class SplashProvider: SplashProviderInputProtocol {
     
     func fetchData() {
         self.networkservice.requestGeneric(requestPayload: SplashRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: <#T##Decodable.Protocol#>,
-                                           success: <#T##(Decodable?) -> Void#>,
-                                           failure: <#T##(NetworkError) -> Void#>)
+                                           entityClass: MusicServerModel.self,
+                                           success: { (result) in },
+                                           failure: { (error) in })
     }
 }
 
