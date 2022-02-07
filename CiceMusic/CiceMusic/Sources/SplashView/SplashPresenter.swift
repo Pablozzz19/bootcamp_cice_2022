@@ -14,7 +14,7 @@ protocol SplashPresenterInputProtocol {
 
 // Output del Interactor
 protocol SplashInteractorOutputProtocol {
-    
+    func setDataFromWebInteractor(data: [ResultMusic]?)
 }
 
 final class SplashPresenter: BasePresenter<SplashPresenterOutputProtocol,
@@ -32,5 +32,7 @@ extension SplashPresenter: SplashPresenterInputProtocol {
 
 // Output del Interactor
 extension SplashPresenter: SplashInteractorOutputProtocol {
-    
+    func setDataFromWebInteractor(data: [ResultMusic]?) {
+        //
+    }
 }
