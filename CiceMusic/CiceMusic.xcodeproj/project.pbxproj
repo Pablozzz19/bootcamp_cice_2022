@@ -20,6 +20,7 @@
 		09A1462727B17CE30042A44C /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1462627B17CE30042A44C /* SplashCoordinator.swift */; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		09A1463027B186CF0042A44C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1462F27B186CF0042A44C /* Utils.swift */; };
 		09A1463327B18D0F0042A44C /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1463227B18D0F0042A44C /* SplashProvider.swift */; };
 		09A1463627B18EDE0042A44C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1463527B18EDE0042A44C /* NetworkService.swift */; };
@@ -30,6 +31,8 @@
 =======
 		09A1462C27B183BE0042A44C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1462B27B183BE0042A44C /* NetworkService.swift */; };
 >>>>>>> parent of e594394 ([WIP] - SplashProvider)
+=======
+>>>>>>> parent of 6e49ac6 ([WIP] - NetworkService)
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,7 @@
 		09A1462627B17CE30042A44C /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		09A1462F27B186CF0042A44C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		09A1463227B18D0F0042A44C /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 		09A1463527B18EDE0042A44C /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 =======
 		09A1462B27B183BE0042A44C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 >>>>>>> parent of e594394 ([WIP] - SplashProvider)
+=======
+>>>>>>> parent of 6e49ac6 ([WIP] - NetworkService)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +96,6 @@
 		09A145F327B170470042A44C /* CiceMusic */ = {
 			isa = PBXGroup;
 			children = (
-				09A1462A27B183920042A44C /* NetworkService */,
 				09A1461427B176400042A44C /* Sources */,
 				09A1460F27B173670042A44C /* BaseVIPER */,
 				09A1460B27B1722F0042A44C /* CoreApp */,
@@ -139,6 +144,7 @@
 			path = SplashView;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		09A1462A27B183920042A44C /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +154,8 @@
 			path = NetworkService;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> parent of 6e49ac6 ([WIP] - NetworkService)
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +232,7 @@
 				09A1462327B1784E0042A44C /* SplashRouter.swift in Sources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				09A1463027B186CF0042A44C /* Utils.swift in Sources */,
 =======
 				09A1462C27B183BE0042A44C /* NetworkService.swift in Sources */,
@@ -231,6 +240,8 @@
 =======
 				09A1462C27B183BE0042A44C /* NetworkService.swift in Sources */,
 >>>>>>> parent of e594394 ([WIP] - SplashProvider)
+=======
+>>>>>>> parent of 6e49ac6 ([WIP] - NetworkService)
 				09A1461D27B176CF0042A44C /* SplashPresenter.swift in Sources */,
 				09A1461127B1738F0042A44C /* BaseVIPER.swift in Sources */,
 				09A1460D27B1724C0042A44C /* AppCoreCoordinator.swift in Sources */,
