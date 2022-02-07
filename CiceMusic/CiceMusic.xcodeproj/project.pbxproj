@@ -19,6 +19,8 @@
 		09A1462327B1784E0042A44C /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1462227B1784E0042A44C /* SplashRouter.swift */; };
 		09A1462727B17CE30042A44C /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1462627B17CE30042A44C /* SplashCoordinator.swift */; };
 		09A1462C27B183BE0042A44C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1462B27B183BE0042A44C /* NetworkService.swift */; };
+		09A1463027B186CF0042A44C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1462F27B186CF0042A44C /* Utils.swift */; };
+		09A1463327B18D0F0042A44C /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1463227B18D0F0042A44C /* SplashProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		09A1462227B1784E0042A44C /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		09A1462627B17CE30042A44C /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		09A1462B27B183BE0042A44C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		09A1462F27B186CF0042A44C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		09A1463227B18D0F0042A44C /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		09A145F327B170470042A44C /* CiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09A1462E27B186BC0042A44C /* Utils+Helpers */,
 				09A1462A27B183920042A44C /* NetworkService */,
 				09A1461427B176400042A44C /* Sources */,
 				09A1460F27B173670042A44C /* BaseVIPER */,
@@ -113,6 +118,7 @@
 				09A1461F27B1783B0042A44C /* SplashInteractor.swift */,
 				09A1462227B1784E0042A44C /* SplashRouter.swift */,
 				09A1462627B17CE30042A44C /* SplashCoordinator.swift */,
+				09A1463227B18D0F0042A44C /* SplashProvider.swift */,
 			);
 			path = SplashView;
 			sourceTree = "<group>";
@@ -123,6 +129,14 @@
 				09A1462B27B183BE0042A44C /* NetworkService.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		09A1462E27B186BC0042A44C /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09A1462F27B186CF0042A44C /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +214,9 @@
 				09A1462027B1783B0042A44C /* SplashInteractor.swift in Sources */,
 				09A1462327B1784E0042A44C /* SplashRouter.swift in Sources */,
 				09A1462C27B183BE0042A44C /* NetworkService.swift in Sources */,
+				09A1463027B186CF0042A44C /* Utils.swift in Sources */,
 				09A1461D27B176CF0042A44C /* SplashPresenter.swift in Sources */,
+				09A1463327B18D0F0042A44C /* SplashProvider.swift in Sources */,
 				09A1461127B1738F0042A44C /* BaseVIPER.swift in Sources */,
 				09A1460D27B1724C0042A44C /* AppCoreCoordinator.swift in Sources */,
 				09A1461827B176770042A44C /* SplashViewController.swift in Sources */,
