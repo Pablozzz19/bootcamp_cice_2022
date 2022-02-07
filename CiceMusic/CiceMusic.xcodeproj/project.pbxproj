@@ -23,6 +23,13 @@
 		09A1464227B198660042A44C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1464127B198660042A44C /* Utils.swift */; };
 		09A1464527B198D90042A44C /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1464427B198D90042A44C /* SplashProvider.swift */; };
 		09A1464927B19F060042A44C /* MusicServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1464827B19F060042A44C /* MusicServerModel.swift */; };
+		09A1465B27B1BFD00042A44C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A1465427B1BFD00042A44C /* TestViewController.xib */; };
+		09A1465C27B1BFD00042A44C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1465527B1BFD00042A44C /* TestViewController.swift */; };
+		09A1465D27B1BFD00042A44C /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1465627B1BFD00042A44C /* TestRouter.swift */; };
+		09A1465E27B1BFD00042A44C /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1465727B1BFD00042A44C /* TestProvider.swift */; };
+		09A1465F27B1BFD00042A44C /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1465827B1BFD00042A44C /* TestCoordinator.swift */; };
+		09A1466027B1BFD00042A44C /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1465927B1BFD00042A44C /* TestPresenter.swift */; };
+		09A1466127B1BFD00042A44C /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1465A27B1BFD00042A44C /* TestInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,13 @@
 		09A1464127B198660042A44C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		09A1464427B198D90042A44C /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 		09A1464827B19F060042A44C /* MusicServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServerModel.swift; sourceTree = "<group>"; };
+		09A1465427B1BFD00042A44C /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		09A1465527B1BFD00042A44C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		09A1465627B1BFD00042A44C /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
+		09A1465727B1BFD00042A44C /* TestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
+		09A1465827B1BFD00042A44C /* TestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinator.swift; sourceTree = "<group>"; };
+		09A1465927B1BFD00042A44C /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
+		09A1465A27B1BFD00042A44C /* TestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,7 @@
 		09A1461427B176400042A44C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09A1465327B1BF980042A44C /* Test */,
 				09A1461527B176480042A44C /* SplashView */,
 			);
 			path = Sources;
@@ -151,6 +166,20 @@
 				09A1464827B19F060042A44C /* MusicServerModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		09A1465327B1BF980042A44C /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				09A1465427B1BFD00042A44C /* TestViewController.xib */,
+				09A1465527B1BFD00042A44C /* TestViewController.swift */,
+				09A1465627B1BFD00042A44C /* TestRouter.swift */,
+				09A1465727B1BFD00042A44C /* TestProvider.swift */,
+				09A1465827B1BFD00042A44C /* TestCoordinator.swift */,
+				09A1465927B1BFD00042A44C /* TestPresenter.swift */,
+				09A1465A27B1BFD00042A44C /* TestInteractor.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +241,7 @@
 			files = (
 				09A1460127B1705A0042A44C /* LaunchScreen.storyboard in Resources */,
 				09A1461927B176770042A44C /* SplashViewController.xib in Resources */,
+				09A1465B27B1BFD00042A44C /* TestViewController.xib in Resources */,
 				09A145FE27B1705A0042A44C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,16 +253,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A1465C27B1BFD00042A44C /* TestViewController.swift in Sources */,
 				09A1464927B19F060042A44C /* MusicServerModel.swift in Sources */,
 				09A145F527B170470042A44C /* AppDelegate.swift in Sources */,
 				09A1464527B198D90042A44C /* SplashProvider.swift in Sources */,
 				09A1462727B17CE30042A44C /* SplashCoordinator.swift in Sources */,
+				09A1465F27B1BFD00042A44C /* TestCoordinator.swift in Sources */,
 				09A1462027B1783B0042A44C /* SplashInteractor.swift in Sources */,
 				09A1462327B1784E0042A44C /* SplashRouter.swift in Sources */,
+				09A1466027B1BFD00042A44C /* TestPresenter.swift in Sources */,
 				09A1462C27B183BE0042A44C /* NetworkService.swift in Sources */,
+				09A1465E27B1BFD00042A44C /* TestProvider.swift in Sources */,
 				09A1461D27B176CF0042A44C /* SplashPresenter.swift in Sources */,
 				09A1461127B1738F0042A44C /* BaseVIPER.swift in Sources */,
 				09A1464227B198660042A44C /* Utils.swift in Sources */,
+				09A1466127B1BFD00042A44C /* TestInteractor.swift in Sources */,
+				09A1465D27B1BFD00042A44C /* TestRouter.swift in Sources */,
 				09A1460D27B1724C0042A44C /* AppCoreCoordinator.swift in Sources */,
 				09A1461827B176770042A44C /* SplashViewController.swift in Sources */,
 				09A1463E27B197D80042A44C /* NetworkError.swift in Sources */,
