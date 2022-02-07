@@ -10,6 +10,7 @@ import Foundation
 // Input del Presenter
 protocol SplashPresenterInputProtocol {
     func fetchDataFromWebService()
+    func showHomeTabBar()
 }
 
 // Output del Interactor
@@ -18,21 +19,30 @@ protocol SplashInteractorOutputProtocol {
 }
 
 final class SplashPresenter: BasePresenter<SplashPresenterOutputProtocol,
-                                           SplashPresenterInputProtocol,
+                                           SplashInteractorInputProtocol,
                                            SplashRouterInputProtocol> {
+    
+    var dataSourceMusic: [ResultMusic] = []
     
 }
 
 // Input del Presenter
 extension SplashPresenter: SplashPresenterInputProtocol {
     func fetchDataFromWebService() {
-        self.interactor?.fetchDataFromWebService()
+        self.interactor?.fetchDataFromWebServiceInteractor()
+    }
+    
+    func showHomeTabBar() {
+        self.router?.showHomeTabBarRouter(dataSoure: self.dataSourceMusic)
     }
 }
 
 // Output del Interactor
 extension SplashPresenter: SplashInteractorOutputProtocol {
     func setDataFromWebInteractor(data: [ResultMusic]?) {
-        //
+        guard let dataUnw = data else { return }
+        self.dataSourceMusic.removeAll()
+        self.dataSourceMusic = dataUnw
+        self.viewController?.launchAnimation()
     }
 }
