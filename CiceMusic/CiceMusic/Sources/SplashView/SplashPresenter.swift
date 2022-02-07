@@ -18,7 +18,7 @@ protocol SplashInteractorOutputProtocol {
 }
 
 final class SplashPresenter: BasePresenter<SplashPresenterOutputProtocol,
-                                           SplashPresenterInputProtocol,
+                                           SplashInteractorInputProtocol,
                                            SplashRouterInputProtocol> {
     
 }
@@ -26,7 +26,7 @@ final class SplashPresenter: BasePresenter<SplashPresenterOutputProtocol,
 // Input del Presenter
 extension SplashPresenter: SplashPresenterInputProtocol {
     func fetchDataFromWebService() {
-        self.interactor?.fetchDataFromWebService()
+        self.interactor?.fetchDataFromWebServiceInteractor()
     }
 }
 
