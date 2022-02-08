@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A1467127B2E0590042A44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1467027B2E0590042A44C /* AppDelegate.swift */; };
+		09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467927B2E05D0042A44C /* Assets.xcassets */; };
+		09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */; };
+		09A1468D27B2E13B0042A44C /* AppCoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1468C27B2E13B0042A44C /* AppCoreCoordinator.swift */; };
+		09A1469227B2E1A30042A44C /* BaseVIPER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469127B2E1A30042A44C /* BaseVIPER.swift */; };
+		09A1469527B2E1D60042A44C /* MusicServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469427B2E1D60042A44C /* MusicServerModel.swift */; };
+		09A1469827B2E2060042A44C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469727B2E2060042A44C /* NetworkError.swift */; };
+		09A1469B27B2E2110042A44C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469A27B2E2110042A44C /* NetworkService.swift */; };
+		09A1469F27B2E2670042A44C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469E27B2E2670042A44C /* Utils.swift */; };
+		09A146A327B2E2910042A44C /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A146A227B2E2910042A44C /* SplashCoordinator.swift */; };
+		09A146A627B2E2A50042A44C /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A146A527B2E2A50042A44C /* SplashInteractor.swift */; };
+		09A146A927B2E2B30042A44C /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A146A827B2E2B30042A44C /* SplashPresenter.swift */; };
+		09A146AC27B2E2C30042A44C /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A146AB27B2E2C30042A44C /* SplashProvider.swift */; };
+		09A146AF27B2E2CF0042A44C /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A146AE27B2E2CF0042A44C /* SplashRouter.swift */; };
+		09A146B327B2E3C60042A44C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A146B127B2E3C60042A44C /* SplashViewController.swift */; };
+		09A146B427B2E3C60042A44C /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A146B227B2E3C60042A44C /* SplashViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09A1466D27B2E0590042A44C /* MyCiceMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCiceMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A1467027B2E0590042A44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09A1467927B2E05D0042A44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09A1467C27B2E05D0042A44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09A1467E27B2E05D0042A44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09A1468C27B2E13B0042A44C /* AppCoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreCoordinator.swift; sourceTree = "<group>"; };
+		09A1469127B2E1A30042A44C /* BaseVIPER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVIPER.swift; sourceTree = "<group>"; };
+		09A1469427B2E1D60042A44C /* MusicServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServerModel.swift; sourceTree = "<group>"; };
+		09A1469727B2E2060042A44C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		09A1469A27B2E2110042A44C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		09A1469E27B2E2670042A44C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		09A146A227B2E2910042A44C /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		09A146A527B2E2A50042A44C /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		09A146A827B2E2B30042A44C /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		09A146AB27B2E2C30042A44C /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
+		09A146AE27B2E2CF0042A44C /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		09A146B127B2E3C60042A44C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		09A146B227B2E3C60042A44C /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09A1466A27B2E0590042A44C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09A1466427B2E0590042A44C = {
+			isa = PBXGroup;
+			children = (
+				09A1466F27B2E0590042A44C /* MyCiceMusic */,
+				09A1466E27B2E0590042A44C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09A1466E27B2E0590042A44C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09A1466D27B2E0590042A44C /* MyCiceMusic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09A1466F27B2E0590042A44C /* MyCiceMusic */ = {
+			isa = PBXGroup;
+			children = (
+				09A1469027B2E16F0042A44C /* BaseVIPER */,
+				09A1468B27B2E1210042A44C /* Sources */,
+				09A1468A27B2E1150042A44C /* Utils+Helpers */,
+				09A1468927B2E0F60042A44C /* NetworkService */,
+				09A1468827B2E0EB0042A44C /* Models */,
+				09A1468727B2E0D10042A44C /* CoreApp */,
+				09A1467927B2E05D0042A44C /* Assets.xcassets */,
+				09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */,
+				09A1467E27B2E05D0042A44C /* Info.plist */,
+			);
+			path = MyCiceMusic;
+			sourceTree = "<group>";
+		};
+		09A1468727B2E0D10042A44C /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				09A1467027B2E0590042A44C /* AppDelegate.swift */,
+				09A1468C27B2E13B0042A44C /* AppCoreCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		09A1468827B2E0EB0042A44C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09A1469427B2E1D60042A44C /* MusicServerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09A1468927B2E0F60042A44C /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				09A1469727B2E2060042A44C /* NetworkError.swift */,
+				09A1469A27B2E2110042A44C /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		09A1468A27B2E1150042A44C /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09A1469E27B2E2670042A44C /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		09A1468B27B2E1210042A44C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				09A1469D27B2E2500042A44C /* SplashView */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		09A1469027B2E16F0042A44C /* BaseVIPER */ = {
+			isa = PBXGroup;
+			children = (
+				09A1469127B2E1A30042A44C /* BaseVIPER.swift */,
+			);
+			path = BaseVIPER;
+			sourceTree = "<group>";
+		};
+		09A1469D27B2E2500042A44C /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				09A146A227B2E2910042A44C /* SplashCoordinator.swift */,
+				09A146A527B2E2A50042A44C /* SplashInteractor.swift */,
+				09A146A827B2E2B30042A44C /* SplashPresenter.swift */,
+				09A146AB27B2E2C30042A44C /* SplashProvider.swift */,
+				09A146AE27B2E2CF0042A44C /* SplashRouter.swift */,
+				09A146B127B2E3C60042A44C /* SplashViewController.swift */,
+				09A146B227B2E3C60042A44C /* SplashViewController.xib */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09A1466C27B2E0590042A44C /* MyCiceMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09A1468127B2E05D0042A44C /* Build configuration list for PBXNativeTarget "MyCiceMusic" */;
+			buildPhases = (
+				09A1466927B2E0590042A44C /* Sources */,
+				09A1466A27B2E0590042A44C /* Frameworks */,
+				09A1466B27B2E0590042A44C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCiceMusic;
+			productName = MyCiceMusic;
+			productReference = 09A1466D27B2E0590042A44C /* MyCiceMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09A1466527B2E0590042A44C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					09A1466C27B2E0590042A44C = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 09A1466827B2E0590042A44C /* Build configuration list for PBXProject "MyCiceMusic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09A1466427B2E0590042A44C;
+			productRefGroup = 09A1466E27B2E0590042A44C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09A1466C27B2E0590042A44C /* MyCiceMusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09A1466B27B2E0590042A44C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */,
+				09A146B427B2E3C60042A44C /* SplashViewController.xib in Resources */,
+				09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09A1466927B2E0590042A44C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A1467127B2E0590042A44C /* AppDelegate.swift in Sources */,
+				09A146AF27B2E2CF0042A44C /* SplashRouter.swift in Sources */,
+				09A146A927B2E2B30042A44C /* SplashPresenter.swift in Sources */,
+				09A146A327B2E2910042A44C /* SplashCoordinator.swift in Sources */,
+				09A1469227B2E1A30042A44C /* BaseVIPER.swift in Sources */,
+				09A1469527B2E1D60042A44C /* MusicServerModel.swift in Sources */,
+				09A146B327B2E3C60042A44C /* SplashViewController.swift in Sources */,
+				09A146A627B2E2A50042A44C /* SplashInteractor.swift in Sources */,
+				09A1469F27B2E2670042A44C /* Utils.swift in Sources */,
+				09A146AC27B2E2C30042A44C /* SplashProvider.swift in Sources */,
+				09A1468D27B2E13B0042A44C /* AppCoreCoordinator.swift in Sources */,
+				09A1469B27B2E2110042A44C /* NetworkService.swift in Sources */,
+				09A1469827B2E2060042A44C /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09A1467C27B2E05D0042A44C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09A1467F27B2E05D0042A44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09A1468027B2E05D0042A44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09A1468227B2E05D0042A44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyCiceMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cice.education.Teconolgia.IOS.MyCiceMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		09A1468327B2E05D0042A44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyCiceMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cice.education.Teconolgia.IOS.MyCiceMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09A1466827B2E0590042A44C /* Build configuration list for PBXProject "MyCiceMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A1467F27B2E05D0042A44C /* Debug */,
+				09A1468027B2E05D0042A44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A1468127B2E05D0042A44C /* Build configuration list for PBXNativeTarget "MyCiceMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A1468227B2E05D0042A44C /* Debug */,
+				09A1468327B2E05D0042A44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09A1466527B2E0590042A44C /* Project object */;
+}
