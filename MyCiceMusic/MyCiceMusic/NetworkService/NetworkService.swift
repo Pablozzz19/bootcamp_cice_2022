@@ -25,7 +25,8 @@ final class NetworkService: NetworkServiceProtocol {
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         
-        let baseUrl = URLEnpoint.baseUrl
+        let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us"]
+        let baseUrl = String(format: URLEnpoint.baseUrl, arguments: argument)//URLEnpoint.baseUrl
         let endpoint = "\(baseUrl)\(requestPayload.endpoint)"
         
         guard let urlUnw = URL(string: endpoint) else {
