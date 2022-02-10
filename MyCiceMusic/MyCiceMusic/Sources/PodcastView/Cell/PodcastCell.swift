@@ -1,24 +1,22 @@
 //
-//  MusicCell.swift
+//  PodcastCell.swift
 //  MyCiceMusic
 //
-//  Created by cice on 08/02/2022.
+//  Created by cice on 09/02/2022.
 //
 
 import UIKit
 import Kingfisher
 
-protocol MusicCellInputProtocol {
+protocol PodcastCellInputProtocol {
     func setupCell(data: GenericResult)
 }
 
-class MusicCell: UITableViewCell, ReuseIdentifierProtocol {
+class PodcastCell: UITableViewCell, ReuseIdentifierProtocol {
 
     // MARK: - IBOutlets
-    @IBOutlet weak var artistWorkImageView: UIImageView!
-    @IBOutlet weak var artistNameLBL: UILabel!
-    @IBOutlet weak var releaseDateLBL: UILabel!
-    @IBOutlet weak var kindLBL: UILabel!
+    @IBOutlet weak var podcastImageView: UIImageView!
+    @IBOutlet weak var podcastName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,15 +31,15 @@ class MusicCell: UITableViewCell, ReuseIdentifierProtocol {
     
 }
 
-extension MusicCell: MusicCellInputProtocol {
+extension PodcastCell: PodcastCellInputProtocol {
     
     func setupCell(data: GenericResult) {
         
         let url = URL(string: data.artworkUrl100 ?? "")
-        let processor = DownsamplingImageProcessor(size: artistWorkImageView.bounds.size)
+        let processor = DownsamplingImageProcessor(size: podcastImageView.bounds.size)
                      |> RoundCornerImageProcessor(cornerRadius: 20)
-        artistWorkImageView.kf.indicatorType = .activity
-        artistWorkImageView.kf.setImage(
+        podcastImageView.kf.indicatorType = .activity
+        podcastImageView.kf.setImage(
             with: url,
             placeholder: UIImage(named: "placeholderImage"),
             options: [
@@ -60,8 +58,7 @@ extension MusicCell: MusicCellInputProtocol {
             }
         }
         
-        self.artistNameLBL.text = data.artistName
-        self.releaseDateLBL.text = data.releaseDate
-        self.kindLBL.text = data.kind
+        self.podcastName.text = data.name
     }
+    
 }

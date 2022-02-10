@@ -43,6 +43,9 @@ class MusicViewController: BaseView<MusicPresenterInputProtocol> {
     private func configuracionTV() {
         self.musicTableView.delegate = self
         self.musicTableView.dataSource = self
+        self.musicTableView.register(UINib(nibName: MusicCell.defaultReuseIdentifier,
+                                           bundle: nil),
+                                     forCellReuseIdentifier: MusicCell.defaultReuseIdentifier)
     }
 
 }
@@ -56,6 +59,7 @@ extension MusicViewController: MusicPresenterOutputProtocol {
 }
 
 extension MusicViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -65,8 +69,14 @@ extension MusicViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let model = self.presenter?.informationForCell(indexPath: indexPath.row)
-        debugPrint(model!)
-        return UITableViewCell()
+        let cell = self.musicTableView.dequeueReusableCell(withIdentifier: MusicCell.defaultReuseIdentifier, for: indexPath) as! MusicCell
+        if let model = self.presenter?.informationForCell(indexPath: indexPath.row) {
+            cell.setupCell(data: model)
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 182
     }
 }

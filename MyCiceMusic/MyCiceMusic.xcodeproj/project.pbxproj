@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09670C5327B44B9C00FE8A0B /* PodcastServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C5227B44B9C00FE8A0B /* PodcastServerModel.swift */; };
+		09670C5727B4526300FE8A0B /* AppleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C5627B4526300FE8A0B /* AppleViewModel.swift */; };
+		09670C5C27B45FA100FE8A0B /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C5A27B45FA100FE8A0B /* PodcastCell.swift */; };
+		09670C5D27B45FA100FE8A0B /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09670C5B27B45FA100FE8A0B /* PodcastCell.xib */; };
 		09A1467127B2E0590042A44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1467027B2E0590042A44C /* AppDelegate.swift */; };
 		09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467927B2E05D0042A44C /* Assets.xcassets */; };
 		09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */; };
@@ -53,6 +57,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09670C5227B44B9C00FE8A0B /* PodcastServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastServerModel.swift; sourceTree = "<group>"; };
+		09670C5627B4526300FE8A0B /* AppleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleViewModel.swift; sourceTree = "<group>"; };
+		09670C5A27B45FA100FE8A0B /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
+		09670C5B27B45FA100FE8A0B /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
 		09A1466D27B2E0590042A44C /* MyCiceMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCiceMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A1467027B2E0590042A44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A1467927B2E05D0042A44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +119,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09670C5527B4523D00FE8A0B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				09670C5627B4526300FE8A0B /* AppleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		09670C5927B45F8000FE8A0B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09670C5A27B45FA100FE8A0B /* PodcastCell.swift */,
+				09670C5B27B45FA100FE8A0B /* PodcastCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		09A1466427B2E0590042A44C = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +155,7 @@
 		09A1466F27B2E0590042A44C /* MyCiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09670C5527B4523D00FE8A0B /* ViewModels */,
 				09A1469027B2E16F0042A44C /* BaseVIPER */,
 				09A1468B27B2E1210042A44C /* Sources */,
 				09A1468A27B2E1150042A44C /* Utils+Helpers */,
@@ -156,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				09A1469427B2E1D60042A44C /* MusicServerModel.swift */,
+				09670C5227B44B9C00FE8A0B /* PodcastServerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +266,7 @@
 		09A146CB27B2ED290042A44C /* PodcastView */ = {
 			isa = PBXGroup;
 			children = (
+				09670C5927B45F8000FE8A0B /* Cell */,
 				09A1470C27B2EFD00042A44C /* PodcastViewController.xib */,
 				09A1470D27B2EFD00042A44C /* PodcastViewController.swift */,
 				09A1470E27B2EFD00042A44C /* PodcastRouter.swift */,
@@ -341,6 +369,7 @@
 				09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */,
 				09A1470427B2EF9D0042A44C /* BooksViewController.xib in Resources */,
 				09A146B427B2E3C60042A44C /* SplashViewController.xib in Resources */,
+				09670C5D27B45FA100FE8A0B /* PodcastCell.xib in Resources */,
 				09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */,
 				09A1472D27B2F0330042A44C /* HomeTabBarViewController.xib in Resources */,
 				09A1473627B30D7D0042A44C /* MusicCell.xib in Resources */,
@@ -363,6 +392,7 @@
 				09A146A327B2E2910042A44C /* SplashCoordinator.swift in Sources */,
 				09A1469227B2E1A30042A44C /* BaseVIPER.swift in Sources */,
 				09A1471827B2EFD00042A44C /* PodcastPresenter.swift in Sources */,
+				09670C5C27B45FA100FE8A0B /* PodcastCell.swift in Sources */,
 				09A1469527B2E1D60042A44C /* MusicServerModel.swift in Sources */,
 				09A1472427B2EFDC0042A44C /* MusicRouter.swift in Sources */,
 				09A1470827B2EF9D0042A44C /* BooksCoordinator.swift in Sources */,
@@ -383,7 +413,9 @@
 				09A1469B27B2E2110042A44C /* NetworkService.swift in Sources */,
 				09A1473527B30D7D0042A44C /* MusicCell.swift in Sources */,
 				09A1469827B2E2060042A44C /* NetworkError.swift in Sources */,
+				09670C5727B4526300FE8A0B /* AppleViewModel.swift in Sources */,
 				09A1472327B2EFDC0042A44C /* MusicViewController.swift in Sources */,
+				09670C5327B44B9C00FE8A0B /* PodcastServerModel.swift in Sources */,
 				09A1472627B2EFDC0042A44C /* MusicCoordinator.swift in Sources */,
 				09A1470627B2EF9D0042A44C /* BooksRouter.swift in Sources */,
 				09A1470527B2EF9D0042A44C /* BooksViewController.swift in Sources */,

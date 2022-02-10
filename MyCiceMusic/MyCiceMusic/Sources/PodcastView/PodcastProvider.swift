@@ -26,12 +26,23 @@ import Foundation
 
 // Input Protocol
 protocol PodcastProviderInputProtocol {
-    
+    func fetchPodcastFromWebServiceProvider(completioHadler: @escaping (Result<PodcastServerMdoel, NetworkError>) -> Void)
 }
 
 final class PodcastProvider: PodcastProviderInputProtocol {
     
     let networkService: NetworkServiceProtocol = NetworkService()
+    
+    func fetchPodcastFromWebServiceProvider(completioHadler: @escaping (Result<PodcastServerMdoel, NetworkError>) -> Void) {
+        self.networkService.requestGeneric(requestPayload: PodcastRequestDTO.requestData(numeroItems: "10"),
+                                           entityClass: PodcastServerMdoel.self) { [weak self] (result) in
+            guard self != nil else { return }
+            guard let resultUnw = result else { return }
+            completioHadler(.success(resultUnw))
+        } failure: { (error) in
+            completioHadler(.failure(error))
+        }
+    }
     
 }
 
@@ -39,7 +50,7 @@ struct PodcastRequestDTO {
     
     static func requestData(numeroItems: String) -> RequestDTO {
         let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
+        let urlComplete = String(format: URLEnpoint.podcast, arguments: argument)
         let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete)
         return request
     }
