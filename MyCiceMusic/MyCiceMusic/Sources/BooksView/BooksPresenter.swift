@@ -26,27 +26,48 @@ import Foundation
 
 // Input del Presenter
 protocol BooksPresenterInputProtocol {
-    
+    func fetchBooksFromWebService()
+    func numberOfRows() -> Int?
+    func informationForCell(indexPath: Int) -> GenericResult?
 }
 
 // Output del Interactor
 protocol BooksInteractorOutputProtocol {
-    
+    func setDataFromWebInteractor(data: [GenericResult]?)
 }
 
 final class BooksPresenter: BasePresenter<BooksPresenterOutputProtocol,
                                                         BooksInteractorInputProtocol,
                                                         BooksRouterInputProtocol> {
     
+    // MARK: - Variable globales
+    var dataSourceViewModel: [GenericResult] = []
 }
 
 // Input del Presenter
 extension BooksPresenter: BooksPresenterInputProtocol {
     
+    func fetchBooksFromWebService() {
+        self.interactor?.fetchBooksFromWebServiceInteractor()
+    }
+    
+    func numberOfRows() -> Int? {
+        return self.dataSourceViewModel.count
+    }
+    
+    func informationForCell(indexPath: Int) -> GenericResult? {
+        return self.dataSourceViewModel[indexPath]
+    }
 }
 
 // Output del Interactor
 extension BooksPresenter: BooksInteractorOutputProtocol {
     
+    func setDataFromWebInteractor(data: [GenericResult]?) {
+        guard let dataUnw = data else { return }
+        self.dataSourceViewModel.removeAll()
+        self.dataSourceViewModel = dataUnw
+        self.viewController?.reloadInformationInView()
+    }
 }
 

@@ -16,7 +16,7 @@
 		09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */; };
 		09A1468D27B2E13B0042A44C /* AppCoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1468C27B2E13B0042A44C /* AppCoreCoordinator.swift */; };
 		09A1469227B2E1A30042A44C /* BaseVIPER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469127B2E1A30042A44C /* BaseVIPER.swift */; };
-		09A1469527B2E1D60042A44C /* MusicServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469427B2E1D60042A44C /* MusicServerModel.swift */; };
+		09A1469527B2E1D60042A44C /* AppleServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469427B2E1D60042A44C /* AppleServerModel.swift */; };
 		09A1469827B2E2060042A44C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469727B2E2060042A44C /* NetworkError.swift */; };
 		09A1469B27B2E2110042A44C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469A27B2E2110042A44C /* NetworkService.swift */; };
 		09A1469F27B2E2670042A44C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1469E27B2E2670042A44C /* Utils.swift */; };
@@ -68,7 +68,7 @@
 		09A1467E27B2E05D0042A44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A1468C27B2E13B0042A44C /* AppCoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreCoordinator.swift; sourceTree = "<group>"; };
 		09A1469127B2E1A30042A44C /* BaseVIPER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVIPER.swift; sourceTree = "<group>"; };
-		09A1469427B2E1D60042A44C /* MusicServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServerModel.swift; sourceTree = "<group>"; };
+		09A1469427B2E1D60042A44C /* AppleServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleServerModel.swift; sourceTree = "<group>"; };
 		09A1469727B2E2060042A44C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		09A1469A27B2E2110042A44C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		09A1469E27B2E2670042A44C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		09A1468827B2E0EB0042A44C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				09A1469427B2E1D60042A44C /* MusicServerModel.swift */,
+				09A1469427B2E1D60042A44C /* AppleServerModel.swift */,
 				09670C5227B44B9C00FE8A0B /* PodcastServerModel.swift */,
 			);
 			path = Models;
@@ -393,7 +393,7 @@
 				09A1469227B2E1A30042A44C /* BaseVIPER.swift in Sources */,
 				09A1471827B2EFD00042A44C /* PodcastPresenter.swift in Sources */,
 				09670C5C27B45FA100FE8A0B /* PodcastCell.swift in Sources */,
-				09A1469527B2E1D60042A44C /* MusicServerModel.swift in Sources */,
+				09A1469527B2E1D60042A44C /* AppleServerModel.swift in Sources */,
 				09A1472427B2EFDC0042A44C /* MusicRouter.swift in Sources */,
 				09A1470827B2EF9D0042A44C /* BooksCoordinator.swift in Sources */,
 				09A1471427B2EFD00042A44C /* PodcastViewController.swift in Sources */,
