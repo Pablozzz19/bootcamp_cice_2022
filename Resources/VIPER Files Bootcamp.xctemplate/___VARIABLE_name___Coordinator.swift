@@ -1,4 +1,7 @@
 /*
+Copyright, everisSL
+All rights reserved.
+
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -23,36 +26,32 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import UIKit
 
-// Input Protocol
-protocol BooksProviderInputProtocol {
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void)
+// MARK: - module builder
+
+final class ___VARIABLE_name___Coordinator: ModuleInterface {
+
+    typealias View = ___VARIABLE_name___ViewController
+    typealias Presenter = ___VARIABLE_name___Presenter
+    typealias Router = ___VARIABLE_name___Router
+    typealias Interactor = ___VARIABLE_name___Interactor
+    
+    func navigation(dto: ___VARIABLE_name___CoordinatorDTO? = nil) -> UINavigationController {
+        UINavigationController(rootViewController: build())
+    }
+
+    func build(dto: ___VARIABLE_name___CoordinatorDTO? = nil) -> UIViewController {
+        let view = View()
+        let interactor = Interactor()
+        let presenter = Presenter()
+        let router = Router()
+        self.coordinator(view: view, presenter: presenter, router: router, interactor: interactor)
+        router.viewController = view
+        return view
+    }
 }
 
-final class BooksProvider: BooksProviderInputProtocol {
-    
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void) {
-        self.networkService.requestGeneric(requestPayload: BooksRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: AppleServerModel.self) { [weak self] (result) in
-            guard self != nil else { return }
-            guard let resultUnw = result else { return }
-            completioHadler(.success(resultUnw))
-        } failure: { (error) in
-            completioHadler(.failure(error))
-        }
-    }
-    
-}
-
-struct BooksRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us", numeroItems]
-        let urlComplete = String(format: URLEnpoint.books, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
-    }
+struct ___VARIABLE_name___CoordinatorDTO {
     
 }

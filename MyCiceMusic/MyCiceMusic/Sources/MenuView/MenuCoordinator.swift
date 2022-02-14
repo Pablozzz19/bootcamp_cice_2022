@@ -1,4 +1,7 @@
 /*
+Copyright, everisSL
+All rights reserved.
+
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -24,35 +27,39 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-// Input Protocol
-protocol BooksProviderInputProtocol {
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void)
-}
+// MARK: - module builder
 
-final class BooksProvider: BooksProviderInputProtocol {
+final class MenuCoordinator {
+
+    static func navigation(dto: MenuCoordinatorDTO? = nil) -> BaseNavigation {
+        BaseNavigation(rootViewController: view())
+    }
     
-    let networkService: NetworkServiceProtocol = NetworkService()
+    static func view(dto: MenuCoordinatorDTO? = nil) -> MenuViewController & MenuPresenterOutputProtocol {
+        let vc = MenuViewController()
+        vc.presenter = presenter(vc: vc)
+        return vc
+    }
     
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void) {
-        self.networkService.requestGeneric(requestPayload: BooksRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: AppleServerModel.self) { [weak self] (result) in
-            guard self != nil else { return }
-            guard let resultUnw = result else { return }
-            completioHadler(.success(resultUnw))
-        } failure: { (error) in
-            completioHadler(.failure(error))
-        }
+    static func presenter(vc: MenuViewController) -> MenuPresenterInputProtocol & MenuInteractorOutputProtocol {
+        let presenter = MenuPresenter(vc: vc)
+        presenter.interactor = interactor(presenter: presenter)
+        presenter.router = router(vc: vc)
+        return presenter
+    }
+    
+    static func interactor(presenter: MenuPresenter) -> MenuInteractorInputProtocol {
+        let interactor = MenuInteractor(presenter: presenter)
+        return interactor
+    }
+    
+    static func router(vc: MenuViewController) -> MenuRouterInputProtocol {
+        let router = MenuRouter(view: vc)
+        return router
     }
     
 }
 
-struct BooksRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us", numeroItems]
-        let urlComplete = String(format: URLEnpoint.books, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
-    }
+struct MenuCoordinatorDTO {
     
 }

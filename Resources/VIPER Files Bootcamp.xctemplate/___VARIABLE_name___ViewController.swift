@@ -1,4 +1,7 @@
 /*
+Copyright, everisSL
+All rights reserved.
+
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -22,26 +25,26 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-import Foundation
+import UIKit
 
-// Input Protocol
-protocol MusicProviderInputProtocol {
-    
+protocol ___VARIABLE_name___ViewPresenterInterface: ViewPresenterInterface {
+    func reloadInformationInView()
 }
 
-final class MusicProvider: MusicProviderInputProtocol {
-    
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-}
+class ___VARIABLE_name___ViewController: UIViewController, ViewInterface {
 
-struct MusicRequestDTO {
+    var presenter: ___VARIABLE_name___PresenterViewInterface!
     
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
     }
-    
+
+}
+
+extension ___VARIABLE_name___ViewController: ___VARIABLE_name___ViewPresenterInterface {
+
+    func reloadInformationInView() {
+        
+    }
 }

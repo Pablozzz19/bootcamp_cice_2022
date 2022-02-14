@@ -21,6 +21,14 @@
 		09670C7827BA5B8900FE8A0B /* AppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C7627BA5B8900FE8A0B /* AppsCell.swift */; };
 		09670C7927BA5B8900FE8A0B /* AppsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09670C7727BA5B8900FE8A0B /* AppsCell.xib */; };
 		09670C7C27BA5E1B00FE8A0B /* AppServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C7B27BA5E1B00FE8A0B /* AppServerModel.swift */; };
+		09670C8227BA6E4100FE8A0B /* SWRevealViewController .m in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8027BA6E4100FE8A0B /* SWRevealViewController .m */; };
+		09670C8C27BA73C500FE8A0B /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09670C8527BA73C500FE8A0B /* MenuViewController.xib */; };
+		09670C8D27BA73C500FE8A0B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8627BA73C500FE8A0B /* MenuViewController.swift */; };
+		09670C8E27BA73C500FE8A0B /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8727BA73C500FE8A0B /* MenuRouter.swift */; };
+		09670C8F27BA73C500FE8A0B /* MenuProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8827BA73C500FE8A0B /* MenuProvider.swift */; };
+		09670C9027BA73C500FE8A0B /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8927BA73C500FE8A0B /* MenuCoordinator.swift */; };
+		09670C9127BA73C500FE8A0B /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8A27BA73C500FE8A0B /* MenuPresenter.swift */; };
+		09670C9227BA73C500FE8A0B /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8B27BA73C500FE8A0B /* MenuInteractor.swift */; };
 		09A1467127B2E0590042A44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1467027B2E0590042A44C /* AppDelegate.swift */; };
 		09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467927B2E05D0042A44C /* Assets.xcassets */; };
 		09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */; };
@@ -81,6 +89,16 @@
 		09670C7627BA5B8900FE8A0B /* AppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCell.swift; sourceTree = "<group>"; };
 		09670C7727BA5B8900FE8A0B /* AppsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppsCell.xib; sourceTree = "<group>"; };
 		09670C7B27BA5E1B00FE8A0B /* AppServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServerModel.swift; sourceTree = "<group>"; };
+		09670C7F27BA6E4000FE8A0B /* MyCiceMusic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCiceMusic-Bridging-Header.h"; sourceTree = "<group>"; };
+		09670C8027BA6E4100FE8A0B /* SWRevealViewController .m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SWRevealViewController .m"; path = "../../../Resources/Archivo_comprimido/SWRevealViewController .m"; sourceTree = "<group>"; };
+		09670C8127BA6E4100FE8A0B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../Resources/Archivo_comprimido/SWRevealViewController.h; sourceTree = "<group>"; };
+		09670C8527BA73C500FE8A0B /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		09670C8627BA73C500FE8A0B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		09670C8727BA73C500FE8A0B /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		09670C8827BA73C500FE8A0B /* MenuProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProvider.swift; sourceTree = "<group>"; };
+		09670C8927BA73C500FE8A0B /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
+		09670C8A27BA73C500FE8A0B /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		09670C8B27BA73C500FE8A0B /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
 		09A1466D27B2E0590042A44C /* MyCiceMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCiceMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A1467027B2E0590042A44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A1467927B2E05D0042A44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,8 +201,25 @@
 		09670C7E27BA6C9500FE8A0B /* MenuLateral */ = {
 			isa = PBXGroup;
 			children = (
+				09670C8027BA6E4100FE8A0B /* SWRevealViewController .m */,
+				09670C8127BA6E4100FE8A0B /* SWRevealViewController.h */,
+				09670C7F27BA6E4000FE8A0B /* MyCiceMusic-Bridging-Header.h */,
 			);
 			path = MenuLateral;
+			sourceTree = "<group>";
+		};
+		09670C8427BA738800FE8A0B /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				09670C8527BA73C500FE8A0B /* MenuViewController.xib */,
+				09670C8627BA73C500FE8A0B /* MenuViewController.swift */,
+				09670C8727BA73C500FE8A0B /* MenuRouter.swift */,
+				09670C8827BA73C500FE8A0B /* MenuProvider.swift */,
+				09670C8927BA73C500FE8A0B /* MenuCoordinator.swift */,
+				09670C8A27BA73C500FE8A0B /* MenuPresenter.swift */,
+				09670C8B27BA73C500FE8A0B /* MenuInteractor.swift */,
+			);
+			path = MenuView;
 			sourceTree = "<group>";
 		};
 		09A1466427B2E0590042A44C = {
@@ -260,6 +295,7 @@
 		09A1468B27B2E1210042A44C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09670C8427BA738800FE8A0B /* MenuView */,
 				09670C6527B5987300FE8A0B /* AppleGenericDetail */,
 				09A146CC27B2ED2F0042A44C /* BooksView */,
 				09A146CB27B2ED290042A44C /* PodcastView */,
@@ -389,6 +425,7 @@
 				TargetAttributes = {
 					09A1466C27B2E0590042A44C = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -425,6 +462,7 @@
 				09A1470427B2EF9D0042A44C /* BooksViewController.xib in Resources */,
 				09A146B427B2E3C60042A44C /* SplashViewController.xib in Resources */,
 				09670C5D27B45FA100FE8A0B /* PodcastCell.xib in Resources */,
+				09670C8C27BA73C500FE8A0B /* MenuViewController.xib in Resources */,
 				09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */,
 				09670C7927BA5B8900FE8A0B /* AppsCell.xib in Resources */,
 				09A1472D27B2F0330042A44C /* HomeTabBarViewController.xib in Resources */,
@@ -443,19 +481,24 @@
 				09A146AF27B2E2CF0042A44C /* SplashRouter.swift in Sources */,
 				09A1472727B2EFDC0042A44C /* MusicPresenter.swift in Sources */,
 				09A146A927B2E2B30042A44C /* SplashPresenter.swift in Sources */,
+				09670C8D27BA73C500FE8A0B /* MenuViewController.swift in Sources */,
 				09A1471727B2EFD00042A44C /* PodcastCoordinator.swift in Sources */,
 				09A1471627B2EFD00042A44C /* PodcastProvider.swift in Sources */,
 				09A146A327B2E2910042A44C /* SplashCoordinator.swift in Sources */,
+				09670C9127BA73C500FE8A0B /* MenuPresenter.swift in Sources */,
 				09A1469227B2E1A30042A44C /* BaseVIPER.swift in Sources */,
 				09A1471827B2EFD00042A44C /* PodcastPresenter.swift in Sources */,
 				09670C5C27B45FA100FE8A0B /* PodcastCell.swift in Sources */,
 				09670C6E27B5989C00FE8A0B /* AppleGenericDetailViewController.swift in Sources */,
 				09670C6F27B5989C00FE8A0B /* AppleGenericDetailRouter.swift in Sources */,
 				09A1469527B2E1D60042A44C /* AppleServerModel.swift in Sources */,
+				09670C9227BA73C500FE8A0B /* MenuInteractor.swift in Sources */,
 				09A1472427B2EFDC0042A44C /* MusicRouter.swift in Sources */,
 				09A1470827B2EF9D0042A44C /* BooksCoordinator.swift in Sources */,
 				09A1471427B2EFD00042A44C /* PodcastViewController.swift in Sources */,
+				09670C8E27BA73C500FE8A0B /* MenuRouter.swift in Sources */,
 				09A1472C27B2F0330042A44C /* HomeTabBarViewController.swift in Sources */,
+				09670C8F27BA73C500FE8A0B /* MenuProvider.swift in Sources */,
 				09670C7127B5989C00FE8A0B /* AppleGenericDetailCoordinator.swift in Sources */,
 				09A146B327B2E3C60042A44C /* SplashViewController.swift in Sources */,
 				09A1472827B2EFDC0042A44C /* MusicInteractor.swift in Sources */,
@@ -473,8 +516,10 @@
 				09670C7327B5989C00FE8A0B /* AppleGenericDetailInteractor.swift in Sources */,
 				09A1469B27B2E2110042A44C /* NetworkService.swift in Sources */,
 				09670C7227B5989C00FE8A0B /* AppleGenericDetailPresenter.swift in Sources */,
+				09670C9027BA73C500FE8A0B /* MenuCoordinator.swift in Sources */,
 				09A1473527B30D7D0042A44C /* MusicCell.swift in Sources */,
 				09A1469827B2E2060042A44C /* NetworkError.swift in Sources */,
+				09670C8227BA6E4100FE8A0B /* SWRevealViewController .m in Sources */,
 				09670C5727B4526300FE8A0B /* AppleViewModel.swift in Sources */,
 				09A1472327B2EFDC0042A44C /* MusicViewController.swift in Sources */,
 				09670C5327B44B9C00FE8A0B /* PodcastServerModel.swift in Sources */,
@@ -622,6 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyCiceMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -630,6 +676,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.education.Teconolgia.IOS.MyCiceMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCiceMusic/MenuLateral/MyCiceMusic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -640,6 +688,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyCiceMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -648,6 +697,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.education.Teconolgia.IOS.MyCiceMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCiceMusic/MenuLateral/MyCiceMusic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

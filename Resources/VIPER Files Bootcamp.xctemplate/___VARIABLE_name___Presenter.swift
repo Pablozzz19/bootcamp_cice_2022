@@ -1,4 +1,7 @@
 /*
+Copyright, everisSL
+All rights reserved.
+
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -24,35 +27,37 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-// Input Protocol
-protocol BooksProviderInputProtocol {
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void)
-}
-
-final class BooksProvider: BooksProviderInputProtocol {
-    
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void) {
-        self.networkService.requestGeneric(requestPayload: BooksRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: AppleServerModel.self) { [weak self] (result) in
-            guard self != nil else { return }
-            guard let resultUnw = result else { return }
-            completioHadler(.success(resultUnw))
-        } failure: { (error) in
-            completioHadler(.failure(error))
-        }
-    }
+protocol ___VARIABLE_name___PresenterRouterInterface: PresenterRouterInterface {
     
 }
 
-struct BooksRequestDTO {
+protocol ___VARIABLE_name___PresenterInteractorInterface: PresenterInteractorInterface {
     
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us", numeroItems]
-        let urlComplete = String(format: URLEnpoint.books, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
-    }
+}
+
+protocol ___VARIABLE_name___PresenterViewInterface: PresenterViewInterface {
+   
+}
+
+final class ___VARIABLE_name___Presenter: PresenterInterface {
+    
+    var router: ___VARIABLE_name___RouterPresenterInterface!
+    var interactor: ___VARIABLE_name___InteractorPresenterInterface!
+    weak var view: ___VARIABLE_name___ViewPresenterInterface!
+    
+    
+    
+}
+
+extension ___VARIABLE_name___Presenter: ___VARIABLE_name___PresenterRouterInterface {
+    
+}
+
+extension ___VARIABLE_name___Presenter: ___VARIABLE_name___PresenterInteractorInterface {
+    
+}
+
+extension ___VARIABLE_name___Presenter: ___VARIABLE_name___PresenterViewInterface {
+    
     
 }
