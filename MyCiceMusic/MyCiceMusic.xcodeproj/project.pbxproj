@@ -11,6 +11,16 @@
 		09670C5727B4526300FE8A0B /* AppleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C5627B4526300FE8A0B /* AppleViewModel.swift */; };
 		09670C5C27B45FA100FE8A0B /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C5A27B45FA100FE8A0B /* PodcastCell.swift */; };
 		09670C5D27B45FA100FE8A0B /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09670C5B27B45FA100FE8A0B /* PodcastCell.xib */; };
+		09670C6D27B5989C00FE8A0B /* AppleGenericDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09670C6627B5989C00FE8A0B /* AppleGenericDetailViewController.xib */; };
+		09670C6E27B5989C00FE8A0B /* AppleGenericDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C6727B5989C00FE8A0B /* AppleGenericDetailViewController.swift */; };
+		09670C6F27B5989C00FE8A0B /* AppleGenericDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C6827B5989C00FE8A0B /* AppleGenericDetailRouter.swift */; };
+		09670C7027B5989C00FE8A0B /* AppleGenericDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C6927B5989C00FE8A0B /* AppleGenericDetailProvider.swift */; };
+		09670C7127B5989C00FE8A0B /* AppleGenericDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C6A27B5989C00FE8A0B /* AppleGenericDetailCoordinator.swift */; };
+		09670C7227B5989C00FE8A0B /* AppleGenericDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C6B27B5989C00FE8A0B /* AppleGenericDetailPresenter.swift */; };
+		09670C7327B5989C00FE8A0B /* AppleGenericDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C6C27B5989C00FE8A0B /* AppleGenericDetailInteractor.swift */; };
+		09670C7827BA5B8900FE8A0B /* AppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C7627BA5B8900FE8A0B /* AppsCell.swift */; };
+		09670C7927BA5B8900FE8A0B /* AppsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09670C7727BA5B8900FE8A0B /* AppsCell.xib */; };
+		09670C7C27BA5E1B00FE8A0B /* AppServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C7B27BA5E1B00FE8A0B /* AppServerModel.swift */; };
 		09A1467127B2E0590042A44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1467027B2E0590042A44C /* AppDelegate.swift */; };
 		09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467927B2E05D0042A44C /* Assets.xcassets */; };
 		09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */; };
@@ -61,6 +71,16 @@
 		09670C5627B4526300FE8A0B /* AppleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleViewModel.swift; sourceTree = "<group>"; };
 		09670C5A27B45FA100FE8A0B /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
 		09670C5B27B45FA100FE8A0B /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
+		09670C6627B5989C00FE8A0B /* AppleGenericDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppleGenericDetailViewController.xib; sourceTree = "<group>"; };
+		09670C6727B5989C00FE8A0B /* AppleGenericDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailViewController.swift; sourceTree = "<group>"; };
+		09670C6827B5989C00FE8A0B /* AppleGenericDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailRouter.swift; sourceTree = "<group>"; };
+		09670C6927B5989C00FE8A0B /* AppleGenericDetailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailProvider.swift; sourceTree = "<group>"; };
+		09670C6A27B5989C00FE8A0B /* AppleGenericDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailCoordinator.swift; sourceTree = "<group>"; };
+		09670C6B27B5989C00FE8A0B /* AppleGenericDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailPresenter.swift; sourceTree = "<group>"; };
+		09670C6C27B5989C00FE8A0B /* AppleGenericDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailInteractor.swift; sourceTree = "<group>"; };
+		09670C7627BA5B8900FE8A0B /* AppsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCell.swift; sourceTree = "<group>"; };
+		09670C7727BA5B8900FE8A0B /* AppsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppsCell.xib; sourceTree = "<group>"; };
+		09670C7B27BA5E1B00FE8A0B /* AppServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServerModel.swift; sourceTree = "<group>"; };
 		09A1466D27B2E0590042A44C /* MyCiceMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCiceMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A1467027B2E0590042A44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A1467927B2E05D0042A44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +156,30 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		09670C6527B5987300FE8A0B /* AppleGenericDetail */ = {
+			isa = PBXGroup;
+			children = (
+				09670C7527BA5B4600FE8A0B /* Cell */,
+				09670C6627B5989C00FE8A0B /* AppleGenericDetailViewController.xib */,
+				09670C6727B5989C00FE8A0B /* AppleGenericDetailViewController.swift */,
+				09670C6827B5989C00FE8A0B /* AppleGenericDetailRouter.swift */,
+				09670C6927B5989C00FE8A0B /* AppleGenericDetailProvider.swift */,
+				09670C6A27B5989C00FE8A0B /* AppleGenericDetailCoordinator.swift */,
+				09670C6B27B5989C00FE8A0B /* AppleGenericDetailPresenter.swift */,
+				09670C6C27B5989C00FE8A0B /* AppleGenericDetailInteractor.swift */,
+			);
+			path = AppleGenericDetail;
+			sourceTree = "<group>";
+		};
+		09670C7527BA5B4600FE8A0B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09670C7627BA5B8900FE8A0B /* AppsCell.swift */,
+				09670C7727BA5B8900FE8A0B /* AppsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		09A1466427B2E0590042A44C = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +227,7 @@
 			children = (
 				09A1469427B2E1D60042A44C /* AppleServerModel.swift */,
 				09670C5227B44B9C00FE8A0B /* PodcastServerModel.swift */,
+				09670C7B27BA5E1B00FE8A0B /* AppServerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +252,7 @@
 		09A1468B27B2E1210042A44C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09670C6527B5987300FE8A0B /* AppleGenericDetail */,
 				09A146CC27B2ED2F0042A44C /* BooksView */,
 				09A146CB27B2ED290042A44C /* PodcastView */,
 				09A146CA27B2ED200042A44C /* MusicView */,
@@ -366,11 +412,13 @@
 			files = (
 				09A1472227B2EFDC0042A44C /* MusicViewController.xib in Resources */,
 				09A1471327B2EFD00042A44C /* PodcastViewController.xib in Resources */,
+				09670C6D27B5989C00FE8A0B /* AppleGenericDetailViewController.xib in Resources */,
 				09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */,
 				09A1470427B2EF9D0042A44C /* BooksViewController.xib in Resources */,
 				09A146B427B2E3C60042A44C /* SplashViewController.xib in Resources */,
 				09670C5D27B45FA100FE8A0B /* PodcastCell.xib in Resources */,
 				09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */,
+				09670C7927BA5B8900FE8A0B /* AppsCell.xib in Resources */,
 				09A1472D27B2F0330042A44C /* HomeTabBarViewController.xib in Resources */,
 				09A1473627B30D7D0042A44C /* MusicCell.xib in Resources */,
 			);
@@ -393,11 +441,14 @@
 				09A1469227B2E1A30042A44C /* BaseVIPER.swift in Sources */,
 				09A1471827B2EFD00042A44C /* PodcastPresenter.swift in Sources */,
 				09670C5C27B45FA100FE8A0B /* PodcastCell.swift in Sources */,
+				09670C6E27B5989C00FE8A0B /* AppleGenericDetailViewController.swift in Sources */,
+				09670C6F27B5989C00FE8A0B /* AppleGenericDetailRouter.swift in Sources */,
 				09A1469527B2E1D60042A44C /* AppleServerModel.swift in Sources */,
 				09A1472427B2EFDC0042A44C /* MusicRouter.swift in Sources */,
 				09A1470827B2EF9D0042A44C /* BooksCoordinator.swift in Sources */,
 				09A1471427B2EFD00042A44C /* PodcastViewController.swift in Sources */,
 				09A1472C27B2F0330042A44C /* HomeTabBarViewController.swift in Sources */,
+				09670C7127B5989C00FE8A0B /* AppleGenericDetailCoordinator.swift in Sources */,
 				09A146B327B2E3C60042A44C /* SplashViewController.swift in Sources */,
 				09A1472827B2EFDC0042A44C /* MusicInteractor.swift in Sources */,
 				09A1470A27B2EF9D0042A44C /* BooksInteractor.swift in Sources */,
@@ -405,12 +456,15 @@
 				09A1473027B2F0430042A44C /* HomeTabBarCoordinator.swift in Sources */,
 				09A1471527B2EFD00042A44C /* PodcastRouter.swift in Sources */,
 				09A1470727B2EF9D0042A44C /* BooksProvider.swift in Sources */,
+				09670C7027B5989C00FE8A0B /* AppleGenericDetailProvider.swift in Sources */,
 				09A146A627B2E2A50042A44C /* SplashInteractor.swift in Sources */,
 				09A1469F27B2E2670042A44C /* Utils.swift in Sources */,
 				09A1470927B2EF9D0042A44C /* BooksPresenter.swift in Sources */,
 				09A146AC27B2E2C30042A44C /* SplashProvider.swift in Sources */,
 				09A1468D27B2E13B0042A44C /* AppCoreCoordinator.swift in Sources */,
+				09670C7327B5989C00FE8A0B /* AppleGenericDetailInteractor.swift in Sources */,
 				09A1469B27B2E2110042A44C /* NetworkService.swift in Sources */,
+				09670C7227B5989C00FE8A0B /* AppleGenericDetailPresenter.swift in Sources */,
 				09A1473527B30D7D0042A44C /* MusicCell.swift in Sources */,
 				09A1469827B2E2060042A44C /* NetworkError.swift in Sources */,
 				09670C5727B4526300FE8A0B /* AppleViewModel.swift in Sources */,
@@ -418,8 +472,10 @@
 				09670C5327B44B9C00FE8A0B /* PodcastServerModel.swift in Sources */,
 				09A1472627B2EFDC0042A44C /* MusicCoordinator.swift in Sources */,
 				09A1470627B2EF9D0042A44C /* BooksRouter.swift in Sources */,
+				09670C7827BA5B8900FE8A0B /* AppsCell.swift in Sources */,
 				09A1470527B2EF9D0042A44C /* BooksViewController.swift in Sources */,
 				09A1471927B2EFD00042A44C /* PodcastInteractor.swift in Sources */,
+				09670C7C27BA5E1B00FE8A0B /* AppServerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,24 +23,37 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import UIKit
 
-// Input del Router
-protocol MusicRouterInputProtocol {
-    func didSelectRowRouter(data: GenericResult)
+// Input Protocol
+protocol AppleGenericDetailProviderInputProtocol {
+    func fetchData(completioHadler: @escaping (Result<AppServerModel, NetworkError>) -> Void)
 }
 
-final class MusicRouter: BaseRouter<MusicViewController> {
+final class AppleGenericDetailProvider: AppleGenericDetailProviderInputProtocol {
     
-}
-
-// Input del Router
-extension MusicRouter: MusicRouterInputProtocol {
+    let networkService: NetworkServiceProtocol = NetworkService()
     
-    func didSelectRowRouter(data: GenericResult) {
-        DispatchQueue.main.async {
-            let vc = AppleGenericDetailCoordinator.view(dto: AppleGenericDetailCoordinatorDTO(dataModel: data))
-            self.viewController?.show(vc, sender: nil)
+    func fetchData(completioHadler: @escaping (Result<AppServerModel, NetworkError>) -> Void) {
+        
+        self.networkService.requestGeneric(requestPayload: AppleGenericDetailRequestDTO.requestData(numeroItems: "10"),
+                                           entityClass: AppServerModel.self) { [weak self] (result) in
+            guard self != nil else { return }
+            guard let resultUnw = result else { return }
+            completioHadler(.success(resultUnw))
+        } failure: { (error) in
+            completioHadler(.failure(error))
         }
+
     }
+}
+
+struct AppleGenericDetailRequestDTO {
+    
+    static func requestData(numeroItems: String) -> RequestDTO {
+        let argument: [CVarArg] = [numeroItems]
+        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
+        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete)
+        return request
+    }
+    
 }

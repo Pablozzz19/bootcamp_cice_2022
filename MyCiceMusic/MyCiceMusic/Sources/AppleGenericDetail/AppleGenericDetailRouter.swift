@@ -24,23 +24,24 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 import UIKit
+import SafariServices
 
 // Input del Router
-protocol MusicRouterInputProtocol {
-    func didSelectRowRouter(data: GenericResult)
+protocol AppleGenericDetailRouterInputProtocol {
+    func showAppleStoreRouter(data: GenericResult)
 }
 
-final class MusicRouter: BaseRouter<MusicViewController> {
+final class AppleGenericDetailRouter: BaseRouter<AppleGenericDetailViewController> {
     
 }
 
 // Input del Router
-extension MusicRouter: MusicRouterInputProtocol {
-    
-    func didSelectRowRouter(data: GenericResult) {
+extension AppleGenericDetailRouter: AppleGenericDetailRouterInputProtocol {
+    func showAppleStoreRouter(data: GenericResult){
         DispatchQueue.main.async {
-            let vc = AppleGenericDetailCoordinator.view(dto: AppleGenericDetailCoordinatorDTO(dataModel: data))
-            self.viewController?.show(vc, sender: nil)
+            guard let urlUnw = URL(string: data.url ?? "") else { return }
+            let vc = SFSafariViewController(url: urlUnw)
+            self.viewController?.present(vc, animated: true, completion: nil)
         }
     }
 }

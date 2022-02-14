@@ -37,7 +37,7 @@ extension MusicCell: MusicCellInputProtocol {
     
     func setupCell(data: GenericResult) {
         
-        let url = URL(string: data.artworkUrl100 ?? "")
+        let url = URL(string: data.artworkUrl100?.replacingOccurrences(of: "100x100", with: "800x800") ?? "")
         let processor = DownsamplingImageProcessor(size: artistWorkImageView.bounds.size)
                      |> RoundCornerImageProcessor(cornerRadius: 20)
         artistWorkImageView.kf.indicatorType = .activity
