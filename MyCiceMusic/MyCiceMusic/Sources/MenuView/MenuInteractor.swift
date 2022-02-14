@@ -24,35 +24,18 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-// Input Protocol
-protocol BooksProviderInputProtocol {
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void)
-}
-
-final class BooksProvider: BooksProviderInputProtocol {
-    
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void) {
-        self.networkService.requestGeneric(requestPayload: BooksRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: AppleServerModel.self) { [weak self] (result) in
-            guard self != nil else { return }
-            guard let resultUnw = result else { return }
-            completioHadler(.success(resultUnw))
-        } failure: { (error) in
-            completioHadler(.failure(error))
-        }
-    }
+// Input del Interactor
+protocol MenuInteractorInputProtocol {
     
 }
 
-struct BooksRequestDTO {
+final class MenuInteractor: BaseInteractor<MenuInteractorOutputProtocol> {
     
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us", numeroItems]
-        let urlComplete = String(format: URLEnpoint.books, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
-    }
+    let provider: MenuProviderInputProtocol = MenuProvider()
+    
+}
+
+// Input del Interactor
+extension MenuInteractor: MenuInteractorInputProtocol {
     
 }

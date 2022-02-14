@@ -22,26 +22,26 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-import Foundation
+import UIKit
 
-// Input Protocol
-protocol MusicProviderInputProtocol {
-    
+// Output del Presenter
+protocol MenuPresenterOutputProtocol{
+    func reloadInformationInView()
 }
 
-final class MusicProvider: MusicProviderInputProtocol {
+class MenuViewController: BaseView<MenuPresenterInputProtocol> {
     
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-}
-
-struct MusicRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
     }
-    
+
+}
+
+// Output del Presenter
+extension MenuViewController: MenuPresenterOutputProtocol {
+
+    func reloadInformationInView() {
+        
+    }
 }

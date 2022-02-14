@@ -38,6 +38,7 @@ class PodcastViewController: BaseView<PodcastPresenterInputProtocol> {
         super.viewDidLoad()
         self.presenter?.fetchPodcastFromWebService()
         self.configuracionTV()
+        self.menuButton()
     }
     
     private func configuracionTV() {

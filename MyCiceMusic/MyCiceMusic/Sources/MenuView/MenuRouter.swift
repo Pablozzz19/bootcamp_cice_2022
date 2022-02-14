@@ -23,25 +23,18 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import UIKit
 
-// Input Protocol
-protocol MusicProviderInputProtocol {
+// Input del Router
+protocol MenuRouterInputProtocol {
+
+}
+
+final class MenuRouter: BaseRouter<MenuViewController> {
     
 }
 
-final class MusicProvider: MusicProviderInputProtocol {
-    
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-}
-
-struct MusicRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
-    }
+// Input del Router
+extension MenuRouter: MenuRouterInputProtocol {
     
 }

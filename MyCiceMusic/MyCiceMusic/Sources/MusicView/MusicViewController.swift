@@ -38,6 +38,7 @@ class MusicViewController: BaseView<MusicPresenterInputProtocol> {
         super.viewDidLoad()
         self.presenter?.loadDataFromInteractor()
         self.configuracionTV()
+        self.menuButton()
     }
     
     private func configuracionTV() {

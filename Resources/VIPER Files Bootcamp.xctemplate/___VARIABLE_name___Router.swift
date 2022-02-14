@@ -1,4 +1,7 @@
 /*
+Copyright, everisSL
+All rights reserved.
+
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -23,36 +26,19 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import UIKit
 
-// Input Protocol
-protocol BooksProviderInputProtocol {
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void)
+protocol ___VARIABLE_name___RouterPresenterInterface: RouterPresenterInterface {
+
 }
 
-final class BooksProvider: BooksProviderInputProtocol {
+final class ___VARIABLE_name___Router: RouterInterface {
     
-    let networkService: NetworkServiceProtocol = NetworkService()
     
-    func fetchBooksFromWebServiceProvider(completioHadler: @escaping (Result<AppleServerModel, NetworkError>) -> Void) {
-        self.networkService.requestGeneric(requestPayload: BooksRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: AppleServerModel.self) { [weak self] (result) in
-            guard self != nil else { return }
-            guard let resultUnw = result else { return }
-            completioHadler(.success(resultUnw))
-        } failure: { (error) in
-            completioHadler(.failure(error))
-        }
-    }
-    
+    weak var presenter: ___VARIABLE_name___PresenterRouterInterface!
+    weak var viewController: UIViewController?
 }
 
-struct BooksRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us", numeroItems]
-        let urlComplete = String(format: URLEnpoint.books, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
-    }
+extension ___VARIABLE_name___Router: ___VARIABLE_name___RouterPresenterInterface {
     
 }
