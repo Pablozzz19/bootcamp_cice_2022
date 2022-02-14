@@ -41,6 +41,7 @@ class AppleGenericDetailViewController: BaseView<AppleGenericDetailPresenterInpu
     
     // MARK: - IBActions
     @IBAction func goToAppleStoreACTION(_ sender: Any) {
+        self.presenter?.showAppleStore()
     }
     
     // MARK: - CollectionView
@@ -48,7 +49,9 @@ class AppleGenericDetailViewController: BaseView<AppleGenericDetailPresenterInpu
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter?.fetchDataFromWebService()
         self.configuracionUI()
+        self.configuracionCollectionView()
     }
     
     private func configuracionUI() {

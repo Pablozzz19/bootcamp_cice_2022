@@ -180,6 +180,13 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		09670C7E27BA6C9500FE8A0B /* MenuLateral */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MenuLateral;
+			sourceTree = "<group>";
+		};
 		09A1466427B2E0590042A44C = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +206,7 @@
 		09A1466F27B2E0590042A44C /* MyCiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09670C7E27BA6C9500FE8A0B /* MenuLateral */,
 				09670C5527B4523D00FE8A0B /* ViewModels */,
 				09A1469027B2E16F0042A44C /* BaseVIPER */,
 				09A1468B27B2E1210042A44C /* Sources */,

@@ -14,39 +14,39 @@
                 <outlet property="artistNameLBL" destination="vOd-wH-iLP" id="wRV-af-10l"/>
                 <outlet property="backgroundImageView" destination="8Wf-fD-IoI" id="c2l-ZH-esl"/>
                 <outlet property="catalogImageView" destination="0I9-Eu-ssf" id="u81-0F-1pW"/>
-                <outlet property="gotToAppleStoreBTN" destination="lbd-SA-lYD" id="u0W-EL-wSU"/>
+                <outlet property="goToAppleStoreBTN" destination="lbd-SA-lYD" id="ckq-lt-QcL"/>
                 <outlet property="releaseDateLBL" destination="ucs-qB-VPI" id="GZv-4S-WIe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0KK-4V-vEI"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="8Wf-fD-IoI">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="327"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="327" id="8kk-rk-2sL"/>
                     </constraints>
                 </imageView>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEW-nh-nap">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="327"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cGI-VD-Fx8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="327"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
                     <blurEffect style="dark"/>
                 </visualEffectView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="0I9-Eu-ssf">
-                    <rect key="frame" x="72.666666666666686" y="144" width="230" height="230"/>
+                    <rect key="frame" x="92" y="144" width="230" height="230"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="230" id="3c5-eH-Lod"/>
                         <constraint firstAttribute="height" constant="230" id="JLl-y2-lUb"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-SA-lYD">
-                    <rect key="frame" x="20" y="447" width="335" height="60"/>
+                    <rect key="frame" x="20" y="447" width="374" height="60"/>
                     <color key="backgroundColor" red="1" green="0.30045315909999998" blue="0.30571708409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="nbr-SZ-8Dl"/>
@@ -55,23 +55,23 @@
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="ir a Apple"/>
                     <connections>
-                        <action selector="gotToAppleStoreACTION:" destination="-1" eventType="touchUpInside" id="X7v-2W-eKt"/>
+                        <action selector="goToAppleStoreACTION:" destination="-1" eventType="touchUpInside" id="KbU-1b-qDF"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOd-wH-iLP">
-                    <rect key="frame" x="20" y="385" width="335" height="21"/>
+                    <rect key="frame" x="20" y="385" width="374" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_releaseDate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucs-qB-VPI">
-                    <rect key="frame" x="20" y="416" width="335" height="21"/>
+                    <rect key="frame" x="20" y="416" width="374" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ttW-5r-xoJ">
-                    <rect key="frame" x="20" y="532" width="335" height="190"/>
+                    <rect key="frame" x="20" y="532" width="374" height="190"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="190" id="fbo-Je-270"/>
