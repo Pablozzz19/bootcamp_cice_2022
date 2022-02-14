@@ -17,6 +17,12 @@ protocol NetworkServiceProtocol {
 
 final class NetworkService: NetworkServiceProtocol {
     
+    typealias HTTPHeaders = [String: String]
+    
+    let defaultHTTPHeaders: HTTPHeaders = {
+        return [Utils.Constantes().Authentication: Utils.Constantes().BearerAuthentication]
+    }()
+    
     func requestGeneric<M>(requestPayload: RequestDTO,
                            entityClass: M.Type,
                            success: @escaping (M?) -> Void,
@@ -33,9 +39,15 @@ final class NetworkService: NetworkServiceProtocol {
             return
         }
         
-        let urlEndpoint = urlUnw
+        var urlRquest = URLRequest(url: urlUnw)
+        let headers = defaultHTTPHeaders
         
-        session.dataTask(with: urlEndpoint) { [weak self] (data, response, error) in
+        headers.forEach { (key, value) in
+            urlRquest.setValue(value, forHTTPHeaderField: key)
+        }
+        
+        //let urlEndpoint = urlUnw
+        session.dataTask(with: urlRquest) { [weak self] (data, response, error) in
             guard self != nil else { return }
             if let errorUnw = error {
                 failure(NetworkError(error: errorUnw))

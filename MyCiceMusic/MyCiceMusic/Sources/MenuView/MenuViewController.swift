@@ -31,9 +31,21 @@ protocol MenuPresenterOutputProtocol{
 
 class MenuViewController: BaseView<MenuPresenterInputProtocol> {
     
+    // MARK: - OBOutlet
+    @IBOutlet weak var menuTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        self.presenter?.fetchDataFromPresenter()
+        self.configuracionTV()
+    }
+    
+    private func configuracionTV() {
+        self.menuTableView.delegate = self
+        self.menuTableView.dataSource = self
+        self.menuTableView.register(UINib(nibName: MenuCell.defaultReuseIdentifier,
+                                          bundle: nil),
+                                    forCellReuseIdentifier: MenuCell.defaultReuseIdentifier)
     }
 
 }
@@ -42,6 +54,25 @@ class MenuViewController: BaseView<MenuPresenterInputProtocol> {
 extension MenuViewController: MenuPresenterOutputProtocol {
 
     func reloadInformationInView() {
-        
+        self.menuTableView.reloadData()
+    }
+}
+
+extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.presenter?.numberOfRows() ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let menuCell = self.menuTableView.dequeueReusableCell(withIdentifier: MenuCell.defaultReuseIdentifier, for: indexPath) as! MenuCell
+        if let model = self.presenter?.informationForRow(indexPath: indexPath.row) {
+            menuCell.setupCell(data: model)
+        }
+        return menuCell
     }
 }

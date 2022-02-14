@@ -109,6 +109,8 @@ class Utils {
         let kPassword = "PASSWORD"
         let kUsuarioLogado = "USUARIO_LOGADO"
         let kPrefer = UserDefaults.standard
+        let BearerAuthentication = "Bearer 123456789"
+        let Authentication = "Authorization"
     }
     
     static func showAlert(title: String, message: String) -> UIAlertController {
