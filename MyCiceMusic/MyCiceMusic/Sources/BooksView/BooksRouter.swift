@@ -27,7 +27,7 @@ import UIKit
 
 // Input del Router
 protocol BooksRouterInputProtocol {
-
+    func didSelectRowRouter(data: GenericResult)
 }
 
 final class BooksRouter: BaseRouter<BooksViewController> {
@@ -37,4 +37,10 @@ final class BooksRouter: BaseRouter<BooksViewController> {
 // Input del Router
 extension BooksRouter: BooksRouterInputProtocol {
     
+    func didSelectRowRouter(data: GenericResult) {
+        DispatchQueue.main.async {
+            let vc = AppleGenericDetailCoordinator.view(dto: AppleGenericDetailCoordinatorDTO(dataModel: data))
+            self.viewController?.show(vc, sender: nil)
+        }
+    }
 }
