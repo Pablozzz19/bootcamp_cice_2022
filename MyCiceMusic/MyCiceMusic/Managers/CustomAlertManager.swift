@@ -12,8 +12,8 @@ enum DefaultAlertType: Int {
     case succesLogin
     case failureLogin
     case cantSendMail
+    case generalConfirmation
 }
-
 
 struct CustomAlertManager {
     
@@ -36,6 +36,9 @@ struct CustomAlertManager {
     var failureMailTitle = LocalizedKeys.Mail.titleAlertMailFailure
     var failureMailMessage = LocalizedKeys.Mail.messageAlertMailFailure
     
+    // Confirmation
+    var confirmationTitle = LocalizedKeys.Confirmation.titleAlertConfirmation
+    var confirmationMessage = LocalizedKeys.Confirmation.messageAlertConfirmation
     
     // General Title Buttons
     var primaryButton = LocalizedKeys.General.generalAccept

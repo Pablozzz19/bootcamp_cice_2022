@@ -29,7 +29,8 @@ import MessageUI
 // Input del Router
 protocol MenuRouterInputProtocol {
     func canSendMail(delegate: MFMailComposeViewControllerDelegate)
-    func cantSendMail(model: CustomAlertManager)
+    func showCustomAlert(delegate: AlertDefaultViewControllerDelegate?, model: CustomAlertManager)
+    func showGenericWebView()
 }
 
 final class MenuRouter: BaseRouter<MenuViewController> {
@@ -46,14 +47,30 @@ extension MenuRouter: MenuRouterInputProtocol {
                                              completion: nil)
             }
         }
-        func cantSendMail(model: CustomAlertManager){
-            DispatchQueue.main.async {
-                let vc = AlertDefaultViewController()
-                //vc.delegate = delegate
+    
+    func showCustomAlert(delegate: AlertDefaultViewControllerDelegate?, model: CustomAlertManager) {
+        DispatchQueue.main.async {
+            let vc = AlertDefaultViewController()
+            switch model.type {
+            case .cantSendMail:
+                vc.delegate = nil
                 vc.alertManager = model
-                vc.modalPresentationStyle = .overFullScreen
-                vc.modalTransitionStyle = .crossDissolve
-                self.viewController?.present(vc, animated: true, completion: nil)
+            default:
+                vc.delegate = delegate
+                vc.alertManager = model
             }
+            vc.modalPresentationStyle = .overFullScreen
+            vc.modalTransitionStyle = .crossDissolve
+            self.viewController?.present(vc, animated: true, completion: nil)
         }
+    }
+    
+    func showGenericWebView() {
+        DispatchQueue.main.async {
+            let vc = GenericWebViewCoordinator.navigation()
+            self.viewController?.present(vc,
+                                         animated: true,
+                                         completion: nil)
+        }
+    }
 }

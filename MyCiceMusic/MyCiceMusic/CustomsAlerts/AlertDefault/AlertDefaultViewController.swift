@@ -81,6 +81,19 @@ class AlertDefaultViewController: UIViewController {
             self.primaryBTN.isHidden = true
             self.constHeightAcceptButton.constant = 0
             self.secondaryBTN.setTitle(alertManager?.secondButton, for: .normal)
+        case .cantSendMail:
+            self.titleAlertLBL.text = alertManager?.failureMailTitle
+            self.messageAlertLBL.text = alertManager?.failureMailMessage
+            self.primaryBTN.isHidden = true
+            self.constHeightAcceptButton.constant = 0
+            self.secondaryBTN.setTitle(alertManager?.secondButton, for: .normal)
+        case .generalConfirmation:
+            self.titleAlertLBL.text = alertManager?.confirmationTitle
+            self.messageAlertLBL.text = alertManager?.confirmationMessage
+            self.primaryBTN.isHidden = true
+            self.closeBTN.isHidden = true
+            self.constHeightAcceptButton.constant = 0
+            self.secondaryBTN.setTitle(alertManager?.secondButton, for: .normal)
         default:
             self.titleAlertLBL.text = "AQUI ANDRES"
             self.messageAlertLBL.text = "Y SI PASA ALGO ???"
