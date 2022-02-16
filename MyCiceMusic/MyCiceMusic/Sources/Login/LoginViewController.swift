@@ -51,11 +51,7 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
             Utils.Constantes().kPrefer.setValue(self.usuarioLogado, forKey: Utils.Constantes().kUsuarioLogado)
             self.configuracionUI(color: #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1))
         } else {
-//            self.present(Utils.muestraAlerta(titulo: "hey!",
-//                                             mensaje: "Rellena el username y el password",
-//                                             completionHandler: nil),
-//                         animated: true,
-//                         completion: nil)
+            self.presenter?.showCustomAlertFailure()
         }
     }
     
@@ -63,14 +59,16 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
         if datosCompletados() {
             self.borrarDatosFormulario()
         } else {
-//            self.present(Utils.muestraAlerta(titulo: "hey!",
-//                                             mensaje: "Rellena el username y el password",
-//                                             completionHandler: nil),
-//                         animated: true,
-//                         completion: nil)
+            self.presenter?.showCustomAlertFailure()
         }
     }
     
+    @IBAction func showOrNotPassword(_ sender: Any) {
+        if self.passwordTF.isSecureTextEntry {
+            self.passwordTF.isSecureTextEntry = false        } else {
+            self.passwordTF.isSecureTextEntry = true
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configuracionUI(color: #colorLiteral(red: 1, green: 0.2827598444, blue: 0.25824927, alpha: 1))
@@ -102,10 +100,7 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
     }
     
     private func mostrarHomeTabBar() {
-//        let vc = HomeTabBarViewCoordinator.homeViewController()
-//        vc.modalTransitionStyle = .coverVertical
-//        vc.modalPresentationStyle = .fullScreen
-//        self.present(vc, animated: true, completion: nil)
+        self.presenter?.showCustomAlertSuccess()
     }
 
 }

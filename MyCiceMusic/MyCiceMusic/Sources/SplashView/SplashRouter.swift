@@ -32,7 +32,6 @@ extension SplashRouter: SplashRouterInputProtocol {
             if let windowUnw = self.delegate.window {
                 self.appCore.createSlidingMenu(window: windowUnw, vc: vc, menuDto: dataSource)
             }
-            //self.viewController?.present(vc, animated: true, completion: nil)
         }
     }
     
@@ -47,7 +46,7 @@ extension SplashRouter: SplashRouterInputProtocol {
     
     func showLoginViewRouter(dataSource: [MenuResponse]) {
         DispatchQueue.main.async {
-            let vc = LoginCoordinator.view()
+            let vc = LoginCoordinator.view(dto: LoginCoordinatorDTO.init(dataModel: dataSource))
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
             self.viewController?.present(vc,

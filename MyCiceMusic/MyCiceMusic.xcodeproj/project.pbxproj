@@ -39,6 +39,9 @@
 		09670CA927BAF55D00FE8A0B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670CA227BAF55D00FE8A0B /* LoginCoordinator.swift */; };
 		09670CAA27BAF55D00FE8A0B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670CA327BAF55D00FE8A0B /* LoginPresenter.swift */; };
 		09670CAB27BAF55D00FE8A0B /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670CA427BAF55D00FE8A0B /* LoginInteractor.swift */; };
+		0973949227BC2FB2006716F4 /* Localizables.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0973949427BC2FB2006716F4 /* Localizables.strings */; };
+		0973949F27BC31DA006716F4 /* AlertDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973949D27BC31DA006716F4 /* AlertDefaultViewController.swift */; };
+		097394A027BC31DA006716F4 /* AlertDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0973949E27BC31DA006716F4 /* AlertDefaultViewController.xib */; };
 		09A1467127B2E0590042A44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1467027B2E0590042A44C /* AppDelegate.swift */; };
 		09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467927B2E05D0042A44C /* Assets.xcassets */; };
 		09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */; };
@@ -82,6 +85,9 @@
 		09A1473527B30D7D0042A44C /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1473327B30D7D0042A44C /* MusicCell.swift */; };
 		09A1473627B30D7D0042A44C /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A1473427B30D7D0042A44C /* MusicCell.xib */; };
 		09A1473A27B310BB0042A44C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 09A1473927B310BB0042A44C /* Kingfisher */; };
+		09FC998E27BD75D70004CDF7 /* CustomAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC998D27BD75D70004CDF7 /* CustomAlertManager.swift */; };
+		09FC999127BD75E50004CDF7 /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC999027BD75E50004CDF7 /* LocalizedKeys.swift */; };
+		09FC999527BD7E5C0004CDF7 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 09FC999427BD7E5C0004CDF7 /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +125,15 @@
 		09670CA227BAF55D00FE8A0B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		09670CA327BAF55D00FE8A0B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		09670CA427BAF55D00FE8A0B /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		0973948E27BC2F5A006716F4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0973949027BC2F98006716F4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0973949327BC2FB2006716F4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizables.strings; sourceTree = "<group>"; };
+		0973949627BC2FB8006716F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizables.strings; sourceTree = "<group>"; };
+		0973949727BC2FBA006716F4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizables.strings; sourceTree = "<group>"; };
+		0973949827BC2FD4006716F4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0973949927BC2FD5006716F4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizables.strings; sourceTree = "<group>"; };
+		0973949D27BC31DA006716F4 /* AlertDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDefaultViewController.swift; sourceTree = "<group>"; };
+		0973949E27BC31DA006716F4 /* AlertDefaultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertDefaultViewController.xib; sourceTree = "<group>"; };
 		09A1466D27B2E0590042A44C /* MyCiceMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCiceMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A1467027B2E0590042A44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A1467927B2E05D0042A44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +178,8 @@
 		09A1472F27B2F0430042A44C /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
 		09A1473327B30D7D0042A44C /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		09A1473427B30D7D0042A44C /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		09FC998D27BD75D70004CDF7 /* CustomAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertManager.swift; sourceTree = "<group>"; };
+		09FC999027BD75E50004CDF7 /* LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A1473A27B310BB0042A44C /* Kingfisher in Frameworks */,
+				09FC999527BD7E5C0004CDF7 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +284,31 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		0973948227BC2E6B006716F4 /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				0973949427BC2FB2006716F4 /* Localizables.strings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		0973949B27BC31A5006716F4 /* CustomsAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				0973949C27BC31B9006716F4 /* AlertDefault */,
+			);
+			path = CustomsAlerts;
+			sourceTree = "<group>";
+		};
+		0973949C27BC31B9006716F4 /* AlertDefault */ = {
+			isa = PBXGroup;
+			children = (
+				0973949D27BC31DA006716F4 /* AlertDefaultViewController.swift */,
+				0973949E27BC31DA006716F4 /* AlertDefaultViewController.xib */,
+			);
+			path = AlertDefault;
+			sourceTree = "<group>";
+		};
 		09A1466427B2E0590042A44C = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +328,9 @@
 		09A1466F27B2E0590042A44C /* MyCiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09FC998C27BD75B90004CDF7 /* Managers */,
+				0973949B27BC31A5006716F4 /* CustomsAlerts */,
+				0973948227BC2E6B006716F4 /* Localizables */,
 				09670C7E27BA6C9500FE8A0B /* MenuLateral */,
 				09670C5527B4523D00FE8A0B /* ViewModels */,
 				09A1469027B2E16F0042A44C /* BaseVIPER */,
@@ -437,6 +483,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		09FC998C27BD75B90004CDF7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				09FC998D27BD75D70004CDF7 /* CustomAlertManager.swift */,
+				09FC999027BD75E50004CDF7 /* LocalizedKeys.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -455,6 +510,7 @@
 			name = MyCiceMusic;
 			packageProductDependencies = (
 				09A1473927B310BB0042A44C /* Kingfisher */,
+				09FC999427BD7E5C0004CDF7 /* PKHUD */,
 			);
 			productName = MyCiceMusic;
 			productReference = 09A1466D27B2E0590042A44C /* MyCiceMusic.app */;
@@ -482,10 +538,14 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				fr,
+				de,
 			);
 			mainGroup = 09A1466427B2E0590042A44C;
 			packageReferences = (
 				09A1473827B310BB0042A44C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				09FC999327BD7E5C0004CDF7 /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 09A1466E27B2E0590042A44C /* Products */;
 			projectDirPath = "";
@@ -510,7 +570,9 @@
 				09670C5D27B45FA100FE8A0B /* PodcastCell.xib in Resources */,
 				09670C8C27BA73C500FE8A0B /* MenuViewController.xib in Resources */,
 				09670C9B27BAECC900FE8A0B /* MenuCell.xib in Resources */,
+				0973949227BC2FB2006716F4 /* Localizables.strings in Resources */,
 				09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */,
+				097394A027BC31DA006716F4 /* AlertDefaultViewController.xib in Resources */,
 				09670C7927BA5B8900FE8A0B /* AppsCell.xib in Resources */,
 				09A1472D27B2F0330042A44C /* HomeTabBarViewController.xib in Resources */,
 				09670CA527BAF55D00FE8A0B /* LoginViewController.xib in Resources */,
@@ -539,6 +601,7 @@
 				09A1469227B2E1A30042A44C /* BaseVIPER.swift in Sources */,
 				09A1471827B2EFD00042A44C /* PodcastPresenter.swift in Sources */,
 				09670C5C27B45FA100FE8A0B /* PodcastCell.swift in Sources */,
+				0973949F27BC31DA006716F4 /* AlertDefaultViewController.swift in Sources */,
 				09670C6E27B5989C00FE8A0B /* AppleGenericDetailViewController.swift in Sources */,
 				09670C6F27B5989C00FE8A0B /* AppleGenericDetailRouter.swift in Sources */,
 				09A1469527B2E1D60042A44C /* AppleServerModel.swift in Sources */,
@@ -551,6 +614,7 @@
 				09670C8E27BA73C500FE8A0B /* MenuRouter.swift in Sources */,
 				09A1472C27B2F0330042A44C /* HomeTabBarViewController.swift in Sources */,
 				09670C8F27BA73C500FE8A0B /* MenuProvider.swift in Sources */,
+				09FC998E27BD75D70004CDF7 /* CustomAlertManager.swift in Sources */,
 				09670C7127B5989C00FE8A0B /* AppleGenericDetailCoordinator.swift in Sources */,
 				09A146B327B2E3C60042A44C /* SplashViewController.swift in Sources */,
 				09A1472827B2EFDC0042A44C /* MusicInteractor.swift in Sources */,
@@ -570,6 +634,7 @@
 				09670C7227B5989C00FE8A0B /* AppleGenericDetailPresenter.swift in Sources */,
 				09670C9027BA73C500FE8A0B /* MenuCoordinator.swift in Sources */,
 				09670CAA27BAF55D00FE8A0B /* LoginPresenter.swift in Sources */,
+				09FC999127BD75E50004CDF7 /* LocalizedKeys.swift in Sources */,
 				09A1473527B30D7D0042A44C /* MusicCell.swift in Sources */,
 				09A1469827B2E2060042A44C /* NetworkError.swift in Sources */,
 				09670CA627BAF55D00FE8A0B /* LoginViewController.swift in Sources */,
@@ -591,10 +656,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0973949427BC2FB2006716F4 /* Localizables.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0973949327BC2FB2006716F4 /* fr */,
+				0973949627BC2FB8006716F4 /* en */,
+				0973949727BC2FBA006716F4 /* es */,
+				0973949927BC2FD5006716F4 /* de */,
+			);
+			name = Localizables.strings;
+			sourceTree = "<group>";
+		};
 		09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				09A1467C27B2E05D0042A44C /* Base */,
+				0973948E27BC2F5A006716F4 /* es */,
+				0973949027BC2F98006716F4 /* fr */,
+				0973949827BC2FD4006716F4 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -606,6 +685,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -667,6 +747,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -791,6 +872,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		09FC999327BD7E5C0004CDF7 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -798,6 +887,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 09A1473827B310BB0042A44C /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		09FC999427BD7E5C0004CDF7 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09FC999327BD7E5C0004CDF7 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
