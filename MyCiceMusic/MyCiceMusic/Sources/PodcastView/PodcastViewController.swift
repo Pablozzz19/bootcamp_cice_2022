@@ -36,6 +36,7 @@ class PodcastViewController: BaseView<PodcastPresenterInputProtocol> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.showLoading()
         self.presenter?.fetchPodcastFromWebService()
         self.configuracionTV()
         self.menuButton()
@@ -56,6 +57,7 @@ extension PodcastViewController: PodcastPresenterOutputProtocol {
 
     func reloadInformationInView() {
         self.podcastTableView.reloadData()
+        self.hideLoading()
     }
 }
 
@@ -75,6 +77,12 @@ extension PodcastViewController: UITableViewDelegate, UITableViewDataSource {
             cell.setupCell(data: model)
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let model = self.presenter?.informationForCell(indexPath: indexPath.row) {
+            self.presenter?.didSelectRow(data: model)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

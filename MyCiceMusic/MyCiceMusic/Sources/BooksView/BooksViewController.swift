@@ -36,6 +36,7 @@ class BooksViewController: BaseView<BooksPresenterInputProtocol> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.showLoading()
         self.presenter?.fetchBooksFromWebService()
         self.configurationTV()
         self.menuButton()
@@ -56,6 +57,7 @@ extension BooksViewController: BooksPresenterOutputProtocol {
 
     func reloadInformationInView() {
         self.booksTableView.reloadData()
+        self.hideLoading()
     }
 }
 
@@ -75,6 +77,12 @@ extension BooksViewController: UITableViewDelegate, UITableViewDataSource {
             cell.setupCell(data: model)
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let model = self.presenter?.informationForCell(indexPath: indexPath.row) {
+            self.presenter?.didSelectRow(data: model)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

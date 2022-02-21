@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import MessageUI
 
 enum HTTPMethods: String {
     case get = "GET"
@@ -66,6 +67,7 @@ struct URLEnpoint {
     static let apps = "%@/apps/top-free/%@/apps.json"
     
     static let menu = "iCoMenuResponse"
+    static let tipsTraining = "iCoResponseConsejos"
 }
 
 extension URLEnpoint{
@@ -83,20 +85,20 @@ extension URLEnpoint{
         case .webService:
             switch self.environmentDefault{
             case .DEV:
-                return ""
+                return "https://rss.applemarketingtools.com/api/v2/"
             case .PRE:
                 return ""
             case .PRO:
-                return "https://rss.applemarketingtools.com/api/v2/"
+                return ""
             }
         case .heroku:
             switch self.environmentDefault{
             case .DEV:
-                return ""
+                return "https://icospartan-app.herokuapp.com/"
             case .PRE:
                 return ""
             case .PRO:
-                return "https://icospartan-app.herokuapp.com/"
+                return ""
             }
         }
     }
@@ -109,6 +111,8 @@ class Utils {
         let kPassword = "PASSWORD"
         let kUsuarioLogado = "USUARIO_LOGADO"
         let kPrefer = UserDefaults.standard
+        let BearerAuthentication = "Bearer 123456789"
+        let Authentication = "Authorization"
     }
     
     static func showAlert(title: String, message: String) -> UIAlertController {
@@ -116,6 +120,17 @@ class Utils {
         alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         return alertVC
     }
+    
+    static func configuracionMailCompose(delegate: MFMailComposeViewControllerDelegate, data: [String]) -> MFMailComposeViewController {
+            let mailCompo = MFMailComposeViewController()
+            mailCompo.mailComposeDelegate = delegate
+            mailCompo.setToRecipients(["info@mail.com", "masinfo@mail.es"])
+            mailCompo.setSubject("este es en mensaje para el equipo de soporte")
+            let emailBody = "Los datos del formualario de registro son \(data)"
+            mailCompo.setMessageBody(emailBody, isHTML: false)
+            return mailCompo
+    }
+    
 }
 
 protocol ReuseIdentifierProtocol: AnyObject {

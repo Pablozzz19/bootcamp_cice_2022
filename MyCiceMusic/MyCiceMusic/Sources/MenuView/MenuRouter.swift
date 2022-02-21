@@ -24,10 +24,14 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 import UIKit
+import MessageUI
 
 // Input del Router
 protocol MenuRouterInputProtocol {
-
+    func canSendMail(delegate: MFMailComposeViewControllerDelegate)
+    func showCustomAlert(delegate: AlertDefaultViewControllerDelegate?, model: CustomAlertManager)
+    func showGenericWebView()
+    func showTipsTrainingView()
 }
 
 final class MenuRouter: BaseRouter<MenuViewController> {
@@ -36,5 +40,45 @@ final class MenuRouter: BaseRouter<MenuViewController> {
 
 // Input del Router
 extension MenuRouter: MenuRouterInputProtocol {
+    func canSendMail(delegate: MFMailComposeViewControllerDelegate){
+            DispatchQueue.main.async {
+                self.viewController?.present(Utils.configuracionMailCompose(delegate: delegate,
+                                                                            data: []),
+                                             animated: true,
+                                             completion: nil)
+            }
+        }
     
+    func showCustomAlert(delegate: AlertDefaultViewControllerDelegate?, model: CustomAlertManager) {
+        DispatchQueue.main.async {
+            let vc = AlertDefaultViewController()
+            switch model.type {
+            case .cantSendMail:
+                vc.delegate = nil
+                vc.alertManager = model
+            default:
+                vc.delegate = delegate
+                vc.alertManager = model
+            }
+            vc.modalPresentationStyle = .overFullScreen
+            vc.modalTransitionStyle = .crossDissolve
+            self.viewController?.present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    func showGenericWebView() {
+        DispatchQueue.main.async {
+            let vc = GenericWebViewCoordinator.navigation()
+            self.viewController?.present(vc,
+                                         animated: true,
+                                         completion: nil)
+        }
+    }
+    
+    func showTipsTrainingView() {
+        DispatchQueue.main.async {
+            let vc = TipsCoordinator.navigation()
+            self.viewController?.present(vc, animated: true, completion: nil)
+        }
+    }
 }

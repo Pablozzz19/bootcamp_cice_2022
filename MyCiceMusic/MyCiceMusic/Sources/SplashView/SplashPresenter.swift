@@ -15,13 +15,13 @@ protocol SplashPresenterInputProtocol {
 
 // Output del Interactor
 protocol SplashInteractorOutputProtocol {
-    func setDataFromWebInteractor(data: [GenericResult]?)
+    func setDataFromWebInteractor(data: [MenuResponse]?)
     func setAlertMessage(error: NetworkError)
 }
 
 final class SplashPresenter: BasePresenter<SplashPresenterOutputProtocol, SplashInteractorInputProtocol, SplashRouterInputProtocol> {
     
-    var dataSourceViewModel: [GenericResult] = []
+    var dataSourceViewModel: [MenuResponse] = []
     
 }
 
@@ -32,14 +32,18 @@ extension SplashPresenter: SplashPresenterInputProtocol {
     }
     
     func showHometabBar() {
-        self.router?.showHometabBarRouter(dataSource: self.dataSourceViewModel)
+        if Utils.Constantes().kPrefer.bool(forKey: Utils.Constantes().kUsuarioLogado) {
+            self.router?.showHometabBarRouter(dataSource: self.dataSourceViewModel)
+        } else {
+            self.router?.showLoginViewRouter(dataSource: self.dataSourceViewModel)
+        }
     }
 }
 
 // Output del Interactor
 extension SplashPresenter: SplashInteractorOutputProtocol{
     
-    func setDataFromWebInteractor(data: [GenericResult]?) {
+    func setDataFromWebInteractor(data: [MenuResponse]?) {
         guard let dataUnw = data else { return }
         self.dataSourceViewModel.removeAll()
         self.dataSourceViewModel = dataUnw
@@ -47,6 +51,6 @@ extension SplashPresenter: SplashInteractorOutputProtocol{
     }
     
     func setAlertMessage(error: NetworkError) {
-        self.router?.showAlert(title: "\(error.status)", message: error.description)
+        self.router?.showAlert(title: "\(error.status)", message: error.status.rawValue == -1001 ? error.localizedDescription : "Aqui hay un error.")
     }
 }

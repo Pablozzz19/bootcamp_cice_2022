@@ -1,0 +1,14 @@
+//  GENERAL
+"general_accept" = "Accept";
+"general_cancel" = "Cancel";
+
+// LOGIN
+"title_my_alert_login_success" = "Congratulations!";
+"message_my_alert_login_success" = "Now you have access to the music portal, podcats y books from iTunes";
+"title_my_alert_login_failure" = "You have a failure";
+"message_my_alert_login_failure" = "You must to fill in all the text fields";
+
+// REGISTRO
+
+// BUROFAX
+

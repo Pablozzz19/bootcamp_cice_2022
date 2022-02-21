@@ -27,7 +27,7 @@ import UIKit
 
 // Input del Router
 protocol PodcastRouterInputProtocol {
-
+    func didSelectRowRouter(data: GenericResult)
 }
 
 final class PodcastRouter: BaseRouter<PodcastViewController> {
@@ -37,4 +37,10 @@ final class PodcastRouter: BaseRouter<PodcastViewController> {
 // Input del Router
 extension PodcastRouter: PodcastRouterInputProtocol {
     
+    func didSelectRowRouter(data: GenericResult) {
+        DispatchQueue.main.async {
+            let vc = AppleGenericDetailCoordinator.view(dto: AppleGenericDetailCoordinatorDTO(dataModel: data))
+            self.viewController?.show(vc, sender: nil)
+        }
+    }
 }

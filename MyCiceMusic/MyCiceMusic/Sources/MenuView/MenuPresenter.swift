@@ -23,30 +23,87 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import MessageUI
 
 // Input del Presenter
 protocol MenuPresenterInputProtocol {
-    
+    func fetchDataFromPresenter()
+    func numberOfRows() -> Int
+    func informationForRow(indexPath: Int) -> MenuResponse
+    func showWebSite()
+    func showMusicViewController()
+    func showCalendarViewController()
+    func showAdviceViewController()
+    func sendMail(canSendMail: Bool, delegate: MFMailComposeViewControllerDelegate)
 }
 
 // Output del Interactor
 protocol MenuInteractorOutputProtocol {
-    
+    func setDataFromInteractor(data: [MenuResponse])
 }
 
 final class MenuPresenter: BasePresenter<MenuPresenterOutputProtocol,
                                                         MenuInteractorInputProtocol,
                                                         MenuRouterInputProtocol> {
     
+    var dataSourceMenu: [MenuResponse] = []
 }
 
 // Input del Presenter
 extension MenuPresenter: MenuPresenterInputProtocol {
+    func fetchDataFromPresenter() {
+        self.interactor?.fetchDataFromInteractor()
+    }
     
+    func numberOfRows() -> Int {
+        self.dataSourceMenu.count
+    }
+    
+    func informationForRow(indexPath: Int) -> MenuResponse {
+        self.dataSourceMenu[indexPath]
+    }
+    
+    func showWebSite() {
+        self.router?.showCustomAlert(delegate: self, model: CustomAlertManager(type: .generalConfirmation))
+    }
+    
+    func showMusicViewController() {
+        //
+    }
+    
+    func showCalendarViewController() {
+        //
+    }
+    
+    func showAdviceViewController() {
+        self.router?.showTipsTrainingView()
+    }
+    
+    func sendMail(canSendMail: Bool, delegate: MFMailComposeViewControllerDelegate) {
+        if (canSendMail) {
+            self.router?.canSendMail(delegate: delegate)
+        } else {
+            self.router?.showCustomAlert(delegate: self, model: CustomAlertManager(type: .cantSendMail))
+        }
+    }
 }
 
 // Output del Interactor
 extension MenuPresenter: MenuInteractorOutputProtocol {
+    func setDataFromInteractor(data: [MenuResponse]) {
+        self.dataSourceMenu.removeAll()
+        self.dataSourceMenu = data
+        self.viewController?.reloadInformationInView()
+    }
+}
+
+extension MenuPresenter: AlertDefaultViewControllerDelegate {
+    func primaryButtonPressed() {
+        self.router?.showGenericWebView()
+    }
     
+    func secondButtonPresses() {
+        //
+    }
 }
 

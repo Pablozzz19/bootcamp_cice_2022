@@ -9,8 +9,9 @@ import Foundation
 
 // Input del Router
 protocol SplashRouterInputProtocol {
-    func showHometabBarRouter(dataSource: [GenericResult])
+    func showHometabBarRouter(dataSource: [MenuResponse])
     func showAlert(title: String, message: String)
+    func showLoginViewRouter(dataSource: [MenuResponse])
 }
 
 final class SplashRouter: BaseRouter<SplashViewController>{
@@ -23,15 +24,14 @@ final class SplashRouter: BaseRouter<SplashViewController>{
 // Input del Router
 extension SplashRouter: SplashRouterInputProtocol {
     
-    func showHometabBarRouter(dataSource: [GenericResult]) {
+    func showHometabBarRouter(dataSource: [MenuResponse]) {
         DispatchQueue.main.async {
-            let vc = HomeTabBarCoordinator.tabBarController(dto: HomeTabBarCoordinatorDTO(data: dataSource))
+            let vc = HomeTabBarCoordinator.tabBarController()
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
             if let windowUnw = self.delegate.window {
-                self.appCore.createSlidingMenu(window: windowUnw, vc: vc)
+                self.appCore.createSlidingMenu(window: windowUnw, vc: vc, menuDto: dataSource)
             }
-            //self.viewController?.present(vc, animated: true, completion: nil)
         }
     }
     
@@ -39,6 +39,17 @@ extension SplashRouter: SplashRouterInputProtocol {
         DispatchQueue.main.async {
             self.viewController?.present(Utils.showAlert(title: title,
                                                          message: message),
+                                         animated: true,
+                                         completion: nil)
+        }
+    }
+    
+    func showLoginViewRouter(dataSource: [MenuResponse]) {
+        DispatchQueue.main.async {
+            let vc = LoginCoordinator.view(dto: LoginCoordinatorDTO.init(dataModel: dataSource))
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .fullScreen
+            self.viewController?.present(vc,
                                          animated: true,
                                          completion: nil)
         }

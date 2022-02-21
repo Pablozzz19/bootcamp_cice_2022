@@ -29,6 +29,26 @@
 		09670C9027BA73C500FE8A0B /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8927BA73C500FE8A0B /* MenuCoordinator.swift */; };
 		09670C9127BA73C500FE8A0B /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8A27BA73C500FE8A0B /* MenuPresenter.swift */; };
 		09670C9227BA73C500FE8A0B /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C8B27BA73C500FE8A0B /* MenuInteractor.swift */; };
+		09670C9527BAD6FE00FE8A0B /* MenuServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C9427BAD6FE00FE8A0B /* MenuServerModel.swift */; };
+		09670C9A27BAECC900FE8A0B /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C9827BAECC900FE8A0B /* MenuCell.swift */; };
+		09670C9B27BAECC900FE8A0B /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09670C9927BAECC900FE8A0B /* MenuCell.xib */; };
+		09670CA527BAF55D00FE8A0B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09670C9E27BAF55D00FE8A0B /* LoginViewController.xib */; };
+		09670CA627BAF55D00FE8A0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670C9F27BAF55D00FE8A0B /* LoginViewController.swift */; };
+		09670CA727BAF55D00FE8A0B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670CA027BAF55D00FE8A0B /* LoginRouter.swift */; };
+		09670CA827BAF55D00FE8A0B /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670CA127BAF55D00FE8A0B /* LoginProvider.swift */; };
+		09670CA927BAF55D00FE8A0B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670CA227BAF55D00FE8A0B /* LoginCoordinator.swift */; };
+		09670CAA27BAF55D00FE8A0B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670CA327BAF55D00FE8A0B /* LoginPresenter.swift */; };
+		09670CAB27BAF55D00FE8A0B /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09670CA427BAF55D00FE8A0B /* LoginInteractor.swift */; };
+		0973949227BC2FB2006716F4 /* Localizables.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0973949427BC2FB2006716F4 /* Localizables.strings */; };
+		0973949F27BC31DA006716F4 /* AlertDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973949D27BC31DA006716F4 /* AlertDefaultViewController.swift */; };
+		097394A027BC31DA006716F4 /* AlertDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0973949E27BC31DA006716F4 /* AlertDefaultViewController.xib */; };
+		098D93B927BED17C007128B3 /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098D93B227BED17C007128B3 /* TipsViewController.xib */; };
+		098D93BA27BED17C007128B3 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098D93B327BED17C007128B3 /* TipsViewController.swift */; };
+		098D93BB27BED17C007128B3 /* TipsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098D93B427BED17C007128B3 /* TipsRouter.swift */; };
+		098D93BC27BED17C007128B3 /* TipsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098D93B527BED17C007128B3 /* TipsProvider.swift */; };
+		098D93BD27BED17C007128B3 /* TipsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098D93B627BED17C007128B3 /* TipsCoordinator.swift */; };
+		098D93BE27BED17C007128B3 /* TipsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098D93B727BED17C007128B3 /* TipsPresenter.swift */; };
+		098D93BF27BED17C007128B3 /* TipsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098D93B827BED17C007128B3 /* TipsInteractor.swift */; };
 		09A1467127B2E0590042A44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1467027B2E0590042A44C /* AppDelegate.swift */; };
 		09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467927B2E05D0042A44C /* Assets.xcassets */; };
 		09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */; };
@@ -72,6 +92,13 @@
 		09A1473527B30D7D0042A44C /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1473327B30D7D0042A44C /* MusicCell.swift */; };
 		09A1473627B30D7D0042A44C /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A1473427B30D7D0042A44C /* MusicCell.xib */; };
 		09A1473A27B310BB0042A44C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 09A1473927B310BB0042A44C /* Kingfisher */; };
+		09FC998E27BD75D70004CDF7 /* CustomAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC998D27BD75D70004CDF7 /* CustomAlertManager.swift */; };
+		09FC999127BD75E50004CDF7 /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC999027BD75E50004CDF7 /* LocalizedKeys.swift */; };
+		09FC999527BD7E5C0004CDF7 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 09FC999427BD7E5C0004CDF7 /* PKHUD */; };
+		09FC999A27BD91200004CDF7 /* GenericWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC999827BD91200004CDF7 /* GenericWebViewController.swift */; };
+		09FC999B27BD91200004CDF7 /* GenericWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09FC999927BD91200004CDF7 /* GenericWebViewController.xib */; };
+		09FC99A227BD91510004CDF7 /* GenericWebViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC99A127BD91510004CDF7 /* GenericWebViewCoordinator.swift */; };
+		09FC99A527BD92370004CDF7 /* GenericWebPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC99A427BD92370004CDF7 /* GenericWebPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +126,32 @@
 		09670C8927BA73C500FE8A0B /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		09670C8A27BA73C500FE8A0B /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		09670C8B27BA73C500FE8A0B /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		09670C9427BAD6FE00FE8A0B /* MenuServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuServerModel.swift; sourceTree = "<group>"; };
+		09670C9827BAECC900FE8A0B /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		09670C9927BAECC900FE8A0B /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		09670C9E27BAF55D00FE8A0B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		09670C9F27BAF55D00FE8A0B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		09670CA027BAF55D00FE8A0B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		09670CA127BAF55D00FE8A0B /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		09670CA227BAF55D00FE8A0B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		09670CA327BAF55D00FE8A0B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		09670CA427BAF55D00FE8A0B /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		0973948E27BC2F5A006716F4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0973949027BC2F98006716F4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0973949327BC2FB2006716F4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizables.strings; sourceTree = "<group>"; };
+		0973949627BC2FB8006716F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizables.strings; sourceTree = "<group>"; };
+		0973949727BC2FBA006716F4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizables.strings; sourceTree = "<group>"; };
+		0973949827BC2FD4006716F4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0973949927BC2FD5006716F4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizables.strings; sourceTree = "<group>"; };
+		0973949D27BC31DA006716F4 /* AlertDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDefaultViewController.swift; sourceTree = "<group>"; };
+		0973949E27BC31DA006716F4 /* AlertDefaultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertDefaultViewController.xib; sourceTree = "<group>"; };
+		098D93B227BED17C007128B3 /* TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsViewController.xib; sourceTree = "<group>"; };
+		098D93B327BED17C007128B3 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		098D93B427BED17C007128B3 /* TipsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRouter.swift; sourceTree = "<group>"; };
+		098D93B527BED17C007128B3 /* TipsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsProvider.swift; sourceTree = "<group>"; };
+		098D93B627BED17C007128B3 /* TipsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCoordinator.swift; sourceTree = "<group>"; };
+		098D93B727BED17C007128B3 /* TipsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsPresenter.swift; sourceTree = "<group>"; };
+		098D93B827BED17C007128B3 /* TipsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsInteractor.swift; sourceTree = "<group>"; };
 		09A1466D27B2E0590042A44C /* MyCiceMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCiceMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A1467027B2E0590042A44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A1467927B2E05D0042A44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +196,12 @@
 		09A1472F27B2F0430042A44C /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
 		09A1473327B30D7D0042A44C /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		09A1473427B30D7D0042A44C /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		09FC998D27BD75D70004CDF7 /* CustomAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertManager.swift; sourceTree = "<group>"; };
+		09FC999027BD75E50004CDF7 /* LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeys.swift; sourceTree = "<group>"; };
+		09FC999827BD91200004CDF7 /* GenericWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewController.swift; sourceTree = "<group>"; };
+		09FC999927BD91200004CDF7 /* GenericWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericWebViewController.xib; sourceTree = "<group>"; };
+		09FC99A127BD91510004CDF7 /* GenericWebViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewCoordinator.swift; sourceTree = "<group>"; };
+		09FC99A427BD92370004CDF7 /* GenericWebPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A1473A27B310BB0042A44C /* Kingfisher in Frameworks */,
+				09FC999527BD7E5C0004CDF7 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +271,7 @@
 		09670C8427BA738800FE8A0B /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
+				09670C9727BAEC7D00FE8A0B /* Cell */,
 				09670C8527BA73C500FE8A0B /* MenuViewController.xib */,
 				09670C8627BA73C500FE8A0B /* MenuViewController.swift */,
 				09670C8727BA73C500FE8A0B /* MenuRouter.swift */,
@@ -220,6 +281,68 @@
 				09670C8B27BA73C500FE8A0B /* MenuInteractor.swift */,
 			);
 			path = MenuView;
+			sourceTree = "<group>";
+		};
+		09670C9727BAEC7D00FE8A0B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09670C9827BAECC900FE8A0B /* MenuCell.swift */,
+				09670C9927BAECC900FE8A0B /* MenuCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09670C9D27BAF53800FE8A0B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				09670C9E27BAF55D00FE8A0B /* LoginViewController.xib */,
+				09670C9F27BAF55D00FE8A0B /* LoginViewController.swift */,
+				09670CA027BAF55D00FE8A0B /* LoginRouter.swift */,
+				09670CA127BAF55D00FE8A0B /* LoginProvider.swift */,
+				09670CA227BAF55D00FE8A0B /* LoginCoordinator.swift */,
+				09670CA327BAF55D00FE8A0B /* LoginPresenter.swift */,
+				09670CA427BAF55D00FE8A0B /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0973948227BC2E6B006716F4 /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				0973949427BC2FB2006716F4 /* Localizables.strings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		0973949B27BC31A5006716F4 /* CustomsAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				0973949C27BC31B9006716F4 /* AlertDefault */,
+			);
+			path = CustomsAlerts;
+			sourceTree = "<group>";
+		};
+		0973949C27BC31B9006716F4 /* AlertDefault */ = {
+			isa = PBXGroup;
+			children = (
+				0973949D27BC31DA006716F4 /* AlertDefaultViewController.swift */,
+				0973949E27BC31DA006716F4 /* AlertDefaultViewController.xib */,
+			);
+			path = AlertDefault;
+			sourceTree = "<group>";
+		};
+		098D93B127BED157007128B3 /* TipsTrainingView */ = {
+			isa = PBXGroup;
+			children = (
+				098D93B227BED17C007128B3 /* TipsViewController.xib */,
+				098D93B327BED17C007128B3 /* TipsViewController.swift */,
+				098D93B427BED17C007128B3 /* TipsRouter.swift */,
+				098D93B527BED17C007128B3 /* TipsProvider.swift */,
+				098D93B627BED17C007128B3 /* TipsCoordinator.swift */,
+				098D93B727BED17C007128B3 /* TipsPresenter.swift */,
+				098D93B827BED17C007128B3 /* TipsInteractor.swift */,
+			);
+			path = TipsTrainingView;
 			sourceTree = "<group>";
 		};
 		09A1466427B2E0590042A44C = {
@@ -241,6 +364,9 @@
 		09A1466F27B2E0590042A44C /* MyCiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09FC998C27BD75B90004CDF7 /* Managers */,
+				0973949B27BC31A5006716F4 /* CustomsAlerts */,
+				0973948227BC2E6B006716F4 /* Localizables */,
 				09670C7E27BA6C9500FE8A0B /* MenuLateral */,
 				09670C5527B4523D00FE8A0B /* ViewModels */,
 				09A1469027B2E16F0042A44C /* BaseVIPER */,
@@ -271,6 +397,7 @@
 				09A1469427B2E1D60042A44C /* AppleServerModel.swift */,
 				09670C5227B44B9C00FE8A0B /* PodcastServerModel.swift */,
 				09670C7B27BA5E1B00FE8A0B /* AppServerModel.swift */,
+				09670C9427BAD6FE00FE8A0B /* MenuServerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,6 +422,9 @@
 		09A1468B27B2E1210042A44C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				098D93B127BED157007128B3 /* TipsTrainingView */,
+				09FC999727BD90F60004CDF7 /* WebView */,
+				09670C9D27BAF53800FE8A0B /* Login */,
 				09670C8427BA738800FE8A0B /* MenuView */,
 				09670C6527B5987300FE8A0B /* AppleGenericDetail */,
 				09A146CC27B2ED2F0042A44C /* BooksView */,
@@ -391,6 +521,26 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		09FC998C27BD75B90004CDF7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				09FC998D27BD75D70004CDF7 /* CustomAlertManager.swift */,
+				09FC999027BD75E50004CDF7 /* LocalizedKeys.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		09FC999727BD90F60004CDF7 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				09FC999827BD91200004CDF7 /* GenericWebViewController.swift */,
+				09FC999927BD91200004CDF7 /* GenericWebViewController.xib */,
+				09FC99A127BD91510004CDF7 /* GenericWebViewCoordinator.swift */,
+				09FC99A427BD92370004CDF7 /* GenericWebPresenter.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -409,6 +559,7 @@
 			name = MyCiceMusic;
 			packageProductDependencies = (
 				09A1473927B310BB0042A44C /* Kingfisher */,
+				09FC999427BD7E5C0004CDF7 /* PKHUD */,
 			);
 			productName = MyCiceMusic;
 			productReference = 09A1466D27B2E0590042A44C /* MyCiceMusic.app */;
@@ -436,10 +587,14 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				fr,
+				de,
 			);
 			mainGroup = 09A1466427B2E0590042A44C;
 			packageReferences = (
 				09A1473827B310BB0042A44C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				09FC999327BD7E5C0004CDF7 /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 09A1466E27B2E0590042A44C /* Products */;
 			projectDirPath = "";
@@ -459,13 +614,19 @@
 				09A1471327B2EFD00042A44C /* PodcastViewController.xib in Resources */,
 				09670C6D27B5989C00FE8A0B /* AppleGenericDetailViewController.xib in Resources */,
 				09A1467D27B2E05D0042A44C /* LaunchScreen.storyboard in Resources */,
+				09FC999B27BD91200004CDF7 /* GenericWebViewController.xib in Resources */,
 				09A1470427B2EF9D0042A44C /* BooksViewController.xib in Resources */,
+				098D93B927BED17C007128B3 /* TipsViewController.xib in Resources */,
 				09A146B427B2E3C60042A44C /* SplashViewController.xib in Resources */,
 				09670C5D27B45FA100FE8A0B /* PodcastCell.xib in Resources */,
 				09670C8C27BA73C500FE8A0B /* MenuViewController.xib in Resources */,
+				09670C9B27BAECC900FE8A0B /* MenuCell.xib in Resources */,
+				0973949227BC2FB2006716F4 /* Localizables.strings in Resources */,
 				09A1467A27B2E05D0042A44C /* Assets.xcassets in Resources */,
+				097394A027BC31DA006716F4 /* AlertDefaultViewController.xib in Resources */,
 				09670C7927BA5B8900FE8A0B /* AppsCell.xib in Resources */,
 				09A1472D27B2F0330042A44C /* HomeTabBarViewController.xib in Resources */,
+				09670CA527BAF55D00FE8A0B /* LoginViewController.xib in Resources */,
 				09A1473627B30D7D0042A44C /* MusicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,26 +640,37 @@
 			files = (
 				09A1467127B2E0590042A44C /* AppDelegate.swift in Sources */,
 				09A146AF27B2E2CF0042A44C /* SplashRouter.swift in Sources */,
+				09670C9A27BAECC900FE8A0B /* MenuCell.swift in Sources */,
 				09A1472727B2EFDC0042A44C /* MusicPresenter.swift in Sources */,
 				09A146A927B2E2B30042A44C /* SplashPresenter.swift in Sources */,
 				09670C8D27BA73C500FE8A0B /* MenuViewController.swift in Sources */,
 				09A1471727B2EFD00042A44C /* PodcastCoordinator.swift in Sources */,
 				09A1471627B2EFD00042A44C /* PodcastProvider.swift in Sources */,
+				09670CAB27BAF55D00FE8A0B /* LoginInteractor.swift in Sources */,
 				09A146A327B2E2910042A44C /* SplashCoordinator.swift in Sources */,
 				09670C9127BA73C500FE8A0B /* MenuPresenter.swift in Sources */,
 				09A1469227B2E1A30042A44C /* BaseVIPER.swift in Sources */,
+				098D93BA27BED17C007128B3 /* TipsViewController.swift in Sources */,
 				09A1471827B2EFD00042A44C /* PodcastPresenter.swift in Sources */,
 				09670C5C27B45FA100FE8A0B /* PodcastCell.swift in Sources */,
+				09FC99A227BD91510004CDF7 /* GenericWebViewCoordinator.swift in Sources */,
+				0973949F27BC31DA006716F4 /* AlertDefaultViewController.swift in Sources */,
 				09670C6E27B5989C00FE8A0B /* AppleGenericDetailViewController.swift in Sources */,
 				09670C6F27B5989C00FE8A0B /* AppleGenericDetailRouter.swift in Sources */,
 				09A1469527B2E1D60042A44C /* AppleServerModel.swift in Sources */,
 				09670C9227BA73C500FE8A0B /* MenuInteractor.swift in Sources */,
+				09FC999A27BD91200004CDF7 /* GenericWebViewController.swift in Sources */,
 				09A1472427B2EFDC0042A44C /* MusicRouter.swift in Sources */,
+				098D93BC27BED17C007128B3 /* TipsProvider.swift in Sources */,
 				09A1470827B2EF9D0042A44C /* BooksCoordinator.swift in Sources */,
+				09670CA827BAF55D00FE8A0B /* LoginProvider.swift in Sources */,
+				09670CA927BAF55D00FE8A0B /* LoginCoordinator.swift in Sources */,
+				098D93BE27BED17C007128B3 /* TipsPresenter.swift in Sources */,
 				09A1471427B2EFD00042A44C /* PodcastViewController.swift in Sources */,
 				09670C8E27BA73C500FE8A0B /* MenuRouter.swift in Sources */,
 				09A1472C27B2F0330042A44C /* HomeTabBarViewController.swift in Sources */,
 				09670C8F27BA73C500FE8A0B /* MenuProvider.swift in Sources */,
+				09FC998E27BD75D70004CDF7 /* CustomAlertManager.swift in Sources */,
 				09670C7127B5989C00FE8A0B /* AppleGenericDetailCoordinator.swift in Sources */,
 				09A146B327B2E3C60042A44C /* SplashViewController.swift in Sources */,
 				09A1472827B2EFDC0042A44C /* MusicInteractor.swift in Sources */,
@@ -516,18 +688,27 @@
 				09670C7327B5989C00FE8A0B /* AppleGenericDetailInteractor.swift in Sources */,
 				09A1469B27B2E2110042A44C /* NetworkService.swift in Sources */,
 				09670C7227B5989C00FE8A0B /* AppleGenericDetailPresenter.swift in Sources */,
+				098D93BF27BED17C007128B3 /* TipsInteractor.swift in Sources */,
+				09FC99A527BD92370004CDF7 /* GenericWebPresenter.swift in Sources */,
 				09670C9027BA73C500FE8A0B /* MenuCoordinator.swift in Sources */,
+				09670CAA27BAF55D00FE8A0B /* LoginPresenter.swift in Sources */,
+				09FC999127BD75E50004CDF7 /* LocalizedKeys.swift in Sources */,
+				098D93BB27BED17C007128B3 /* TipsRouter.swift in Sources */,
 				09A1473527B30D7D0042A44C /* MusicCell.swift in Sources */,
 				09A1469827B2E2060042A44C /* NetworkError.swift in Sources */,
+				09670CA627BAF55D00FE8A0B /* LoginViewController.swift in Sources */,
 				09670C8227BA6E4100FE8A0B /* SWRevealViewController .m in Sources */,
+				09670C9527BAD6FE00FE8A0B /* MenuServerModel.swift in Sources */,
 				09670C5727B4526300FE8A0B /* AppleViewModel.swift in Sources */,
 				09A1472327B2EFDC0042A44C /* MusicViewController.swift in Sources */,
 				09670C5327B44B9C00FE8A0B /* PodcastServerModel.swift in Sources */,
 				09A1472627B2EFDC0042A44C /* MusicCoordinator.swift in Sources */,
 				09A1470627B2EF9D0042A44C /* BooksRouter.swift in Sources */,
+				098D93BD27BED17C007128B3 /* TipsCoordinator.swift in Sources */,
 				09670C7827BA5B8900FE8A0B /* AppsCell.swift in Sources */,
 				09A1470527B2EF9D0042A44C /* BooksViewController.swift in Sources */,
 				09A1471927B2EFD00042A44C /* PodcastInteractor.swift in Sources */,
+				09670CA727BAF55D00FE8A0B /* LoginRouter.swift in Sources */,
 				09670C7C27BA5E1B00FE8A0B /* AppServerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,10 +716,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0973949427BC2FB2006716F4 /* Localizables.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0973949327BC2FB2006716F4 /* fr */,
+				0973949627BC2FB8006716F4 /* en */,
+				0973949727BC2FBA006716F4 /* es */,
+				0973949927BC2FD5006716F4 /* de */,
+			);
+			name = Localizables.strings;
+			sourceTree = "<group>";
+		};
 		09A1467B27B2E05D0042A44C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				09A1467C27B2E05D0042A44C /* Base */,
+				0973948E27BC2F5A006716F4 /* es */,
+				0973949027BC2F98006716F4 /* fr */,
+				0973949827BC2FD4006716F4 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -546,10 +741,263 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		098D93C127BED9C2007128B3 /* DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DEV;
+		};
+		098D93C227BED9C2007128B3 /* DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyCiceMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cice.education.Teconolgia.IOS.MyCiceMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCiceMusic/MenuLateral/MyCiceMusic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = DEV;
+		};
+		098D93C327BED9D0007128B3 /* PRE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = PRE;
+		};
+		098D93C427BED9D0007128B3 /* PRE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyCiceMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cice.education.Teconolgia.IOS.MyCiceMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRE;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCiceMusic/MenuLateral/MyCiceMusic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PRE;
+		};
+		098D93C527BED9D5007128B3 /* PRO */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = PRO;
+		};
+		098D93C627BED9D5007128B3 /* PRO */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyCiceMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cice.education.Teconolgia.IOS.MyCiceMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyCiceMusic/MenuLateral/MyCiceMusic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PRO;
+		};
 		09A1467F27B2E05D0042A44C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -611,6 +1059,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -710,19 +1159,25 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09A1467F27B2E05D0042A44C /* Debug */,
+				098D93C127BED9C2007128B3 /* DEV */,
+				098D93C327BED9D0007128B3 /* PRE */,
+				098D93C527BED9D5007128B3 /* PRO */,
 				09A1468027B2E05D0042A44C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DEV;
 		};
 		09A1468127B2E05D0042A44C /* Build configuration list for PBXNativeTarget "MyCiceMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09A1468227B2E05D0042A44C /* Debug */,
+				098D93C227BED9C2007128B3 /* DEV */,
+				098D93C427BED9D0007128B3 /* PRE */,
+				098D93C627BED9D5007128B3 /* PRO */,
 				09A1468327B2E05D0042A44C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = DEV;
 		};
 /* End XCConfigurationList section */
 
@@ -735,6 +1190,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		09FC999327BD7E5C0004CDF7 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -742,6 +1205,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 09A1473827B310BB0042A44C /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		09FC999427BD7E5C0004CDF7 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09FC999327BD7E5C0004CDF7 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
