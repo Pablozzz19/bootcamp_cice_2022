@@ -67,6 +67,7 @@ struct URLEnpoint {
     static let apps = "%@/apps/top-free/%@/apps.json"
     
     static let menu = "iCoMenuResponse"
+    static let tipsTraining = "iCoResponseConsejos"
 }
 
 extension URLEnpoint{
@@ -84,20 +85,20 @@ extension URLEnpoint{
         case .webService:
             switch self.environmentDefault{
             case .DEV:
-                return ""
+                return "https://rss.applemarketingtools.com/api/v2/"
             case .PRE:
                 return ""
             case .PRO:
-                return "https://rss.applemarketingtools.com/api/v2/"
+                return ""
             }
         case .heroku:
             switch self.environmentDefault{
             case .DEV:
-                return ""
+                return "https://icospartan-app.herokuapp.com/"
             case .PRE:
                 return ""
             case .PRO:
-                return "https://icospartan-app.herokuapp.com/"
+                return ""
             }
         }
     }

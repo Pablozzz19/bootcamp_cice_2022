@@ -64,7 +64,7 @@ extension MenuPresenter: MenuPresenterInputProtocol {
     }
     
     func showWebSite() {
-        //
+        self.router?.showCustomAlert(delegate: self, model: CustomAlertManager(type: .generalConfirmation))
     }
     
     func showMusicViewController() {
@@ -76,14 +76,14 @@ extension MenuPresenter: MenuPresenterInputProtocol {
     }
     
     func showAdviceViewController() {
-        //
+        self.router?.showTipsTrainingView()
     }
     
     func sendMail(canSendMail: Bool, delegate: MFMailComposeViewControllerDelegate) {
         if (canSendMail) {
             self.router?.canSendMail(delegate: delegate)
         } else {
-            self.router?.showCustomAlert(delegate: self, model: CustomAlertManager(type: .generalConfirmation))
+            self.router?.showCustomAlert(delegate: self, model: CustomAlertManager(type: .cantSendMail))
         }
     }
 }
