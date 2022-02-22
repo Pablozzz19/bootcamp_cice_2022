@@ -78,8 +78,13 @@ struct CustomBodyMainView: View {
             ForEach(customData) { item in
                 LazyVGrid(columns: Array(repeating: GridItem(), count: 2), content: {
                     ForEach(item.myRows) { itemRow in
-                        //CardCell(model: itemRow)
-                        funcCardCell(model: itemRow)
+                        NavigationLink(
+                            destination: Text("Destination"),
+                            label: {
+                                funcCardCell(model: itemRow)
+                                //CardCell(model: itemRow)
+                            })
+                            .buttonStyle(PlainButtonStyle())
                     }
                 })
             }
@@ -141,7 +146,7 @@ struct CardCell: View {
                 .padding(.trailing, 10)
             }
         }
-        .padding(10)
+        .padding(.horizontal, 10)
     }
 }
 
