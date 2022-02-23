@@ -60,7 +60,8 @@ struct URLEnpoint {
     }
     
     // Endpoint's of movies
-    static let endpointMoviesNowPlaying = "movie/now_playing?api_key=d28f46a23e3f645e40edb208bef7d14e"
+    static let endpointMoviesNowPlaying = "movie/now_playing?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    
 }
 
 extension URLEnpoint{
