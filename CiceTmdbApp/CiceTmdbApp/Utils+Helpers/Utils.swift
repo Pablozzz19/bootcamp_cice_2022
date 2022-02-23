@@ -59,13 +59,8 @@ struct URLEnpoint {
         case heroku
     }
     
-    static let music = "%@/music/most-played/%@/songs.json"
-    static let podcast = "%@/podcasts/top/%@/podcast-episodes.json"
-    static let books = "%@/books/top-free/%@/books.json"
-    static let apps = "%@/apps/top-free/%@/apps.json"
-    
-    static let menu = "iCoMenuResponse"
-    static let tipsTraining = "iCoResponseConsejos"
+    // Endpoint's of movies
+    static let endpointMoviesNowPlaying = "movie/now_playing?api_key=d28f46a23e3f645e40edb208bef7d14e"
 }
 
 extension URLEnpoint{
@@ -74,25 +69,25 @@ extension URLEnpoint{
         case.backend:
             switch self.environmentDefault{
             case .DEV:
-                return "https://www.azurecloud.com/api/v2/des-mgmt"
+                return ""
             case .PRE:
-                return "https://www.azurecloud.com/api/v2/pre-devls"
+                return ""
             case .PRO:
-                return "https://www.azurecloud.com/api/v2/pro-mrk"
+                return ""
             }
         case .webService:
             switch self.environmentDefault{
             case .DEV:
-                return "https://rss.applemarketingtools.com/api/v2/"
+                return ""
             case .PRE:
                 return ""
             case .PRO:
-                return ""
+                return "https://api.themoviedb.org/3/"
             }
         case .heroku:
             switch self.environmentDefault{
             case .DEV:
-                return "https://icospartan-app.herokuapp.com/"
+                return ""
             case .PRE:
                 return ""
             case .PRO:

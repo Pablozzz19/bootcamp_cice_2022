@@ -13,6 +13,7 @@
 		09D4293D27C56F9E0063613C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D4293C27C56F9E0063613C /* Preview Assets.xcassets */; };
 		09D4294727C570130063613C /* BaseVIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4294627C570130063613C /* BaseVIP.swift */; };
 		09D4294C27C578200063613C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4294B27C578200063613C /* Utils.swift */; };
+		09D4295127C57C2F0063613C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 09D4295027C57C2F0063613C /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		09D4293E27C56F9E0063613C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D4294627C570130063613C /* BaseVIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVIP.swift; sourceTree = "<group>"; };
 		09D4294B27C578200063613C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		09D4295027C57C2F0063613C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../../../Resources/data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		09D4294F27C57ADD0063613C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				09D4295027C57C2F0063613C /* data.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D4293D27C56F9E0063613C /* Preview Assets.xcassets in Resources */,
+				09D4295127C57C2F0063613C /* data.json in Resources */,
 				09D4293A27C56F9E0063613C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
