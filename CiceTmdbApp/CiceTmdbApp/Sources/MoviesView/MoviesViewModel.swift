@@ -9,29 +9,54 @@ import Foundation
 
 // Output del Interactor
 protocol MoviesInteractorOutputProtocol: BaseInteractorOuputProtocol {
-    func setInfoNowPlayingViewModel(data: [ResultNowPlaying]?)
+    func setInfoNowPlayingViewModel(data: [MoviesTVModelView]?)
+    func setInfoPopularViewModel(data: [MoviesTVModelView]?)
+    func setInfoTopRateViewModel(data: [MoviesTVModelView]?)
+    func setInfoUpcomingViewModel(data: [MoviesTVModelView]?)
 }
 
 final class MoviesViewModel: BaseViewModel, ObservableObject {
     
     // MARK: - DI
-    var interactor: MoviesInteractorInputProtocol? {
+    var interactor: MoviesInteractorInputProtocol?{
         super.baseInteractor as? MoviesInteractorInputProtocol
     }
     
     // MARK: - Variables
-    @Published var dataSourceNowPlaying: [ResultNowPlaying] = []
+    @Published var dataSourceNowPlaying: [MoviesTVModelView] = []
+    @Published var dataSourcePopular: [MoviesTVModelView] = []
+    @Published var dataSourceTopRate: [MoviesTVModelView] = []
+    @Published var dataSourceUpcoming: [MoviesTVModelView] = []
     
-    // MARK: - Metodos publicos para la View
+    // MARK: - Métodos publicos para View
     func fetchData() {
         self.interactor?.fetchDataNowPlayingInteractor()
+        self.interactor?.fetchDataPopularInteractor()
+        self.interactor?.fetchDataTopRateInteractor()
+        self.interactor?.fetchDataUpcomingInteractor()
     }
+    
 }
 
 // Output del Interactor
 extension MoviesViewModel: MoviesInteractorOutputProtocol {
-    func setInfoNowPlayingViewModel(data: [ResultNowPlaying]?) {
+    func setInfoNowPlayingViewModel(data: [MoviesTVModelView]?) {
         self.dataSourceNowPlaying.removeAll()
         self.dataSourceNowPlaying = data ?? []
+    }
+    
+    func setInfoPopularViewModel(data: [MoviesTVModelView]?) {
+        self.dataSourcePopular.removeAll()
+        self.dataSourcePopular = data ?? []
+    }
+    
+    func setInfoTopRateViewModel(data: [MoviesTVModelView]?) {
+        self.dataSourceTopRate.removeAll()
+        self.dataSourceTopRate = data ?? []
+    }
+    
+    func setInfoUpcomingViewModel(data: [MoviesTVModelView]?) {
+        self.dataSourceUpcoming.removeAll()
+        self.dataSourceUpcoming = data ?? []
     }
 }

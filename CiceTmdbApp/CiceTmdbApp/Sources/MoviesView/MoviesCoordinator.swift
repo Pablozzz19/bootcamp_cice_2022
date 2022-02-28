@@ -16,7 +16,7 @@ final class MoviesCoordinator: BaseCoordinator {
     typealias Provider = MoviesProvider
     
     static func navigation() -> NavigationView<ContentView> {
-        NavigationView {
+        NavigationView{
             self.view()
         }
     }
