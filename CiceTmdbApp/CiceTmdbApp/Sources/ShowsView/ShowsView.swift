@@ -25,14 +25,43 @@ POSSIBILITY OF SUCH DAMAGE.
 import SwiftUI
 
 struct ShowsView: View {
-    
+
     @StateObject var viewModel = ShowsViewModel()
     
     var body: some View {
-        VStack {
-            Text("Hello ShowsView")
+        List{
+            Group{
+                if !self.viewModel.datasourceAiringToday.isEmpty {
+                    MoviesPostCarrousel(title: "Airing Today",
+                                          moviesModel: self.viewModel.datasourceAiringToday,
+                                          isPoster: false)
+                }
+            }
+            Group{
+                if !self.viewModel.datasourceOnTheAir.isEmpty {
+                    MoviesPostCarrousel(title: "On the Air",
+                                          moviesModel: self.viewModel.datasourceOnTheAir,
+                                          isPoster: true)
+                }
+            }
+            Group{
+                if !self.viewModel.datasourcePopular.isEmpty {
+                    MoviesPostCarrousel(title: "Popular",
+                                          moviesModel: self.viewModel.datasourcePopular,
+                                          isPoster: false)
+                }
+            }
+            Group{
+                if !self.viewModel.datasourceTopRated.isEmpty {
+                    MoviesPostCarrousel(title: "Top Rated",
+                                          moviesModel: self.viewModel.datasourceTopRated,
+                                          isPoster: false)
+                }
+            }
         }
-        .onAppear() {
+        .listStyle(PlainListStyle())
+        .navigationTitle(Text("Shows"))
+        .onAppear {
             self.viewModel.fetchData()
         }
     }
@@ -40,7 +69,6 @@ struct ShowsView: View {
 }
 
 struct ShowsView_Previews: PreviewProvider {
-
     static var previews: some View {
         ShowsView()
     }

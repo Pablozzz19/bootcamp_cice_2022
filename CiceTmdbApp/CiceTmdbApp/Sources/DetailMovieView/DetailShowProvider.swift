@@ -1,7 +1,4 @@
 /*
-Copyright, everisSL
-All rights reserved.
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -26,32 +23,40 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import SwiftUI
+import Combine
 
-
-final class ShowsCoordinator: BaseCoordinator {
-
-    typealias ContentView = ShowsView
-    typealias ViewModel = ShowsViewModel
-    typealias Interactor = ShowsInteractor
-    typealias Provider = ShowsProvider
-    
-    static func navigation() -> NavigationView<ContentView> {
-        NavigationView{
-            self.view()
-        }
-    }
-    
-    static func view(dto: ShowsCoordinatorDTO? = nil) -> ContentView {
-        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
-                                              interactor: Interactor.self,
-                                              provider: Provider.self)
-        let view = ContentView(viewModel: vip.viewModel)
-        return view
-    }
+// Input Protocol
+protocol DetailShowProviderInputProtocol: BaseProviderInputProtocol {
     
 }
 
-struct ShowsCoordinatorDTO {
+final class DetailShowProvider: BaseProvider {
+    
+    // MARK: - DI
+    weak var interactor: DetailShowProviderOutputProtocol? {
+        super.baseInteractor as? DetailShowProviderOutputProtocol
+    }
+    
+    let networkService: NetworkServiceInputProtocol = NetworkService()
+    var cancellable: Set<AnyCancellable> = []
+    
+}
+
+extension DetailShowProvider: DetailShowProviderInputProtocol {
+    
+}
+
+// MARK: - Request de apoyo
+struct DetailShowRequestDTO {
+    
+    /*static func requestData(numeroItems: String) -> RequestDTO {
+        let argument: [CVarArg] = [numeroItems]
+        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
+        let request = RequestDTO(params: nil,
+                                 method: .get,
+                                 endpoint: urlComplete,
+                                 urlContext: .webService)
+        return request
+    }*/
     
 }

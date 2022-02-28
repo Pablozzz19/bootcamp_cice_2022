@@ -1,7 +1,4 @@
 /*
-Copyright, everisSL
-All rights reserved.
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -26,32 +23,38 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import SwiftUI
 
-
-final class ShowsCoordinator: BaseCoordinator {
-
-    typealias ContentView = ShowsView
-    typealias ViewModel = ShowsViewModel
-    typealias Interactor = ShowsInteractor
-    typealias Provider = ShowsProvider
-    
-    static func navigation() -> NavigationView<ContentView> {
-        NavigationView{
-            self.view()
-        }
-    }
-    
-    static func view(dto: ShowsCoordinatorDTO? = nil) -> ContentView {
-        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
-                                              interactor: Interactor.self,
-                                              provider: Provider.self)
-        let view = ContentView(viewModel: vip.viewModel)
-        return view
-    }
+// Input del Interactor
+protocol DetailMovieInteractorInputProtocol: BaseInteractorInputProtocol {
     
 }
 
-struct ShowsCoordinatorDTO {
+// Output Provider
+protocol DetailMovieProviderOutputProtocol: BaseProviderOutputProtocol{
     
+}
+
+final class DetailMovieInteractor: BaseInteractor {
+    
+    // MARK: - DI
+    weak var viewModel: DetailMovieInteractorOutputProtocol? {
+        super.baseViewModel as? DetailMovieInteractorOutputProtocol
+    }
+    
+    // MARK: - DI
+    var provider: DetailMovieProviderInputProtocol? {
+        super.baseProvider as? DetailMovieProviderInputProtocol
+    }
+
+    
+}
+
+// Input del Interactor
+extension DetailMovieInteractor: DetailMovieInteractorInputProtocol {
+    
+}
+
+// Output Provider
+extension DetailMovieInteractor: DetailMovieProviderOutputProtocol {
+
 }

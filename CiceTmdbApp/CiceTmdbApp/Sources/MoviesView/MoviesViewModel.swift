@@ -8,7 +8,7 @@
 import Foundation
 
 // Output del Interactor
-protocol MoviesInteractorOutputProtocol: BaseInteractorOuputProtocol {
+protocol MoviesInteractorOutputProtocol: BaseInteractorOutputProtocol {
     func setInfoNowPlayingViewModel(data: [MoviesTVModelView]?)
     func setInfoPopularViewModel(data: [MoviesTVModelView]?)
     func setInfoTopRateViewModel(data: [MoviesTVModelView]?)

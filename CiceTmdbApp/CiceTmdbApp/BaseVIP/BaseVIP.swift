@@ -13,10 +13,10 @@ enum ViewModelState: String {
     case error
 }
 
-protocol BaseInteractorInputProtocol: AnyObject {}
-protocol BaseInteractorOuputProtocol: AnyObject {}
-protocol BaseProviderInputProtocol: AnyObject {}
-protocol BaseProviderOuputProtocol: AnyObject {}
+protocol BaseInteractorInputProtocol: AnyObject{}
+protocol BaseInteractorOutputProtocol: AnyObject{}
+protocol BaseProviderInputProtocol: AnyObject{}
+protocol BaseProviderOutputProtocol: AnyObject{}
 
 class BaseViewModel {
     
@@ -24,7 +24,7 @@ class BaseViewModel {
     
     func changeState() {
         let option = Int.random(in: 0..<3)
-        switch option {
+        switch option{
         case 0: self.state = .ok
         case 1: self.state = .loading
         case 2: self.state = .error
@@ -34,17 +34,16 @@ class BaseViewModel {
     
     internal var baseInteractor: BaseInteractorInputProtocol?
     required init(){}
-    
 }
 
 class BaseInteractor {
-    internal weak var baseViewModel: BaseInteractorOuputProtocol?
+    internal weak var baseViewModel: BaseInteractorOutputProtocol?
     internal var baseProvider: BaseProviderInputProtocol?
     required init(){}
 }
 
 class BaseProvider {
-    internal weak var baseInteractor: BaseProviderOuputProtocol?
+    internal weak var baseInteractor: BaseProviderOutputProtocol?
     required init(){}
 }
 
@@ -60,9 +59,9 @@ class BaseCoordinator {
         let baseProvider = Provider()
         
         baseViewModel.baseInteractor = baseInteractor as? BaseInteractorInputProtocol
-        baseInteractor.baseViewModel = baseViewModel as? BaseInteractorOuputProtocol
+        baseInteractor.baseViewModel = baseViewModel as? BaseInteractorOutputProtocol
         baseInteractor.baseProvider = baseProvider as? BaseProviderInputProtocol
-        baseProvider.baseInteractor = baseInteractor as? BaseProviderOuputProtocol
+        baseProvider.baseInteractor = baseInteractor as? BaseProviderOutputProtocol
         
         return (baseViewModel, baseInteractor, baseProvider)
     }

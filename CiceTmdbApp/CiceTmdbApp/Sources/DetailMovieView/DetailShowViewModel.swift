@@ -1,7 +1,4 @@
 /*
-Copyright, everisSL
-All rights reserved.
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -26,32 +23,29 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import SwiftUI
 
-
-final class ShowsCoordinator: BaseCoordinator {
-
-    typealias ContentView = ShowsView
-    typealias ViewModel = ShowsViewModel
-    typealias Interactor = ShowsInteractor
-    typealias Provider = ShowsProvider
-    
-    static func navigation() -> NavigationView<ContentView> {
-        NavigationView{
-            self.view()
-        }
-    }
-    
-    static func view(dto: ShowsCoordinatorDTO? = nil) -> ContentView {
-        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
-                                              interactor: Interactor.self,
-                                              provider: Provider.self)
-        let view = ContentView(viewModel: vip.viewModel)
-        return view
-    }
+// Output del Interactor
+protocol DetailShowInteractorOutputProtocol: BaseInteractorOutputProtocol {
     
 }
 
-struct ShowsCoordinatorDTO {
+final class DetailShowViewModel: BaseViewModel, ObservableObject {
+    
+    // MARK: - DI
+    var interactor: DetailShowInteractorInputProtocol? {
+        super.baseInteractor as? DetailShowInteractorInputProtocol
+    }
+    
+    // MARK: - Variables @Published
+    
+    // MARK: - Metodos publicos para la View
+    func fetchData() {
+
+    }
+}
+
+// Output del Interactor
+extension DetailShowViewModel: DetailShowInteractorOutputProtocol {
     
 }
+
