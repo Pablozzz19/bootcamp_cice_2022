@@ -27,12 +27,21 @@ import SwiftUI
 struct DetailShowView: View {
     
     @StateObject var viewModel = DetailShowViewModel()
+    var viewModel: DetailShowServerModel
     
     var body: some View {
-        VStack {
-            Text("Hello DetailShowView")
+        ScrollView{
+            VStack{
+
+            }
         }
-        .onAppear() {
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .edgesIgnoringSafeArea(.all)
+        /*.sheet(item: self.$selectedTrailer) { myTrailer in
+            SafariView(url: myTrailer.youtubeURL!)
+        }*/
+        .onAppear {
             self.viewModel.fetchData()
         }
     }
@@ -42,6 +51,6 @@ struct DetailShowView: View {
 struct DetailShowView_Previews: PreviewProvider {
 
     static var previews: some View {
-        DetailShowView()
+        DetailShowView(viewModel: DetailShowServerModel.stubbedDetailShow?)
     }
 }

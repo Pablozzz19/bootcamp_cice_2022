@@ -45,6 +45,7 @@ final class DetailShowCoordinator: BaseCoordinator {
         let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
                                               interactor: Interactor.self,
                                               provider: Provider.self)
+        vip.provider.dataDTO = dto
         let view = ContentView(viewModel: vip.viewModel)
         return view
     }

@@ -12,6 +12,7 @@ struct MoviesPostCarrousel: View {
     var title: String
     var moviesModel: [MoviesTVModelView]
     var isPoster: Bool
+    var isMovie: Bool
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
@@ -30,9 +31,7 @@ struct MoviesPostCarrousel: View {
                 HStack(alignment: .top, spacing: 20) {
                     ForEach(self.moviesModel) { movie in
                         NavigationLink(
-                            destination:
-                                //DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: movie.id ?? 0))
-                                DetailMovieView(viewModel: DetailMovieServerModel.stubbedDetailMovie!),
+                            destination: self.setContentView(isMovie: isMovie, id: movie.id ?? 0),
                             label: {
                                 MoviePosterCell(model: movie, isPoster: self.isPoster)
                             })
@@ -40,6 +39,15 @@ struct MoviesPostCarrousel: View {
                     }
                 }
             }
+        }
+    }
+    
+    @ViewBuilder
+    func setContentView(isMovie: Bool, id: Int) -> some View {
+        if isMovie {
+            DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: id))
+        } else {
+            DetailShowCoordinator.view()
         }
     }
 }
