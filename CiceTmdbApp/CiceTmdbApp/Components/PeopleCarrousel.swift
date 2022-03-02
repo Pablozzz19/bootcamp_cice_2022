@@ -13,13 +13,74 @@ struct PeopleCarrousel: View {
     let dataModel: [PeopleViewModel]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 2) {
+            HStack{
+                Text(title)
+                    .fontWeight(.bold)
+                    .padding(.horizontal)
+                Rectangle()
+                    .fill(Color.red.opacity(0.3))
+                    .frame(width: 50, height: 5)
+            }
+            .padding(.bottom, 10)
+            
+            LazyVGrid(columns: Array(repeating: GridItem(), count: 3)) {
+                ForEach(self.dataModel){ item in
+                    NavigationLink(
+                        destination: DetailPersonPopular(dataModel: item.knownFor ?? []),
+                        label: {
+                            PeopleCell(model: item)
+                        })
+                        .buttonStyle(PlainButtonStyle())
+                    /*NavigationLink {
+                        DetailPersonPopular(dataModel: item.knownFor ?? [])
+                    } label: {
+                        PeopleCell(model: item)
+                    }
+                    .buttonStyle(PlainButtonStyle())*/
+                }
+            }
+        }
     }
 }
 
-struct PeopleCarrousel_Previews: PreviewProvider {
-    static var previews: some View {
-        PeopleCarrousel(title: "",
-                        dataModel: PeoplePopularServerModel)
+struct PeopleCell: View {
+    
+    let model: PeopleViewModel
+    @ObservedObject var imageLoaderVM = ImageLoader()
+    
+    init(model: PeopleViewModel){
+        self.model = model
+        self.imageLoaderVM.loadImage(whit: self.model.profilePathUrl)
+    }
+    
+    var body: some View {
+        ZStack{
+            if self.imageLoaderVM.image != nil {
+                VStack{
+                    Image(uiImage: self.imageLoaderVM.image!)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100, height: 100)
+                        .clipShape(Circle())
+                    Text(self.model.name ?? "")
+                        .font(.headline)
+                }
+            } else {
+                Circle()
+                    .fill(LinearGradient(gradient: Gradient(colors: [Color.red, Color.clear]),
+                                         startPoint: .bottom,
+                                         endPoint: .top))
+                    .clipShape(Circle())
+            }
+        }
     }
 }
+
+
+//struct PeopleCarrousel_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PeopleCarrousel(title: "",
+//                        dataModel: PeoplePopularServerModel.stubbedPeoplePopular?.results)
+//    }
+//}

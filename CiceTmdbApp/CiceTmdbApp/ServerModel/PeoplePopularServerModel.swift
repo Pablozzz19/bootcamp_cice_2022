@@ -7,17 +7,10 @@
 
 import Foundation
 
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let peoplePopularServerModel = try? newJSONDecoder().decode(PeoplePopularServerModel.self, from: jsonData)
-
-import Foundation
-
 // MARK: - PeoplePopularServerModel
 struct PeoplePopularServerModel: Codable {
     let page: Int?
-    let results: [ResultModel]?
+    let results: [ResultPeople]?
     let totalPages: Int?
     let totalResults: Int?
 
@@ -30,12 +23,12 @@ struct PeoplePopularServerModel: Codable {
 }
 
 // MARK: - Result
-struct ResultModel: Codable {
+struct ResultPeople: Codable {
     let adult: Bool?
     let gender: Int?
     let id: Int?
     let knownFor: [KnownFor]?
-    let knownForDepartment: KnownForDepartment?
+    let knownForDepartment: String?
     let name: String?
     let popularity: Double?
     let profilePath: String?
@@ -59,10 +52,10 @@ struct KnownFor: Codable {
     let firstAirDate: String?
     let genreIDS: [Int]?
     let id: Int?
-    let mediaType: MediaType?
+    let mediaType: String?
     let name: String?
-    let originCountry: [OriginCountry]?
-    let originalLanguage: OriginalLanguage?
+    let originCountry: [String]?
+    let originalLanguage: String?
     let originalName: String?
     let overview: String?
     let posterPath: String?
@@ -95,24 +88,15 @@ struct KnownFor: Codable {
     }
 }
 
-enum MediaType: String, Codable {
-    case movie = "movie"
-    case tv = "tv"
-}
-
-enum OriginCountry: String, Codable {
-    case ca = "CA"
-    case jp = "JP"
-    case us = "US"
-}
-
-enum OriginalLanguage: String, Codable {
-    case en = "en"
-    case ja = "ja"
-}
-
-enum KnownForDepartment: String, Codable {
-    case acting = "Acting"
-    case writing = "Writing"
+extension PeoplePopularServerModel {
+    
+    static var stubbedPeoplePopular: PeoplePopularServerModel? {
+        let response: PeoplePopularServerModel? = try? Bundle.main.loadAndDecodeJSON(filename: "PeoplePopularModel")
+        if let responseUnw = response {
+            return responseUnw
+        }
+        return nil
+    }
+    
 }
 
