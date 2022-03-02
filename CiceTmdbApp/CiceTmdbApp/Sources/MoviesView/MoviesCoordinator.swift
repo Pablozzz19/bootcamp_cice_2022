@@ -2,7 +2,7 @@
 //  MoviesCoordinator.swift
 //  CiceTmdbApp
 //
-//  Created by cice on 23/02/2022.
+//  Created by TECDATA ENGINEERING on 23/2/22.
 //
 
 import Foundation
@@ -16,7 +16,7 @@ final class MoviesCoordinator: BaseCoordinator {
     typealias Provider = MoviesProvider
     
     static func navigation() -> NavigationView<ContentView> {
-        NavigationView {
+        NavigationView{
             self.view()
         }
     }
