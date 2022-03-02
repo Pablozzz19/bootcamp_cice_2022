@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C9C72127CFF49400B400C6 /* PeoplePopular.json in Resources */ = {isa = PBXBuildFile; fileRef = 09C9C72027CFF49400B400C6 /* PeoplePopular.json */; };
+		09C9C72427CFF4B700B400C6 /* PeoplePopularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C9C72327CFF4B700B400C6 /* PeoplePopularViewModel.swift */; };
+		09C9C72827CFF64300B400C6 /* PeopleCarrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C9C72727CFF64300B400C6 /* PeopleCarrousel.swift */; };
 		F61FB65127C6AF8C009B3F45 /* MoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61FB65027C6AF8C009B3F45 /* MoviesInteractor.swift */; };
 		F61FB65327C6B19E009B3F45 /* MoviesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61FB65227C6B19E009B3F45 /* MoviesProvider.swift */; };
 		F61FB65527C6B499009B3F45 /* MoviesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61FB65427C6B499009B3F45 /* MoviesCoordinator.swift */; };
@@ -56,6 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09C9C72027CFF49400B400C6 /* PeoplePopular.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PeoplePopular.json; sourceTree = "<group>"; };
+		09C9C72327CFF4B700B400C6 /* PeoplePopularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePopularViewModel.swift; sourceTree = "<group>"; };
+		09C9C72727CFF64300B400C6 /* PeopleCarrousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCarrousel.swift; sourceTree = "<group>"; };
 		F61FB65027C6AF8C009B3F45 /* MoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInteractor.swift; sourceTree = "<group>"; };
 		F61FB65227C6B19E009B3F45 /* MoviesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesProvider.swift; sourceTree = "<group>"; };
 		F61FB65427C6B499009B3F45 /* MoviesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCoordinator.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 			children = (
 				F61FB65C27C6CC62009B3F45 /* MoviesPosterCarrousel.swift */,
 				F69A3B7527CD588200E452CC /* MovieCastCarrouselView.swift */,
+				09C9C72727CFF64300B400C6 /* PeopleCarrousel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -183,16 +190,16 @@
 		F697F78C27C56FB300641438 /* CiceTmdbApp */ = {
 			isa = PBXGroup;
 			children = (
-				F69A3B7727CD67E400E452CC /* UIKitViews */,
-				F67A916327C8014D0082544F /* ModelView */,
-				F61FB65B27C6CC46009B3F45 /* Components */,
-				F61FB65627C6B768009B3F45 /* WebService */,
-				F697F7CE27C584D600641438 /* Sources */,
-				F697F7CB27C580D200641438 /* ServerModel */,
-				F697F7A227C57ADC00641438 /* Resources */,
-				F697F79F27C5780A00641438 /* Utils+Helpers */,
 				F697F79B27C56FFB00641438 /* BaseVIP */,
+				F61FB65B27C6CC46009B3F45 /* Components */,
 				F697F79E27C5776D00641438 /* CoreApp */,
+				F67A916327C8014D0082544F /* ModelView */,
+				F697F7A227C57ADC00641438 /* Resources */,
+				F697F7CB27C580D200641438 /* ServerModel */,
+				F697F7CE27C584D600641438 /* Sources */,
+				F69A3B7727CD67E400E452CC /* UIKitViews */,
+				F697F79F27C5780A00641438 /* Utils+Helpers */,
+				F61FB65627C6B768009B3F45 /* WebService */,
 				F697F79127C56FB500641438 /* Assets.xcassets */,
 				F697F79327C56FB500641438 /* Preview Content */,
 			);
@@ -242,6 +249,7 @@
 				F6F19FB127C956E5004591C8 /* ShowsModel.json */,
 				F6F19FCB27C96D1F004591C8 /* DetailMovie.json */,
 				F6C3BA9D27CEB6E2002995CB /* DetailShow.json */,
+				09C9C72027CFF49400B400C6 /* PeoplePopular.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 				F6F19FB327C9570E004591C8 /* ShowsServerModel.swift */,
 				F6F19FCD27C96D43004591C8 /* DetailMovieServerModel.swift */,
 				F6C3BA9F27CEB736002995CB /* DetailShowServerModel.swift */,
+				09C9C72327CFF4B700B400C6 /* PeoplePopularViewModel.swift */,
 			);
 			path = ServerModel;
 			sourceTree = "<group>";
@@ -372,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6C3BA9E27CEB6E2002995CB /* DetailShow.json in Resources */,
+				09C9C72127CFF49400B400C6 /* PeoplePopular.json in Resources */,
 				F6F19FB227C956E5004591C8 /* ShowsModel.json in Resources */,
 				F697F79527C56FB500641438 /* Preview Assets.xcassets in Resources */,
 				F697F7A427C57B5500641438 /* MoviesModel.json in Resources */,
@@ -399,6 +409,8 @@
 				F697F79027C56FB300641438 /* ContentView.swift in Sources */,
 				F67A916527C801810082544F /* MoviesTVModelView.swift in Sources */,
 				F61FB65127C6AF8C009B3F45 /* MoviesInteractor.swift in Sources */,
+				09C9C72427CFF4B700B400C6 /* PeoplePopularViewModel.swift in Sources */,
+				09C9C72827CFF64300B400C6 /* PeopleCarrousel.swift in Sources */,
 				F6F19FBE27C9642A004591C8 /* DetailMovieView.swift in Sources */,
 				F69A3B7927CD67FF00E452CC /* SafariView.swift in Sources */,
 				F6F19FBC27C9642A004591C8 /* DetailMovieViewModel.swift in Sources */,
@@ -554,9 +566,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CiceTmdbApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -564,6 +578,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,6 +586,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edu.technology.CiceTmdbApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -582,9 +598,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CiceTmdbApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -592,6 +610,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,6 +618,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edu.technology.CiceTmdbApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
