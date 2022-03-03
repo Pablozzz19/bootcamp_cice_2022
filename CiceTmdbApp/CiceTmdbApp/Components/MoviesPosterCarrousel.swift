@@ -22,7 +22,7 @@ struct MoviesPosterCarrousel: View {
                     .fontWeight(.bold)
                     .padding(.horizontal)
                 Rectangle()
-                    .fill(Color.cyan.opacity(0.3))
+                    .fill(Color.blue.opacity(0.3))
                     .frame(width: 50, height: 5)
             }
             .padding(.bottom, 20)
@@ -30,12 +30,18 @@ struct MoviesPosterCarrousel: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 20) {
                     ForEach(self.moviesModel){ movie in
-                        NavigationLink {
+                        NavigationLink(
+                            destination: self.setContentView(isMovie: isMovie, id: movie.id ?? 0),
+                            label: {
+                                MoviePosterCell(model: movie, isPoster: self.isPoster)
+                            })
+                            .buttonStyle(PlainButtonStyle())
+                        /*NavigationLink {
                             self.setContentView(isMovie: isMovie, id: movie.id ?? 0)
                         } label: {
                             MoviePosterCell(model: movie, isPoster: self.isPoster)
                         }
-                        .buttonStyle(PlainButtonStyle())
+                        .buttonStyle(PlainButtonStyle())*/
                     }
                 }
             }
