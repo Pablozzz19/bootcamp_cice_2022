@@ -29,6 +29,7 @@ import Combine
 // Input Protocol
 protocol DetailMovieProviderInputProtocol: BaseProviderInputProtocol {
     func fetchDataDetailMovieProvider()
+    func saveDataAsFavouritesProvider()
 }
 
 final class DetailMovieProvider: BaseProvider {
@@ -64,6 +65,10 @@ extension DetailMovieProvider: DetailMovieProviderInputProtocol {
                 self?.interactor?.setInformationDetailMovie(completion: .success(resultData))
             }
             .store(in: &cancellable)
+    }
+    
+    func saveDataAsFavouritesProvider() {
+        DDBB.shared.addLocal()
     }
 }
 

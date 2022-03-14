@@ -1,4 +1,6 @@
 /*
+Copyright, everisSL
+All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -24,42 +26,30 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import SwiftUI
 
-
-// Output del Interactor
-protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?)
-}
-
-final class DetailMovieViewModel: BaseViewModel, ObservableObject  {
+final class FavouritesCoordinator: BaseCoordinator {
     
-    // MARK: - DI
-    var interactor: DetailMovieInteractorInputProtocol?{
-        super.baseInteractor as? DetailMovieInteractorInputProtocol
-    }
+    typealias ContentView = FavouritesView
+    typealias ViewModel = FavouritesViewModel
+    typealias Interactor = FavouritesInteractor
+    typealias Provider = FavouritesProvider
     
-    // MARK: - Variables @Published
-    @Published var data: DetailMovieTVModelView?
-    
-    // MARK: - Métodos publicos para View
-    func fetchData() {
-        self.interactor?.fetchDataDetailMovieInteractor()
-    }
-    
-    func saveDataFavourites() {
-        self.interactor?.saveDataAsFavouriteInteractor()
-    }
-    
-}
-
-// Output del Interactor
-extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?) {
-        guard let dataUnw = data else {
-            return
+    static func navigation() -> NavigationView<ContentView> {
+        NavigationView {
+            self.view()
         }
-        self.data = dataUnw
+    }
+    
+    static func view(dto: FavouritesCoordinatorDTO? = nil) -> ContentView {
+        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
+                                              interactor: Interactor.self,
+                                              provider: Provider.self)
+        let view = ContentView(viewModel: vip.viewModel)
+        return view
     }
 }
 
-
+struct FavouritesCoordinatorDTO {
+    
+}

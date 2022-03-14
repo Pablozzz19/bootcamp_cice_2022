@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     
     @EnvironmentObject var viewModelSession: LoginViewModel
+    @State private var isPressed = false
     
     var body: some View {
         if self.viewModelSession.userLogged != nil {
@@ -21,6 +22,17 @@ struct ProfileView: View {
                         Text("Logout")
                     }
                     .buttonStyleH1()
+                }
+                Section() {
+                    Button {
+                        self.viewModelSession.logoutSession()
+                    } label: {
+                        Text("Logout")
+                    }
+                    .buttonStyleH1()
+                    .sheet(isPresented: self.$isPressed, content: {
+                        FavouritesCoordinator.navigation()
+                    })
                 }
             }
         } else {

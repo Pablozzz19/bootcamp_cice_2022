@@ -1,5 +1,4 @@
 /*
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -25,41 +24,36 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-
-// Output del Interactor
-protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?)
+// Input del Interactor
+protocol FavouritesInteractorInputProtocol: BaseInteractorInputProtocol {
+    
 }
 
-final class DetailMovieViewModel: BaseViewModel, ObservableObject  {
+// Output Provider
+protocol FavouritesProviderOutputProtocol: BaseProviderOutputProtocol {
+    
+}
+
+final class FavouritesInteractor: BaseInteractor {
     
     // MARK: - DI
-    var interactor: DetailMovieInteractorInputProtocol?{
-        super.baseInteractor as? DetailMovieInteractorInputProtocol
+    weak var viewModel: FavouritesInteractorOutputProtocol? {
+        super.baseViewModel as? FavouritesInteractorOutputProtocol
     }
     
-    // MARK: - Variables @Published
-    @Published var data: DetailMovieTVModelView?
-    
-    // MARK: - Métodos publicos para View
-    func fetchData() {
-        self.interactor?.fetchDataDetailMovieInteractor()
-    }
-    
-    func saveDataFavourites() {
-        self.interactor?.saveDataAsFavouriteInteractor()
+    // MARK: - DI
+    var provider: FavouritesProviderInputProtocol? {
+        super.baseProvider as? FavouritesProviderInputProtocol
     }
     
 }
 
-// Output del Interactor
-extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?) {
-        guard let dataUnw = data else {
-            return
-        }
-        self.data = dataUnw
-    }
+// Input del Interactor
+extension FavouritesInteractor: FavouritesInteractorInputProtocol {
+    
 }
 
-
+// Output Provider
+extension FavouritesInteractor: FavouritesProviderOutputProtocol {
+    
+}

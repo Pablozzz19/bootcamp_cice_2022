@@ -1,5 +1,4 @@
 /*
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -25,41 +24,28 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-
 // Output del Interactor
-protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?)
+protocol FavouritesInteractorOutputProtocol: BaseInteractorOutputProtocol {
+    
 }
 
-final class DetailMovieViewModel: BaseViewModel, ObservableObject  {
+final class FavouritesViewModel: BaseViewModel, ObservableObject {
     
     // MARK: - DI
-    var interactor: DetailMovieInteractorInputProtocol?{
-        super.baseInteractor as? DetailMovieInteractorInputProtocol
+    var interactor: FavouritesInteractorInputProtocol? {
+        super.baseInteractor as? FavouritesInteractorInputProtocol
     }
     
     // MARK: - Variables @Published
-    @Published var data: DetailMovieTVModelView?
     
-    // MARK: - Métodos publicos para View
+    // MARK: - Metodos publicos para la View
     func fetchData() {
-        self.interactor?.fetchDataDetailMovieInteractor()
+
     }
-    
-    func saveDataFavourites() {
-        self.interactor?.saveDataAsFavouriteInteractor()
-    }
-    
 }
 
 // Output del Interactor
-extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?) {
-        guard let dataUnw = data else {
-            return
-        }
-        self.data = dataUnw
-    }
+extension FavouritesViewModel: FavouritesInteractorOutputProtocol {
+    
 }
-
 
