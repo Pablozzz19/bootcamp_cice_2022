@@ -1,5 +1,4 @@
 /*
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -23,43 +22,26 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-import Foundation
+import SwiftUI
 
-
-// Output del Interactor
-protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?)
-}
-
-final class DetailMovieViewModel: BaseViewModel, ObservableObject  {
+struct FavouritesView: View {
     
-    // MARK: - DI
-    var interactor: DetailMovieInteractorInputProtocol?{
-        super.baseInteractor as? DetailMovieInteractorInputProtocol
-    }
+    @StateObject var viewModel = FavouritesViewModel()
     
-    // MARK: - Variables @Published
-    @Published var data: DetailMovieTVModelView?
-    
-    // MARK: - Métodos publicos para View
-    func fetchData() {
-        self.interactor?.fetchDataDetailMovieInteractor()
-    }
-    
-    func saveDataFavourites() {
-        self.interactor?.saveDataAsFavouriteInteractor()
-    }
-    
-}
-
-// Output del Interactor
-extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?) {
-        guard let dataUnw = data else {
-            return
+    var body: some View {
+        VStack {
+            Text("Hello FavouritesView")
         }
-        self.data = dataUnw
+        .onAppear() {
+            self.viewModel.fetchData()
+        }
     }
+
 }
 
+struct FavouritesView_Previews: PreviewProvider {
 
+    static var previews: some View {
+        FavouritesView()
+    }
+}

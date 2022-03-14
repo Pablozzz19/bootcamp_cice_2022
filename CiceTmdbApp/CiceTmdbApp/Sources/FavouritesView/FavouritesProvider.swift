@@ -1,5 +1,4 @@
 /*
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -24,42 +23,40 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import Combine
 
-
-// Output del Interactor
-protocol DetailMovieInteractorOutputProtocol: BaseInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?)
+// Input Protocol
+protocol FavouritesProviderInputProtocol: BaseProviderInputProtocol {
+    
 }
 
-final class DetailMovieViewModel: BaseViewModel, ObservableObject  {
+final class FavouritesProvider: BaseProvider {
     
     // MARK: - DI
-    var interactor: DetailMovieInteractorInputProtocol?{
-        super.baseInteractor as? DetailMovieInteractorInputProtocol
+    weak var interactor: FavouritesProviderOutputProtocol? {
+        super.baseInteractor as? FavouritesProviderOutputProtocol
     }
     
-    // MARK: - Variables @Published
-    @Published var data: DetailMovieTVModelView?
-    
-    // MARK: - Métodos publicos para View
-    func fetchData() {
-        self.interactor?.fetchDataDetailMovieInteractor()
-    }
-    
-    func saveDataFavourites() {
-        self.interactor?.saveDataAsFavouriteInteractor()
-    }
+    let networkService: NetworkServiceInputProtocol = NetworkService()
+    var cancellable: Set<AnyCancellable> = []
     
 }
 
-// Output del Interactor
-extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
-    func setInformationDetail(data: DetailMovieTVModelView?) {
-        guard let dataUnw = data else {
-            return
-        }
-        self.data = dataUnw
-    }
+extension FavouritesProvider: FavouritesProviderInputProtocol {
+    
 }
 
-
+// MARK: - Request de apoyo
+struct FavouritesRequestDTO {
+    
+    /*static func requestData(numeroItems: String) -> RequestDTO {
+        let argument: [CVarArg] = [numeroItems]
+        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
+        let request = RequestDTO(params: nil,
+                                 method: .get,
+                                 endpoint: urlComplete,
+                                 urlContext: .webService)
+        return request
+    }*/
+    
+}

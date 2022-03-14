@@ -28,6 +28,7 @@ import Foundation
 // Input del Interactor
 protocol DetailMovieInteractorInputProtocol: BaseInteractorInputProtocol {
     func fetchDataDetailMovieInteractor()
+    func saveDataAsFavouriteInteractor()
 }
 
 // Output Provider
@@ -114,6 +115,10 @@ final class DetailMovieInteractor: BaseInteractor {
 extension DetailMovieInteractor: DetailMovieInteractorInputProtocol {
     func fetchDataDetailMovieInteractor() {
         self.provider?.fetchDataDetailMovieProvider()
+    }
+    
+    func saveDataAsFavouriteInteractor() {
+        //
     }
 }
 

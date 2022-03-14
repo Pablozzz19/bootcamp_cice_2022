@@ -73,6 +73,7 @@ struct DetailMovieView: View {
                 
                 Button {
                     // Aqui salvaremos la peliculas como favoritas en una BBDD (1. Firebase | 2. UserDefault )
+                    self.viewModel.sa
                 } label: {
                     Image(systemName: "bookmark")
                 }
