@@ -68,7 +68,12 @@ extension DetailMovieProvider: DetailMovieProviderInputProtocol {
     }
     
     func saveDataAsFavouritesProvider() {
-        DDBB.shared.addLocal()
+        DDBB.shared.addLocal(favorite: DownloadNewModel(pId: "\(self.dataDTO?.dataId ?? 0)")) { (result) in
+            debugPrint("Salvado correctamente")
+        } failure: { (error) in
+            debugPrint("Error no se ha salvado correctamente, \(error ?? "")")
+        }
+
     }
 }
 

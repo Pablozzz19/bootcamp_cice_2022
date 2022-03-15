@@ -40,6 +40,7 @@ final class DetailMovieViewModel: BaseViewModel, ObservableObject  {
     
     // MARK: - Variables @Published
     @Published var data: DetailMovieTVModelView?
+    @Published var isSaved = false
     
     // MARK: - Métodos publicos para View
     func fetchData() {
@@ -59,6 +60,16 @@ extension DetailMovieViewModel: DetailMovieInteractorOutputProtocol {
             return
         }
         self.data = dataUnw
+        /*DDBB.shared.getAllLocal { (result) in
+            result?.downloads.map { item in
+                item.map {
+                    
+                }
+            }
+        } failure: { (<#String?#>) in
+            <#code#>
+        }*/
+
     }
 }
 
